@@ -1,0 +1,12 @@
+{
+    "name": "ecc/ecctheme",
+    "description": "consolidated Essex County Council Drupal theme",
+    "type": "drupal-theme",
+    "authors": [
+        {
+            "name": "ageorge",
+            "email": "ageorge@nomensa.com"
+        }
+    ],
+    "require": {}
+}
