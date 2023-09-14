@@ -22,3 +22,7 @@ variables:
 #   css:
 #     theme:
 #       css/sample.css: {}
+fonts:
+  css:
+    theme:
+      css/ecc-shared/fonts.css: {}
