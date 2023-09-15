@@ -1,0 +1,34 @@
+/* Accordion */
+
+.accordion-pane button {
+    background-color: var(--color-link);
+    border-color: var(--color-link);
+    position: relative;
+}
+
+.accordion-pane button:hover,
+.accordion-pane button:focus {
+    background-color: var(--color-white);
+    color: var(--color-link);
+}
+
+.accordion-pane button:after {
+    content: '';
+    background-image: var(--icon-chevron-white);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 11px;
+    position: absolute;
+    right: var(--spacing-larger);
+    top: 1.25rem;
+}
+
+.accordion-pane button[aria-expanded="true"]:after {
+    transform: rotate(180deg);
+}
+
+.accordion-pane button:hover:after,
+.accordion-pane button:focus:after {
+    background-image: var(--icon-chevron-blue);
+}
