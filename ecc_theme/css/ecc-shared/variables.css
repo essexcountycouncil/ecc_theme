@@ -61,6 +61,7 @@ body {
   --heading-1-font-weight: 600;
   --heading-2-font-weight: var(--heading-1-font-weight);
   --heading-3-font-weight: var(--heading-1-font-weight);
+  --font-weight-normal: 400;
 
   /**
     Line-height
@@ -93,25 +94,25 @@ body {
   /**
   Icons
   */
+  --icon-DONP_white: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/icon_DONP_white.svg);
   --icon-chevron-blue: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/chevron-blue.svg);
   --icon-chevron-white-right: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/chevron-white-right);
   --icon-chevron-white: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/chevron-white.svg);
+  --icon-emergency_red: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/icon_emergency_red.svg);
+  --icon-error_red: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/icon_error_red.svg);
   --icon-facebook_icon_white: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/facebook_icon_white.svg);
-  --icon-icon_DONP_white: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/icon_DONP_white.svg);
-  --icon-icon_emergency_red: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/icon_emergency_red.svg);
-  --icon-icon_error_red: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/icon_error_red.svg);
-  --icon-icon_info_green: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/icon_info_green.svg);
-  --icon-icon_warning_yellow: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/icon_warning_yellow.svg);
+  --icon-info_green: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/icon_info_green.svg);
   --icon-info_white: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/info_white.svg);
   --icon-magnifying-glass-red: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/magnifying-glass-red.svg);
   --icon-magnifying-glass: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/magnifying-glass.svg);
   --icon-quotation: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/quotation.svg);
   --icon-search_black: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/search_black.svg);
   --icon-search_white: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/search_white.svg);
-  --icon-twitter_icon_white: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/twitter_icon_white.svg);
+  --icon-twitter_white: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/twitter_icon_white.svg);
   --icon-warning_white_round: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/warning_white_round.svg);
   --icon-warning_white_triangle: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/warning_white_triangle.svg);
-  --icon-youtube_icon_white: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/youtube_icon_white.svg);
+  --icon-warning_yellow: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/icon_warning_yellow.svg);
+  --icon-youtube_white: url(/themes/custom/ecc_theme/assets/images/ecc-shared/icons/youtube_icon_white.svg);
 
   /**
     Misc

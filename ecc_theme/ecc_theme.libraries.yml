@@ -33,6 +33,16 @@ accordion:
     theme:
       css/ecc-shared/accordion.css: {}
 
+alerts:
+  css:
+    theme:
+      css/ecc-shared/alerts.css: {}
+
+hero:
+  css:
+    theme:
+      css/ecc-shared/hero.css: {}
+
 # Layouts
 the_center:
   css:
