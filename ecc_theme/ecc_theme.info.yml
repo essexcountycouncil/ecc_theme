@@ -10,6 +10,9 @@ libraries-extend:
   localgov_base/global:
     - ecc_theme/variables
     - ecc_theme/fonts
+    - ecc_theme/accordion
+    - ecc_theme/alerts
+    - ecc_theme/hero
     # - ecc_theme/other-library-to-load-on-every-page
     # - ecc_theme/other-library-to-load-on-every-page
   # Add libraries here that extend specific libraries.

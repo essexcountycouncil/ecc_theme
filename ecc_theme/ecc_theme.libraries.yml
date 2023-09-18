@@ -36,7 +36,7 @@ accordion:
 alerts:
   css:
     theme:
-      css/ecc-shared/alerts.css: {}
+      css/ecc-shared/alert-banner.css: {}
 
 hero:
   css:
