@@ -1,0 +1,44 @@
+/* Hero and Hero content */
+.hero__container {
+    position: relative;
+    margin-bottom: var(--spacing-larger)
+}
+
+.banner--primary {
+    display: grid;
+    grid-template: "container";
+}
+
+.banner--primary>* {
+    grid-area: container;
+}
+
+.banner--primary .field--name-localgov-title {
+    font-weight: var(--heading-2-font-weight);
+}
+
+.banner--primary .banner__image img {
+    max-height: 350px;
+}
+
+.banner--primary .banner__content {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    display: flex;
+    font-weight: var(--font-semibold);
+    justify-content: center;
+    margin: 0;
+    max-width: 100%;
+    padding: 0 var(--spacing-padding-horizontal);
+    width: 100%;
+}
+
+@media (min-width: 760px) {
+    .lgd-region--hero .banner--primary .banner__content {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

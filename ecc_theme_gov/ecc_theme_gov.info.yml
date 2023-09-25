@@ -9,11 +9,12 @@ libraries-extend:
   # of those extending ecc_theme/global
   ecc_theme/global:
     - ecc_theme_gov/variables
+    - ecc_theme/hero
     # - ecc_theme_gov/other-library-to-load-on-every-page
     # - ecc_theme_gov/other-library-to-load-on-every-page
   # Add libraries here that extend specific libraries.
   # ecc_theme/sample-library:
-    # - ecc_theme_gov/sample-library
+  # - ecc_theme_gov/sample-library
 
 regions:
   tabs: "Tabs"

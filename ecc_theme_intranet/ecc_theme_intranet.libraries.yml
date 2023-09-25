@@ -23,3 +23,11 @@ variables:
 #   css:
 #     theme:
 #       css/sample.css: {}
+hero:
+  css:
+    theme:
+      css/hero.css: {}
+cludo:
+  css:
+    theme:
+      css/cludo-search.css: {}
