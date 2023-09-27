@@ -13,6 +13,8 @@ libraries-extend:
     - ecc_theme/accordion
     - ecc_theme/alerts
     - ecc_theme/hero
+    - ecc_theme/layout
+    - ecc_theme/footer
     # - ecc_theme/other-library-to-load-on-every-page
     # - ecc_theme/other-library-to-load-on-every-page
   # Add libraries here that extend specific libraries.

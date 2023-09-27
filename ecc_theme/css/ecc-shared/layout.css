@@ -1,0 +1,90 @@
+.lgd-page-section>.layout>.layout__region {
+    padding: 0;
+}
+
+.layout__region>* {
+    margin: var(--spacing-larger) 0;
+
+    @media only screen and (min-width: 768px) {
+        margin: 0;
+    }
+}
+
+/* Three column layout responsiveness */
+
+.layout--threecol-33-34-33 {
+    justify-content: space-between;
+}
+
+.paragraph--type--page-section .layout--threecol-33-34-33 .layout__region--first,
+.paragraph--type--page-section .layout--threecol-33-34-33 .layout__region--second,
+.paragraph--type--page-section .layout--threecol-33-34-33 .layout__region--third {
+    padding: 0;
+}
+
+.path-frontpage .layout--threecol-33-34-33 .layout__region--top,
+.path-frontpage .layout--threecol-33-34-33 .layout__region--bottom {
+    padding: 0
+}
+
+@media only screen and (min-width: 640px) {
+
+    .layout--threecol-33-34-33>.layout__region--first,
+    .layout--threecol-33-34-33>.layout__region--second,
+    .layout--threecol-33-34-33>.layout__region--third {
+        flex: 0 1 31%;
+    }
+}
+
+.layout--twocol>.layout__region>*+* {
+    margin-top: var(--spacing-largest);
+}
+
+.layout__region:empty {
+    display: none;
+}
+
+@media only screen and (min-width: 640px) {
+    .paragraph--type--page-section .layout--twocol>.layout__region--first {
+        padding-right: calc(var(--spacing-largest) / 2);
+    }
+
+    .paragraph--type--page-section .layout--twocol>.layout__region--second {
+        padding-left: calc(var(--spacing-largest) / 2);
+    }
+}
+
+/* section paragragh type layout  */
+.paragraph--type--page-section .layout.layout--twocol>* {
+    padding: 0;
+}
+
+.paragraph--type--page-section .layout__region--second .call-out-box {
+    margin-bottom: 0;
+}
+
+
+
+@media only screen and (min-width: 641px) {
+
+    .paragraph--type--page-section .layout.layout--twocol>.layout__region--first>*,
+    .paragraph--type--page-section .layout.layout--twocol>.layout__region--second>* {
+        height: 100%;
+    }
+
+    .paragraph--type--page-section .layout__region--second .call-out-box {
+        margin-top: 0;
+    }
+
+    .paragraph--type--page-section .layout.layout--twocol {
+        flex-direction: row;
+        gap: var(--spacing-small);
+        justify-content: space-between;
+    }
+
+    .paragraph--type--page-section .layout.layout--twocol>.layout__region--first,
+    .paragraph--type--page-section .layout.layout--twocol>.layout__region--second {
+        flex: 0 1 calc(50% - var(--spacing-small));
+        margin: 0;
+    }
+}

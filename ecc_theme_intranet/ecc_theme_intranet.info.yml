@@ -9,8 +9,8 @@ libraries-extend:
   # of those extending ecc_theme/global
   ecc_theme/global:
     - ecc_theme_intranet/variables
-    - ecc_theme/hero
-    - ecc_theme/cludo
+    - ecc_theme_intranet/hero
+    - ecc_theme_intranet/cludo
     # - ecc_theme_intranet/other-library-to-load-on-every-page
     # - ecc_theme_intranet/other-library-to-load-on-every-page
   # Add libraries here that extend specific libraries.

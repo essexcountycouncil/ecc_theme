@@ -9,7 +9,7 @@ libraries-extend:
   # of those extending ecc_theme/global
   ecc_theme/global:
     - ecc_theme_gov/variables
-    - ecc_theme/hero
+    - ecc_theme_gov/hero
     # - ecc_theme_gov/other-library-to-load-on-every-page
     # - ecc_theme_gov/other-library-to-load-on-every-page
   # Add libraries here that extend specific libraries.

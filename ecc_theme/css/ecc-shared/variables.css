@@ -126,4 +126,5 @@ body {
   --table-border: none;
   --table-border: none;
   --touch-size: 45px;
+  --footer-background-color: var(--color-grey-lighter);
 }

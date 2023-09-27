@@ -43,6 +43,16 @@ hero:
     theme:
       css/ecc-shared/hero.css: {}
 
+layout:
+  css:
+    theme:
+      css/ecc-shared/layout.css: {}
+
+footer:
+  css:
+    theme:
+      css/ecc-shared/footer.css: {}
+
 # Layouts
 the_center:
   css:
