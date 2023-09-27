@@ -1,0 +1,22 @@
+.banner--primary .banner__content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-right: var(--spacing-padding-horizontal);
+    padding-left: var(--spacing-padding-horizontal);
+}
+
+.banner__image img {
+    max-height: 350px;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner--primary .banner__content {
+        font-size: 2rem;
+    }
+
+    .banner__image img {
+        min-height: 280px;
+    }
+}
