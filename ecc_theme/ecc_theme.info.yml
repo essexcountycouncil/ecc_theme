@@ -8,13 +8,16 @@ libraries-extend:
   # Add libraries that you want to load on every page of your site to the list
   # of those extending localgov_base/global
   localgov_base/global:
-    - ecc_theme/variables
+    - ecc_theme/variables_shared
     - ecc_theme/fonts
     - ecc_theme/accordion
     - ecc_theme/alerts
     - ecc_theme/hero
     - ecc_theme/layout
     - ecc_theme/footer
+    - ecc_theme/call-out
+    - ecc_theme/contact
+
     # - ecc_theme/other-library-to-load-on-every-page
     # - ecc_theme/other-library-to-load-on-every-page
   # Add libraries here that extend specific libraries.

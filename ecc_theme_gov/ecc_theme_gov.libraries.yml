@@ -1,10 +1,10 @@
-variables:
-  css:
-    base:
-      # This is called in your ecc_theme_gov.info.yml file via `libraries-extend`.
-      # This ensures that in the cascade, your variables come after the base theme's
-      # variables.
-      css/variables.css: {}
+# variables:
+#   css:
+#     base:
+# This is called in your ecc_theme_gov.info.yml file via `libraries-extend`.
+# This ensures that in the cascade, your variables come after the base theme's
+# variables.
+# css/variables.css: {}
 
 # To override CSS from the base theme, add your library here, and then use
 # `libraries-extend` to add that code to the library from the base theme. See the
@@ -24,7 +24,22 @@ variables:
 #     theme:
 #       css/sample.css: {}
 
+variables_gov:
+  css:
+    theme:
+      css/variables-gov.css: {}
+
 hero:
   css:
     theme:
       css/hero.css: {}
+
+service_cta_block:
+  css:
+    theme:
+      css/service-cta-block.css: {}
+
+buttons:
+  css:
+    theme:
+      css/buttons.css: {}

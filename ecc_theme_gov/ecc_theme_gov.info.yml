@@ -8,8 +8,10 @@ libraries-extend:
   # Add libraries that you want to load on every page of your site to the list
   # of those extending ecc_theme/global
   ecc_theme/global:
-    - ecc_theme_gov/variables
+    - ecc_theme_gov/variables_gov
     - ecc_theme_gov/hero
+    - ecc_theme_gov/buttons
+    - ecc_theme_gov/service_cta_block
     # - ecc_theme_gov/other-library-to-load-on-every-page
     # - ecc_theme_gov/other-library-to-load-on-every-page
   # Add libraries here that extend specific libraries.

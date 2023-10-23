@@ -8,9 +8,11 @@ libraries-extend:
   # Add libraries that you want to load on every page of your site to the list
   # of those extending ecc_theme/global
   ecc_theme/global:
-    - ecc_theme_intranet/variables
+    - ecc_theme_intranet/variables_intranet
     - ecc_theme_intranet/hero
     - ecc_theme_intranet/cludo
+    - ecc_theme_intranet/buttons
+    - ecc_theme_intranet/service_cta_block
     # - ecc_theme_intranet/other-library-to-load-on-every-page
     # - ecc_theme_intranet/other-library-to-load-on-every-page
   # Add libraries here that extend specific libraries.

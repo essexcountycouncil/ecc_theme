@@ -37,4 +37,7 @@ body {
   --font-secondary: georgia, var(--font-primary);
   --line-height: 1.3;
   --color-section-pre-footer-bg: #444a48;
+  --color-section-footer-bg: #414745;
+  --cabbage: deeppink;
+  ;
 }

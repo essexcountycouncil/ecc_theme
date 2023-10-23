@@ -1,10 +1,9 @@
-variables:
-  css:
-    base:
-      # This is called in your ecc_theme_intranet.info.yml file via `libraries-extend`.
-      # This ensures that in the cascade, your variables come after the base theme's
-      # variables.
-      css/variables.css: {}
+# variables:
+#   css:
+#     base:
+# This is called in your ecc_theme_intranet.info.yml file via `libraries-extend`.
+# This ensures that in the cascade, your variables come after the base theme's
+# variables.
 
 # To override CSS from the base theme, add your library here, and then use
 # `libraries-extend` to add that code to the library from the base theme. See the
@@ -23,6 +22,10 @@ variables:
 #   css:
 #     theme:
 #       css/sample.css: {}
+variables_intranet:
+  css:
+    theme:
+      css/variables.css: {}
 hero:
   css:
     theme:
@@ -31,3 +34,12 @@ cludo:
   css:
     theme:
       css/cludo-search.css: {}
+buttons:
+  css:
+    theme:
+      css/buttons.css: {}
+
+service_cta_block:
+  css:
+    theme:
+      css/service-cta-block.css: {}
