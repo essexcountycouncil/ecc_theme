@@ -10,9 +10,10 @@ libraries:
   - ecc_theme_intranet/buttons
   - ecc_theme_intranet/header
   - ecc_theme_intranet/hero
-  - ecc_theme_intranet/service_cta_block
-  - ecc_theme_intranet/search
   - ecc_theme_intranet/main_menu
+  - ecc_theme_intranet/news
+  - ecc_theme_intranet/search
+  - ecc_theme_intranet/service_cta_block
 
 regions:
   tabs: "Tabs"

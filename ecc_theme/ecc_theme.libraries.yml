@@ -69,6 +69,11 @@ guide:
     theme:
       css/ecc-shared/guide.css: {}
 
+news:
+  css:
+    theme:
+      css/ecc-shared/news.css: {}
+
 # Layouts
 the_center:
   css:

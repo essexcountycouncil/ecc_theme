@@ -8,11 +8,12 @@ libraries:
   - ecc_theme_gov/variables_gov
   - ecc_theme_gov/branding
   - ecc_theme_gov/buttons
+  - ecc_theme_gov/cookies
   - ecc_theme_gov/header
   - ecc_theme_gov/hero
-  - ecc_theme_gov/service_cta_block
+  - ecc_theme_gov/news
   - ecc_theme_gov/search
-  - ecc_theme_gov/cookies
+  - ecc_theme_gov/service_cta_block
 
 regions:
   tabs: "Tabs"

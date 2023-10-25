@@ -37,3 +37,8 @@ cookies:
   css:
     theme:
       css/cookies.css: {}
+
+news:
+  css:
+    theme:
+      css/news.css: {}

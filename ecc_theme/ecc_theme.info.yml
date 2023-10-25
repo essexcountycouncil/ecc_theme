@@ -16,18 +16,13 @@ libraries-extend:
     - ecc_theme/cookies
     - ecc_theme/fonts
     - ecc_theme/footer
+    - ecc_theme/guide
+    - ecc_theme/headings
     - ecc_theme/hero
     - ecc_theme/layout
-    - ecc_theme/step_by_step
-    - ecc_theme/headings
     - ecc_theme/media_with_text
-    - ecc_theme/guide
-
-    # - ecc_theme/other-library-to-load-on-every-page
-    # - ecc_theme/other-library-to-load-on-every-page
-  # Add libraries here that extend specific libraries.
-  # localgov_base/sample-library:
-  # - ecc_theme/sample-library
+    - ecc_theme/news
+    - ecc_theme/step_by_step
 
 regions:
   tabs: "Tabs"
