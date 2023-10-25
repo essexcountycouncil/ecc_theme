@@ -2,3 +2,7 @@
 /vendor/
 
 **/*.zip
+
+# Remove before committing. If you see this in a MR/PR please remove it.
+/contrib/
+/custom/

@@ -2,5 +2,11 @@
 
 /**
  * @file
- * Theme function for the Ecc Theme - Intranet theme.
+ * Theme function for the ECC Theme - Gov theme.
  */
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+foreach ($suggestions as &$suggestion) {
+    $suggestion = str_replace('ecc_theme', 'ecc_theme_intranet', $suggestion);
+  }

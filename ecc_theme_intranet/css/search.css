@@ -48,7 +48,7 @@
 
 @media (min-width: 760px) {
     .path-frontpage .cludo-search-block-search-form input {
-        font-size: 18px;
+        font-size: var(--font-size-large);
     }
 }
 
@@ -137,7 +137,7 @@ body.path-csearch .cludo-search-search-form input.form-text {
 }
 
 #cludo-search-results {
-    max-width: var(--page-title-width);
+    max-width: 768px;
 }
 
 #cludo-search-results ul .search-results-item h2 {
@@ -170,6 +170,11 @@ body.path-csearch .cludo-search-search-form input.form-text {
     }
 }
 
+body.path-csearch #edit-prompt {
+    display: none;
+
+}
+
 body.path-csearch .cludo-search-form #edit-basic {
     display: flex;
     align-items: flex-start;
@@ -180,7 +185,7 @@ body.path-csearch .cludo-search-form #edit-submit {
     width: 52px;
     height: 52px;
     margin: 0 0 0 0.5rem;
-    background-image: var(--icon-magnifying-glass);
+    background-image: url('../assets/images/icons/magnifying-glass.svg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 1.5rem;
@@ -190,7 +195,7 @@ body.path-csearch .cludo-search-form #edit-submit {
 }
 
 body.path-csearch .cludo-search-form #edit-submit:hover {
-    background-image: var(--icon-magnifying-glass-red);
+    background-image: url('../assets/images/icons/magnifying-glass-red.svg');
 }
 
 body.path-csearch .cludo-search-form #edit-search-keys:focus,
@@ -205,7 +210,7 @@ body.path-csearch .cludo-search-form button:focus,
 body.path-csearch .cludo-search-form button:hover,
 body.path-csearch .cludo-search-form input[type="submit"]:focus,
 body.path-csearch .cludo-search-form input[type="submit"]:hover {
-    --button-text-color-hover: var(--color-white);
+    --button-text-color-hover: white;
 }
 
 body.path-csearch .search_page_list {

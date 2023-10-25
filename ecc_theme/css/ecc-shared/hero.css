@@ -1,10 +1,19 @@
 /* Hero and Hero content */
 
-
 .hero__container {
     position: relative;
     margin-bottom: var(--spacing-larger)
 }
+
+/* .button__content */
+.path-frontpage .banner__content {
+    background: transparent;
+    border: 0;
+}
+
+/* */
+
+
 
 .banner--primary {
     display: grid;
@@ -30,11 +39,4 @@
     margin: 0;
     width: 100%;
     max-width: 100%;
-}
-
-.path-frontpage h1 {
-    display: inline-block;
-    background: var(--color-white);
-    padding: 0.2em 0.7rem;
-    font-weight: 600;
 }

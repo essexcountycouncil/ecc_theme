@@ -9,8 +9,8 @@ footer .menu li {
 }
 
 footer .menu--footer li {
-    margin-right: 1em;
-    margin-bottom: 1.625rem;
+    margin-right: var(--spacing);
+    margin-bottom: var(--spacing-large);
 }
 
 footer .menu--social-media {
@@ -88,4 +88,9 @@ footer .lgd-footer__footer a {
 .lgd-footer__pre-footer {
     background-color: var(--color-section-footer-bg);
     color: var(--color-pre-footer-text);
+}
+
+.lgd-footer__pre-footer,
+.lgd-footer__footer {
+    background-color: var(--color-black);
 }

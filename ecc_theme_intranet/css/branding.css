@@ -1,0 +1,8 @@
+.branding__item--logo {
+    --header-logo-width: clamp(170px, 20vw, 200px);
+}
+
+.branding__item--logo a:focus {
+    outline-width: 3px;
+    outline-style: solid;
+}

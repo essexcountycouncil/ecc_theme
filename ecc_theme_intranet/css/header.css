@@ -1,0 +1,18 @@
+.lgd-header .lgd-region.lgd-region--header {
+    margin-right: 0;
+}
+
+.lgd-header .lgd-header__nav {
+    flex-direction: column;
+    margin-top: var(--spacing);
+}
+
+@media only screen and (min-width: 768px) {
+    .lgd-header .lgd-header__nav {
+        margin-top: 0;
+    }
+
+    .lgd-header .lgd-header__nav .lgd-region--primary-menu {
+        margin-left: auto;
+    }
+}
