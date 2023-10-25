@@ -6,13 +6,13 @@
 
 .accordion-pane button:after {
     content: '';
-    background-image: url('../assets/images/icons/chevron-white.svg');
+    background-image: var(--icon-chevron-white);
     background-position: 100% 50%;
     background-repeat: no-repeat;
     width: 22px;
     height: 11px;
     position: absolute;
-    right: 2rem;
+    right: var(--spacing-larger);
     top: 1.25rem;
 }
 
@@ -28,5 +28,6 @@
 
 .accordion-pane button:hover:after,
 .accordion-pane button:focus:after {
-    background-image: url('../assets/images/icons/chevron-blue.svg');
+    background-image: var(--icon-chevron-blue);
+
 }
