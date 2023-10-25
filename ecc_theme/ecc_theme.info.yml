@@ -19,6 +19,7 @@ libraries-extend:
     - ecc_theme/hero
     - ecc_theme/layout
     - ecc_theme/step-by-step
+    - ecc_theme/headings
 
     # - ecc_theme/other-library-to-load-on-every-page
     # - ecc_theme/other-library-to-load-on-every-page

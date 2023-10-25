@@ -1,0 +1,29 @@
+h1,
+.field--type-text-long h2,
+.navigation--quick-actions h2 {
+    position: relative;
+    margin-bottom: var(--spacing-largest);
+    padding-bottom: var(--spacing-smaller);
+}
+
+h1:after,
+.field--type-text-long h2:after,
+.navigation--quick-actions h2:after {
+    content: '';
+    background-color: var(--color-accent);
+    width: 70px;
+    height: 8px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
+.service-landing-page__contact h2:after,
+.localgov-alert-banner h2:after,
+.call-out-box h2:after,
+.service-landing-page__sidebar h2:after,
+.media-with-text h2:after,
+.service-statuses h2:after,
+.sidebar h2:after {
+    content: none;
+}

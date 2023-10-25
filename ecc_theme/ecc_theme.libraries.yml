@@ -53,6 +53,10 @@ step-by-step:
   css:
     theme:
       css/ecc-shared/step-by-step.css: {}
+headings:
+  css:
+    theme:
+      css/ecc-shared/headings.css: {}
 
 # Layouts
 the_center:
