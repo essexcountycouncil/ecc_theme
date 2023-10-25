@@ -46,6 +46,7 @@ body {
   --color-dusty-green: #00823b;
   --color-green: #3a7d64;
   --color-grey-lighter: #d4d4d4;
+  --color-grey-lightest: #ededed;
   --color-success: #9361b3;
   --quote-author-color: var(--color-black);
   --service-statuses-container-bg-color: #4179aa;
