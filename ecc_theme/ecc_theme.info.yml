@@ -21,6 +21,7 @@ libraries-extend:
     - ecc_theme/step_by_step
     - ecc_theme/headings
     - ecc_theme/media_with_text
+    - ecc_theme/guide
 
     # - ecc_theme/other-library-to-load-on-every-page
     # - ecc_theme/other-library-to-load-on-every-page

@@ -64,6 +64,11 @@ media_with_text:
     theme:
       css/ecc-shared/media-with-text.css: {}
 
+guide:
+  css:
+    theme:
+      css/ecc-shared/guide.css: {}
+
 # Layouts
 the_center:
   css:
