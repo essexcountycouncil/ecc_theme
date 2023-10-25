@@ -13,10 +13,12 @@ libraries-extend:
     - ecc_theme/alerts
     - ecc_theme/call-out
     - ecc_theme/contact
+    - ecc_theme/cookies
     - ecc_theme/fonts
     - ecc_theme/footer
     - ecc_theme/hero
     - ecc_theme/layout
+
     # - ecc_theme/other-library-to-load-on-every-page
     # - ecc_theme/other-library-to-load-on-every-page
   # Add libraries here that extend specific libraries.

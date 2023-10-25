@@ -32,3 +32,8 @@ search:
   css:
     theme:
       css/search.css: {}
+
+cookies:
+  css:
+    theme:
+      css/cookies.css: {}

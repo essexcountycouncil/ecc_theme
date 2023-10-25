@@ -2,13 +2,8 @@ name: "Ecc Theme - Intranet"
 description: "Your sub-theme, which uses ecc_theme as its base theme."
 type: theme
 core_version_requirement: ^8.8 || ^9 || ^10
-base theme:
-  "ecc_theme"
+base theme: "ecc_theme"
 
-  #libraries-extend:
-  # Add libraries that you want to load on every page of your site to the list
-  # of those extending ecc_theme/global
-  #ecc_theme/global:
 libraries:
   - ecc_theme_intranet/variables_intranet
   - ecc_theme_intranet/branding

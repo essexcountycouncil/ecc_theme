@@ -12,6 +12,7 @@ libraries:
   - ecc_theme_gov/hero
   - ecc_theme_gov/service_cta_block
   - ecc_theme_gov/search
+  - ecc_theme_gov/cookies
 
 regions:
   tabs: "Tabs"
