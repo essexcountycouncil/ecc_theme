@@ -11,15 +11,16 @@ libraries-extend:
     - ecc_theme/variables_shared
     - ecc_theme/accordion
     - ecc_theme/alerts
-    - ecc_theme/call-out
+    - ecc_theme/call_out
     - ecc_theme/contact
     - ecc_theme/cookies
     - ecc_theme/fonts
     - ecc_theme/footer
     - ecc_theme/hero
     - ecc_theme/layout
-    - ecc_theme/step-by-step
+    - ecc_theme/step_by_step
     - ecc_theme/headings
+    - ecc_theme/media_with_text
 
     # - ecc_theme/other-library-to-load-on-every-page
     # - ecc_theme/other-library-to-load-on-every-page

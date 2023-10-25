@@ -34,7 +34,7 @@ footer:
     theme:
       css/ecc-shared/footer.css: {}
 
-call-out:
+call_out:
   css:
     theme:
       css/ecc-shared/call-out.css: {}
@@ -49,14 +49,20 @@ cookies:
     theme:
       css/ecc-shared/cookies.css: {}
 
-step-by-step:
+step_by_step:
   css:
     theme:
       css/ecc-shared/step-by-step.css: {}
+
 headings:
   css:
     theme:
       css/ecc-shared/headings.css: {}
+
+media_with_text:
+  css:
+    theme:
+      css/ecc-shared/media-with-text.css: {}
 
 # Layouts
 the_center:
