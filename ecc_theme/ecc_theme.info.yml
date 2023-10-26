@@ -25,6 +25,7 @@ libraries-extend:
     - ecc_theme/media_with_text
     - ecc_theme/nav
     - ecc_theme/news
+    - ecc_theme/pagination
     - ecc_theme/sidebar
     - ecc_theme/step_by_step
     - ecc_theme/tables

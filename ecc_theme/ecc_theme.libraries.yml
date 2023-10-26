@@ -98,6 +98,11 @@ sidebar:
     theme:
       css/ecc-shared/sidebar.css: { weight: 1 }
 
+pagination:
+  css:
+    theme:
+      css/ecc-shared/pagination.css: { weight: 1 }
+
 # Layouts
 the_center:
   css:
