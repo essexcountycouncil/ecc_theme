@@ -25,6 +25,7 @@ libraries-extend:
     - ecc_theme/news
     - ecc_theme/step_by_step
     - ecc_theme/tables
+    - ecc_theme/forms
 
 regions:
   tabs: "Tabs"

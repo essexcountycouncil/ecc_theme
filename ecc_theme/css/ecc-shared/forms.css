@@ -1,0 +1,54 @@
+.website-feedback-form-container {
+    background-color: var(--background-blue);
+    margin-top: var(--spacing-mega);
+}
+
+.website-feedback-form-container>div {
+    color: var(--color-white);
+    max-width: var(--width-container);
+    margin: 0 auto;
+    padding: var(--spacing);
+}
+
+.website-feedback-form-container>div p {
+    margin-bottom: 0;
+}
+
+.website-feedback-form-container>div p strong {
+    display: inline-block;
+    margin-right: var(--spacing-small);
+}
+
+.website-feedback-form-container>div p a {
+    color: var(--color-white);
+}
+
+.website-feedback-form-container>div p a:focus {
+    color: var(--color-black);
+}
+
+.field--name-localgov-destinations .node--view-mode-grid-item h2 {
+    font-size: var(--font-size-h3);
+}
+
+.form-checkboxes input[type="checkbox"]+label {
+    height: 50px;
+}
+
+.form-checkboxes.form-item--error input[type="checkbox"].error+label {
+    position: relative;
+}
+
+/** adjust position to counter negative margin space for checkbox */
+.form-checkboxes.form-item--error input[type="checkbox"].error+label:before {
+    left: -40px;
+}
+
+.form-checkboxes.form-item--error input[type="checkbox"].error+label:after {
+    left: -31px;
+}
+
+.view-display-id-block_feedback_form .field-content>div {
+    display: grid;
+    padding: var(--spacing-larger) 0 var(--spacing);
+}

@@ -8,11 +8,6 @@ fonts:
     theme:
       css/ecc-shared/fonts.css: { weight: 1 }
 
-tables:
-  css:
-    theme:
-      css/ecc-shared/tables.css: { weight: 1 }
-
 # Components
 accordion:
   css:
@@ -83,6 +78,16 @@ blockquote:
   css:
     theme:
       css/ecc-shared/blockquote.css: { weight: 1 }
+
+tables:
+  css:
+    theme:
+      css/ecc-shared/tables.css: { weight: 1 }
+
+forms:
+  css:
+    theme:
+      css/ecc-shared/forms.css: { weight: 1 }
 
 # Layouts
 the_center:
