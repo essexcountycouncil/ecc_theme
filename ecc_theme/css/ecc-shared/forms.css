@@ -52,3 +52,8 @@
     display: grid;
     padding: var(--spacing-larger) 0 var(--spacing);
 }
+
+input[type="submit"] {
+    background-color: var(--color-black);
+    border-color: var(--color-black);
+}

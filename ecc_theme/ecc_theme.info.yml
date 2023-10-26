@@ -15,6 +15,7 @@ libraries-extend:
     - ecc_theme/call_out
     - ecc_theme/contact
     - ecc_theme/cookies
+    - ecc_theme/events
     - ecc_theme/fonts
     - ecc_theme/footer
     - ecc_theme/forms

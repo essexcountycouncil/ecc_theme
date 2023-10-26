@@ -108,6 +108,11 @@ services:
     theme:
       css/ecc-shared/services.css: { weight: 1 }
 
+events:
+  css:
+    theme:
+      css/ecc-shared/events.css: { weight: 1 }
+
 # Layouts
 the_center:
   css:
