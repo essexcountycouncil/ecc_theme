@@ -41,3 +41,8 @@ news:
   css:
     theme:
       css/news.css: { weight: 2 }
+
+footer:
+  css:
+    theme:
+      css/footer.css: { weight: 2 }
