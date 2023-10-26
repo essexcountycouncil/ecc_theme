@@ -11,6 +11,7 @@ libraries-extend:
     - ecc_theme/variables_shared
     - ecc_theme/accordion
     - ecc_theme/alerts
+    - ecc_theme/blockquote
     - ecc_theme/call_out
     - ecc_theme/contact
     - ecc_theme/cookies
@@ -23,6 +24,7 @@ libraries-extend:
     - ecc_theme/media_with_text
     - ecc_theme/news
     - ecc_theme/step_by_step
+    - ecc_theme/tables
 
 regions:
   tabs: "Tabs"
