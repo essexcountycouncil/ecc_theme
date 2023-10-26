@@ -88,6 +88,10 @@ forms:
   css:
     theme:
       css/ecc-shared/forms.css: { weight: 1 }
+nav:
+  css:
+    theme:
+      css/ecc-shared/nav.css: { weight: 1 }
 
 # Layouts
 the_center:

@@ -17,15 +17,16 @@ libraries-extend:
     - ecc_theme/cookies
     - ecc_theme/fonts
     - ecc_theme/footer
+    - ecc_theme/forms
     - ecc_theme/guide
     - ecc_theme/headings
     - ecc_theme/hero
     - ecc_theme/layout
     - ecc_theme/media_with_text
+    - ecc_theme/nav
     - ecc_theme/news
     - ecc_theme/step_by_step
     - ecc_theme/tables
-    - ecc_theme/forms
 
 regions:
   tabs: "Tabs"
