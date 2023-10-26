@@ -33,6 +33,8 @@ libraries-extend:
     - ecc_theme/step_by_step
     - ecc_theme/tables
     - ecc_theme/video
+    - ecc_theme/link_block
+    - ecc_theme/inset
 
 regions:
   tabs: "Tabs"

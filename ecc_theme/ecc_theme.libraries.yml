@@ -111,6 +111,7 @@ services:
 events:
   css:
     theme:
+      css/ecc-shared/events.css: { weight: 1 }
 
 video:
   css:
@@ -121,6 +122,14 @@ responsivness:
   css:
     theme:
       css/ecc-shared/responsivness.css: { weight: 1 }
+inset:
+  css:
+    theme:
+      css/ecc-shared/inset.css: { weight: 1 }
+link_block:
+  css:
+    theme:
+      css/ecc-shared/link-block.css: { weight: 1 }
 
 # Layouts
 the_center:

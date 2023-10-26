@@ -143,3 +143,29 @@
         padding-left: calc(var(--spacing-largest) / 2);
     }
 }
+
+/**/
+
+.field--name-localgov-subsites-content>.field__item {
+    margin: var(--spacing-largest) clamp(var(--spacing-smallest), 2.5vw, var(--spacing-largest));
+}
+
+.paragraph--type--page-section .layout__region {
+    padding: 0;
+
+}
+
+.field__item:first-of-type .field--name-localgov-text:has(> h2),
+.path-frontpage article>.field__items {
+    padding-top: clamp(0.75rem, 2vw, var(--spacing))
+}
+
+@media only screen and (max-width: 760px) {
+    .path-frontpage article>.field__items {
+        padding-top: 0.25rem;
+    }
+}
+
+.link-block__title-wrapper {
+    align-items: flex-start;
+}

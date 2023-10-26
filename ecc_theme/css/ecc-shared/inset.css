@@ -1,0 +1,14 @@
+.inset {
+    background: #f5f5f5;
+    border-left: 12px solid #dee0e2;
+    padding: 1.625rem 7.5px;
+    margin-bottom: 1.625rem;
+    line-height: 1.625rem;
+}
+
+.inset .section-heading {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.625rem;
+    margin-bottom: 0.8125rem;
+}

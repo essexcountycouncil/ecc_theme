@@ -1,0 +1,14 @@
+/* Link and Summary component */
+.link-block {
+    border-top: 3px solid #6a6a6a;
+    padding-top: var(--spacing);
+    margin-bottom: var(--spacing-large);
+}
+
+.link-block__title {
+    font-size: var(--font-size-h3);
+}
+
+.link-block__content {
+    padding-left: var(--spacing-larger);
+}

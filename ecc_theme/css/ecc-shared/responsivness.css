@@ -17,6 +17,10 @@
     margin-top: var(--spacing-largest);
 }
 
+.views-col:nth-child(2) {
+    padding: 0 2rem;
+}
+
 /**/
 .views-col:nth-child(2) {
     padding: 0 2rem;
