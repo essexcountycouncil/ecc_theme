@@ -117,6 +117,11 @@ video:
     theme:
       css/ecc-shared/video.css: { weight: 1 }
 
+responsivness:
+  css:
+    theme:
+      css/ecc-shared/responsivness.css: { weight: 1 }
+
 # Layouts
 the_center:
   css:
