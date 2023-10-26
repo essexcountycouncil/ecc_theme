@@ -21,7 +21,7 @@
     .services--feature-block {
         width: 100%;
         float: none;
-        margin-inside: 0;
+        margin-inline: 0;
     }
 
     .services--feature-block:nth-of-type(odd),
@@ -60,4 +60,13 @@
     .services--feature-block:nth-of-type(2n) {
         margin-right: 0;
     }
+}
+
+.service-landing-page__contact {
+    border-color: var(--color-link);
+}
+
+.service-statuses__label {
+    color: var(--color-white);
+    font-weight: var(--font-semibold);
 }
