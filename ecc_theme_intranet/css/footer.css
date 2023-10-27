@@ -1,3 +1,7 @@
+.lgd-footer__footer {
+    background-color: var(--color-section-footer-bg);
+}
+
 /* Pre-footer */
 
 .footer__before-pre {

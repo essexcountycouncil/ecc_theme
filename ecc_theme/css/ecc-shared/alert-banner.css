@@ -10,7 +10,6 @@
     background: var(--color-white);
     border-width: 5px;
     border-style: solid;
-    margin: 0 var(--spacing) var(--spacing) var(--spacing);
 }
 
 .localgov-alert-banner--major {

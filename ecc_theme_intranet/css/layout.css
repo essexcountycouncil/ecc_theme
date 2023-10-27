@@ -99,3 +99,7 @@
         padding-left: calc(var(--spacing-largest) / 2);
     }
 }
+
+.field--name-localgov-subsites-content>.field__item {
+    margin: var(--spacing-largest) clamp(var(--spacing-smallest), 2.5vw, var(--spacing-largest));
+}
