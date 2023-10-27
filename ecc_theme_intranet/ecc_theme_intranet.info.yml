@@ -9,9 +9,12 @@ libraries:
   - ecc_theme_intranet/branding
   - ecc_theme_intranet/buttons
   - ecc_theme_intranet/footer
+  - ecc_theme_intranet/forms
   - ecc_theme_intranet/header
   - ecc_theme_intranet/hero
+  - ecc_theme_intranet/layout
   - ecc_theme_intranet/main_menu
+  - ecc_theme_intranet/media_with_text
   - ecc_theme_intranet/news
   - ecc_theme_intranet/search
   - ecc_theme_intranet/service_cta_block

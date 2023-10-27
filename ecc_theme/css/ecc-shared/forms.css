@@ -48,11 +48,6 @@
     left: -31px;
 }
 
-.view-display-id-block_feedback_form .field-content>div {
-    display: grid;
-    padding: var(--spacing-larger) 0 var(--spacing);
-}
-
 input[type="submit"] {
     background-color: var(--color-black);
     border-color: var(--color-black);

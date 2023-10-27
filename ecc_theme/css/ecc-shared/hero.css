@@ -13,17 +13,6 @@
 
 /* */
 
-
-
-.banner--primary {
-    display: grid;
-    grid-template: "container";
-}
-
-.banner--primary>* {
-    grid-area: container;
-}
-
 .banner--primary .field--name-localgov-title {
     font-weight: var(--font-semibold);
 }
