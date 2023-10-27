@@ -43,23 +43,6 @@
     display: none;
 }
 
-@media only screen and (min-width: 640px) {
-
-    .layout--threecol-33-34-33>.layout__region--first,
-    .layout--threecol-33-34-33>.layout__region--second,
-    .layout--threecol-33-34-33>.layout__region--third {
-        flex: 0 1 31%;
-    }
-
-    .paragraph--type--page-section .layout--twocol>.layout__region--first {
-        padding-right: calc(var(--spacing-largest) / 2);
-    }
-
-    .paragraph--type--page-section .layout--twocol>.layout__region--second {
-        padding-left: calc(var(--spacing-largest) / 2);
-    }
-}
-
 @media only screen and (min-width: 641px) {
 
     .paragraph--type--page-section .layout.layout--twocol>.layout__region--first>*,
