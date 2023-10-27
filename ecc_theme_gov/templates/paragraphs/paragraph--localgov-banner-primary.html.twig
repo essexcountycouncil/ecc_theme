@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation to display a Featured teasers paragraph.
+ * Default theme implementation to display a paragraph.
  *
  * Available variables:
  * - paragraph: Full paragraph entity.
@@ -32,7 +32,6 @@
  *   current user is a logged-in member.
  * - is_admin: Flag for admin user status. Will be true when the current user
  *   is an administrator.
- * - heading: Title (heading element).
  *
  * @see template_preprocess_paragraph()
  *
@@ -40,29 +39,51 @@
  */
 #}
 
-{% if not localgov_base_remove_css %}
-  {{ attach_library('localgov_base/featured-teasers') }}
-{% endif %}
-
 {%
   set classes = [
-    'featured-teasers',
+    'banner',
+    'banner--primary',
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished',
+    not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
 
+{% if not localgov_base_remove_css %}
+  {{ attach_library('localgov_base/banner') }}
+{% endif %}
+
+{% if paragraph.localgov_url.value %}
+  {% set banner_url = paragraph.localgov_url.value %}
+{% endif %}
+
 <div{{ attributes.addClass(classes) }}>
-  {% if heading %}
-    <div class="featured-teasers__heading">
-      {{ heading }}
+  {% if paragraph.localgov_image.value %}
+    <div class="banner__image">
+      {{ content.localgov_image }}
     </div>
   {% endif %}
-
-  <div class="featured-teasers__teasers">
-    {{ content }}
-  </div>
-
+  {% if banner_url %}
+    <a class="banner__link" href="{{ banner_url }}">
+  {% endif %}
+      {% if is_front %}
+        <div class="lgd-container">
+          <div class="banner__content">
+            <h1 class="page-title">{{ paragraph.localgov_title.value }}</h1>
+            {% if banner_content %}
+            <div class="blocks">
+              {{ banner_content }}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      {% else %}
+        <div class="banner__content">
+          {{ content|without('localgov_image', 'localgov_url') }}
+        </div>
+      {% endif %}
+  {% if banner_url %}
+    </a>
+  {% endif %}
 </div>
