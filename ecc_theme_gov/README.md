@@ -1,6 +1,6 @@
 # ecc_theme_gov
 
-This is the ecc_theme a place for all the custom css, templates and layouts for Essex County Councils Local Gov Drupal public website.
+This is the ecc_theme_gov a place for all the custom css, templates and layouts for Essex County Councils Local Gov Drupal public website.
 
 Code shared between the two sites are in this theme with custom code in the individaul themes which are sub-themes (which inherit from) of this one.
 
