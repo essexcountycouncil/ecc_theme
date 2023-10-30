@@ -9,7 +9,7 @@ Code shared between the two sites are in this theme with custom code in the indi
                                     ecc_theme_intranet
 stable9 > localgov_base > ecc_theme >
 
-                                    *ecc_theme_gov*
+                                    **ecc_theme_gov**
 
 ## CSS
 
