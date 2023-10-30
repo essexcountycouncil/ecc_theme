@@ -4,7 +4,12 @@
 
 Subtheme of localgov_base.
 
-This theme contains the shared files (css, templates and layoyts) for the Essex County Council public and Intranet sites
+This theme contains the shared files (css, templates and layouts) for the Essex County Council public and Intranet sites
 
-- **ecc_theme_gov** is the custom theme for the public website
-- **ecc_theme_intranet** is the custom theme for the intranet website
+## ecc_theme_gov
+
+The custom theme (css, templates and layouts) for the public website
+
+## ecc_theme_intranet
+
+The custom theme (css, templates and layouts) for the intranet website
