@@ -1,6 +1,6 @@
 {
-    "name": "ecc/ecctheme",
-    "description": "consolidated Essex County Council Drupal theme",
+    "name": "essexcountycouncil/ecctheme",
+    "description": "Consolidated Essex County Council Drupal theme",
     "type": "drupal-theme",
     "authors": [
         {
