@@ -45,11 +45,6 @@
 
 @media only screen and (min-width: 641px) {
 
-    .paragraph--type--page-section .layout.layout--twocol>.layout__region--first>*,
-    .paragraph--type--page-section .layout.layout--twocol>.layout__region--second>* {
-        height: 100%;
-    }
-
     .paragraph--type--page-section .layout__region--second .call-out-box {
         margin-top: 0;
     }
