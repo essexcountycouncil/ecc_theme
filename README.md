@@ -16,4 +16,4 @@ The custom theme (css, templates and layouts) for the intranet website
 
 ## Composer
 
-These themes are pulled into the Essex Gov and Essex Intranet sites via there own composer files
+These themes are pulled into the Essex Gov and Essex Intranet sites via their own composer files
