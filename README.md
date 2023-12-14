@@ -13,3 +13,7 @@ The custom theme (css, templates and layouts) for the public website
 ## ecc_theme_intranet
 
 The custom theme (css, templates and layouts) for the intranet website
+
+## Composer
+
+These themes are pulled into the Essex Gov and Essex Intranet sites via their own composer files
