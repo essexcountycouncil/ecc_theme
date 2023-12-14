@@ -1,0 +1,5 @@
+.newsroom-teaser,
+.featured-news__card article,
+.news-card article {
+    word-wrap: break-word;
+}

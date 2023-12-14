@@ -131,6 +131,11 @@ link_block:
     theme:
       css/ecc-shared/link-block.css: { weight: 1 }
 
+typography:
+  css:
+    theme:
+      css/ecc-shared/typography.css: { weight: 1 }
+
 # Layouts
 the_center:
   css:
