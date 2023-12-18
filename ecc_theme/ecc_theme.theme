@@ -4,7 +4,7 @@ use Drupal\block\Entity\Block;
 
 /**
  * @file
- * Theme function for the Essex County Council theme theme.
+ * Theme function for the ecc_theme County Council theme theme.
  */
 
 /**
@@ -17,7 +17,7 @@ use Drupal\block\Entity\Block;
  *
  * Load blocks from specific region, so we can render them within a template.
  */
-function essex_preprocess_paragraph__localgov_banner_primary(&$variables, $hook) {
+function ecc_theme_preprocess_paragraph__localgov_banner_primary(&$variables, $hook) {
   // Load active theme
   $theme = \Drupal::theme()->getActiveTheme()->getName();
   // Load region blocks
@@ -57,7 +57,7 @@ function essex_preprocess_paragraph__localgov_banner_primary(&$variables, $hook)
 /**
  * Implements hook_preprocess_breadcrumb().
  */
-function essex_preprocess_breadcrumb(&$variables) {
+function ecc_theme_preprocess_breadcrumb(&$variables) {
   $request = \Drupal::request();
   $route_match = \Drupal::routeMatch();
 

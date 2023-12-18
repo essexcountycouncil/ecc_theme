@@ -34,7 +34,7 @@ libraries-extend:
     - ecc_theme/sidebar
     - ecc_theme/step_by_step
     - ecc_theme/tables
-    - ecc_theme/typography
+    - ecc_theme/type
     - ecc_theme/video
 
 regions:

@@ -1,3 +1,11 @@
+.media-with-text {
+    margin: 0;
+}
+
+.media-with-text--media-top .media-with-text__media {
+    margin-bottom: 0;
+}
+
 @media only screen and (max-width: 889px) {
     .media-with-text--media-left {
         flex-direction: column;
@@ -20,7 +28,7 @@
     background-color: #c3d3e5;
 }
 
-.media-with-text--default .media-with-text__link {
+w .media-with-text--default .media-with-text__link {
     background-color: var(--color-white);
     padding: var(--spacing-smaller);
     display: inline-block;
