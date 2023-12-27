@@ -1,0 +1,23 @@
+/*
+ * @file
+ * Provides the layout styles for layout_threecol_33_34_33. Converted to CSS Grid with subgrid contents
+ */
+
+.layout--threecol-33-34-33 {
+  margin: var(--grid-gap) auto;
+}
+
+@media (min-width: 768px) {
+  .layout--threecol-33-34-33 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 var(--grid-gap);
+  }
+
+  .layout--threecol-33-34-33>.layout__region {
+    padding: 0 !important;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+}

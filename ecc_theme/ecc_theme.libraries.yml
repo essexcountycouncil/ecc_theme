@@ -2,7 +2,6 @@ variables_shared:
   css:
     base:
       css/ecc-shared/variables-shared.css: { weight: 1 }
-
 fonts:
   css:
     theme:
@@ -13,77 +12,62 @@ accordion:
   css:
     theme:
       css/ecc-shared/accordion.css: { weight: 1 }
-
 alerts:
   css:
     theme:
       css/ecc-shared/alert-banner.css: { weight: 1 }
-
 hero:
   css:
     theme:
       css/ecc-shared/hero.css: { weight: 1 }
-
 layout:
   css:
     theme:
       css/ecc-shared/layout.css: { weight: 1 }
-
 footer:
   css:
     theme:
       css/ecc-shared/footer.css: { weight: 1 }
-
 call_out:
   css:
     theme:
       css/ecc-shared/call-out.css: { weight: 1 }
-
 contact:
   css:
     theme:
       css/ecc-shared/contact.css: { weight: 1 }
-
 cookies:
   css:
     theme:
       css/ecc-shared/cookies.css: { weight: 1 }
-
 step_by_step:
   css:
     theme:
       css/ecc-shared/step-by-step.css: { weight: 1 }
-
 headings:
   css:
     theme:
       css/ecc-shared/headings.css: { weight: 1 }
-
 media_with_text:
   css:
     theme:
       css/ecc-shared/media-with-text.css: { weight: 1 }
-
 guide:
   css:
     theme:
       css/ecc-shared/guide.css: { weight: 1 }
-
 news:
   css:
     theme:
       css/ecc-shared/news.css: { weight: 1 }
-
 blockquote:
   css:
     theme:
       css/ecc-shared/blockquote.css: { weight: 1 }
-
 tables:
   css:
     theme:
       css/ecc-shared/tables.css: { weight: 1 }
-
 forms:
   css:
     theme:
@@ -92,32 +76,26 @@ nav:
   css:
     theme:
       css/ecc-shared/nav.css: { weight: 1 }
-
 sidebar:
   css:
     theme:
       css/ecc-shared/sidebar.css: { weight: 1 }
-
 pagination:
   css:
     theme:
       css/ecc-shared/pagination.css: { weight: 1 }
-
 services:
   css:
     theme:
       css/ecc-shared/services.css: { weight: 1 }
-
 events:
   css:
     theme:
       css/ecc-shared/events.css: { weight: 1 }
-
 video:
   css:
     theme:
       css/ecc-shared/video.css: { weight: 1 }
-
 responsivness:
   css:
     theme:
@@ -140,19 +118,20 @@ the_center:
   css:
     theme:
       layouts/the_center/the-center.css: { weight: 1 }
-
 autogrid:
   css:
     theme:
       layouts/autogrid/ec-autogrid.css: { weight: 1 }
-
 ec-autogrid-25-25-50:
   css:
     theme:
       layouts/ec-autogrid-25-25-50/ec-autogrid-25-25-50.css: { weight: 1 }
-
 ec-autogrid-50-50-c-50-50:
   css:
     theme:
       layouts/ec-autogrid-50-50-c-50-50/ec-autogrid-50-50-c-50-50.css:
         { weight: 1 }
+threecol_33_34_33:
+  css:
+    theme:
+      layouts/threecol_33_34_33/threecol_33_34_33.css: { weight: 1 }

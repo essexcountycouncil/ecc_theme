@@ -36,6 +36,7 @@ libraries-extend:
     - ecc_theme/tables
     - ecc_theme/type
     - ecc_theme/video
+    - ecc_theme/threecol_33_34_33
 
 regions:
   tabs: "Tabs"
