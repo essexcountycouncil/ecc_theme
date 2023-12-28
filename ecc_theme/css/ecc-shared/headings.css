@@ -8,7 +8,6 @@ h1,
 
 .paragraph--type--localgov-text:has(h2)+.paragraph {
     padding-top: var(--grid-gap);
-    outline: 1px solid lime;
 }
 
 h1:after,

@@ -1,3 +1,12 @@
+.node__content {
+    display: grid;
+    grid-gap: var(--grid-gap-smaller);
+}
+
+.lgd-row__two-thirds>*+* {
+    margin-top: var(--grid-gap);
+}
+
 .layout--onecol .layout__region {
     padding: 0;
 }

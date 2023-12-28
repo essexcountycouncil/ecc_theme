@@ -47,14 +47,3 @@
     -webkit-box-shadow: 0 -2px var(--color-focus), 0 4px var(--color-black);
     box-shadow: 0 -2px var(--color-focus), 0 4px var(--color-black);
 }
-
-/* Related news heading */
-.news-article__related-title {
-    margin-top: var(--spacing-larger);
-}
-
-@media only screen and (min-width: 768px) {
-    .news-article__related-title {
-        margin-top: var(--spacing-mega);
-    }
-}
