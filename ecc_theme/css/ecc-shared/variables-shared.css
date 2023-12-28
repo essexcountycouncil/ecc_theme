@@ -35,6 +35,7 @@ body {
   --spacing-jumbo: 3rem;
   --vertical-rhythm-spacing: calc(var(--line-height) * 1.2rem);
   --grid-gap: var(--spacing-largest);
+  --grid-gap-smaller: calc(var(--grid-gap) / 2);
 
   /**
     Colours

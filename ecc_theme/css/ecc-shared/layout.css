@@ -1,17 +1,14 @@
-/* Three column layout responsiveness */
-/* .layout--threecol-33-34-33 {
-    justify-content: space-between;
-} */
+.layout--onecol .layout__region {
+    padding: 0;
+}
 
-/* .paragraph--type--page-section .layout--threecol-33-34-33 .layout__region--first,
-.paragraph--type--page-section .layout--threecol-33-34-33 .layout__region--second,
-.paragraph--type--page-section .layout--threecol-33-34-33 .layout__region--third,
-.path-frontpage .layout--threecol-33-34-33 .layout__region--top,
-.path-frontpage .layout--threecol-33-34-33 .layout__region--bottom {
-    padding: 0
-} */
+.lgd-page-section {
+    padding-top: var(--grid-gap-smaller);
+    padding-bottom: var(--grid-gap-smaller);
+}
+
 .layout__region>* {
-    margin-bottom: 0;
+    margin-bottom: initial;
 }
 
 .layout__region:empty {
@@ -22,15 +19,10 @@
     margin-bottom: 0;
 }
 
-/**/
 .layout:not(.layout--onecol) .media-with-text:not(.media-with-text--featured) .media-with-text__media * {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.layout--twocol>.layout__region>*+* {
-    margin-top: var(--spacing-largest);
 }
 
 .layout__region:empty {
@@ -53,30 +45,11 @@
     .paragraph--type--page-section .layout.layout--twocol>.layout__region--second {
         flex: 0 1 calc(50% - calc(var(--grid-gap)/2));
         margin: 0;
+        padding: 0;
     }
 }
 
 /* Prelimanary css */
-
-/* Added for https://nomensa.atlassian.net/browse/ECCI-355 */
-
-/* .layout--twocol>.layout__region>.paragraph--type--localgov-media-with-text {
-    margin: var(--spacing-larger) 0 0;
-}
-
-.layout--twocol>.layout__region>.paragraph--type--localgov-media-with-text:last-child {
-    margin-top: var(--spacing);
-}
-
-@media screen and (min-width: 1025px) {
-    .layout--twocol>.layout__region>.paragraph--type--localgov-media-with-text:last-child {
-        margin-top: var(--spacing-largest);
-    }
-
-    .layout--twocol>.layout__region>.paragraph--type--localgov-media-with-text {
-        margin-top: 0px;
-    }
-} */
 
 .featured-news__card article,
 .news-card article {
@@ -121,68 +94,6 @@
         flex-direction: column;
     }
 }
-
-/* End */
-
-/* Added for https://nomensa.atlassian.net/browse/ECCI-418 */
-/* @media screen and (max-width: 640px) {
-    .layout--threecol-33-34-33 {
-        display: block;
-    }
-} */
-
-/* End */
-
-/* Added for https://nomensa.atlassian.net/browse/ECCI-471 */
-.field--name-localgov-subsites-content>.field__item:first-child {
-    margin-top: 0px;
-}
-
-.field--name-localgov-subsites-content>.field__item:first-child .layout__region--first {
-    margin-top: 0px;
-}
-
-.field--name-localgov-subsites-content>.field__item:first-child .layout__region--first>.paragraph--type--localgov-text>.field--name-localgov-text {
-    padding-top: 0px;
-}
-
-.featured-news__card:first-of-type,
-.news-card article {
-    margin-bottom: var(--spacing);
-}
-
-.featured-news__card article {
-    margin-bottom: 0px;
-}
-
-.field--name-localgov-subsites-content>.field__item:first-child .paragraph--type--page-section .layout--twocol>.layout__region--first {
-    padding-right: 0px;
-}
-
-.field--name-localgov-subsites-content>.field__item:first-child .paragraph--type--page-section .layout--twocol>.layout__region--second {
-    padding-left: 0px;
-}
-
-@media screen and (min-width: 1025px) {
-    .field--name-localgov-subsites-content>.field__item:first-child {
-        margin: 0 clamp(var(--spacing-smallest), 2.5vw, var(--spacing-largest))
-    }
-
-    .field--name-localgov-subsites-content>.field__item:first-child .layout__region--first>.paragraph--type--localgov-text>.field--name-localgov-text {
-        padding-top: clamp(0.75rem, 2vw, var(--spacing));
-    }
-
-    .featured-news__card article,
-    .news-card article {
-        margin-bottom: var(--spacing-large);
-    }
-
-    .featured-news__card:first-of-type {
-        margin-bottom: var(--spacing-largest);
-    }
-}
-
-/* End */
 
 /* Added for https://nomensa.atlassian.net/browse/ECCI-472 */
 .ecc-restricted-content {

@@ -2,8 +2,13 @@ h1,
 .field--type-text-long h2,
 .navigation--quick-actions h2 {
     position: relative;
-    margin-bottom: var(--spacing-largest);
-    padding-bottom: var(--spacing-smaller);
+    padding-bottom: var(--spacing-large);
+    margin: 0;
+}
+
+.paragraph--type--localgov-text:has(h2)+.paragraph {
+    padding-top: var(--grid-gap);
+    outline: 1px solid lime;
 }
 
 h1:after,
@@ -14,7 +19,7 @@ h1:after,
     width: 70px;
     height: 8px;
     position: absolute;
-    bottom: -15px;
+    bottom: 0;
     left: 0;
 }
 

@@ -3,10 +3,6 @@
  * Provides the layout styles for layout_threecol_33_34_33. Converted to CSS Grid with subgrid contents
  */
 
-.layout--threecol-33-34-33 {
-  margin: var(--grid-gap) auto;
-}
-
 @media (min-width: 768px) {
   .layout--threecol-33-34-33 {
     display: grid;
