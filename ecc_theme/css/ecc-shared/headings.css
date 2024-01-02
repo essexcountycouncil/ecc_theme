@@ -31,3 +31,8 @@ h1:after,
 .sidebar h2:after {
     content: none;
 }
+
+.lgd-page-title-block {
+    margin-bottom: var(--vertical-rhythm-spacing);
+    padding-bottom: var(--vertical-rhythm-spacing);
+}

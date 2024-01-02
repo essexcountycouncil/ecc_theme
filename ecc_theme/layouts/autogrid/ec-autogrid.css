@@ -2,6 +2,6 @@
   .ec-autogrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(calc(50% - var(--spacing-large)), 100%), 1fr));
-    grid-gap: var(--grid-gap);
+    grid-gap: 0 var(--grid-gap);
   }
 }

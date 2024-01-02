@@ -11,13 +11,10 @@
     padding: 0;
 }
 
-.lgd-page-section {
-    padding-top: var(--grid-gap-smaller);
-    padding-bottom: var(--grid-gap-smaller);
-}
-
 .layout__region>* {
     margin-bottom: initial;
+    padding-top: var(--grid-gap-smaller);
+    padding-bottom: var(--grid-gap-smaller);
 }
 
 .layout__region:empty {

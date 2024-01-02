@@ -11,7 +11,6 @@ libraries:
   - ecc_theme_gov/cookies
   - ecc_theme_gov/header
   - ecc_theme_gov/hero
-  - ecc_theme_gov/media_with_text
   - ecc_theme_gov/news
   - ecc_theme_gov/search
   - ecc_theme_gov/service_cta_block
