@@ -6,10 +6,6 @@ h1,
     margin: 0;
 }
 
-.paragraph--type--localgov-text:has(h2)+.paragraph {
-    padding-top: var(--grid-gap);
-}
-
 h1:after,
 .field--type-text-long h2:after,
 .navigation--quick-actions h2:after {

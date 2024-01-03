@@ -2,16 +2,43 @@
     margin: 0;
 }
 
+.media-with-text--media-right .media-with-text__inner,
+.media-with-text--media-left .media-with-text__inner {
+    flex-direction: row;
+    justify-content: unset;
+    align-items: stretch;
+}
+
+.media-with-text__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.media-with-text__media {
+    width: 100%;
+}
+
 .media-with-text--media-top .media-with-text__media {
     margin-bottom: 0;
 }
 
 .media-with-text__body {
     padding: 1.75rem;
+    flex-grow: 1;
 }
 
 .media-with-text--default .media-with-text__body {
     background-color: #c3d3e5;
+    display: flex;
+    flex-direction: column;
+}
+
+.field--name-localgov-text {
+    flex-grow: 1;
 }
 
 .media-with-text__link {
@@ -19,14 +46,15 @@
     padding: var(--spacing-smaller);
     display: inline-block;
     margin-top: var(--spacing-large);
+    width: fit-content;
 }
 
 .media-with-text--featured {
     position: relative;
     overflow: hidden;
     border: 0;
-    margin-top: var(--grid-gap-smaller);
-    margin-bottom: var(--grid-gap-smaller);
+    margin-top: var(--spacing-gap-smaller);
+    margin-bottom: var(--spacing-gap-smaller);
 }
 
 .media-with-text--featured .contextual-region {
@@ -89,5 +117,15 @@
     .media-with-text--media-left .media-with-text__body,
     .media-with-text--media-right .media-with-text__body {
         min-width: 50%;
+    }
+
+    .media-with-text--featured.media-with-text--media-left .media-with-text__body {
+        align-self: flex-end;
+        margin-right: var(--spacing-large);
+    }
+
+    .media-with-text--featured.media-with-text--media-right .media-with-text__body {
+        align-self: flex-start;
+        margin-left: var(--spacing-large);
     }
 }

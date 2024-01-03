@@ -16,6 +16,10 @@ alerts:
   css:
     theme:
       css/ecc-shared/alert-banner.css: { weight: 1 }
+datetime:
+  css:
+    theme:
+      css/ecc-shared/date-time.css: { weight: 1 }
 hero:
   css:
     theme:

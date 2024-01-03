@@ -1,8 +1,8 @@
 /* Link and Summary component */
 .link-block {
     border-top: 3px solid #6a6a6a;
-    padding-top: var(--spacing);
-    margin-bottom: var(--spacing-large);
+    margin-top: var(--spacing-gap-smaller);
+    /* Offset for the border */
 }
 
 .link-block__title {
