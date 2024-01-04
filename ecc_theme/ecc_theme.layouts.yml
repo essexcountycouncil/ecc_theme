@@ -47,3 +47,32 @@ ec-autogrid-50-50-c-50-50:
   regions:
     content:
       label: Content
+
+layout_twocol_bricks:
+  label: "Two column bricks"
+  path: layouts/twocol_bricks
+  template: layout--twocol-bricks
+  library: ecc_theme/layout_twocol_bricks
+  category: "Columns: 2"
+  default_region: middle
+  icon_map:
+    - [top]
+    - [first_above, second_above]
+    - [middle]
+    - [first_below, second_below]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first_above:
+      label: "First above"
+    second_above:
+      label: "Second above"
+    middle:
+      label: Middle
+    first_below:
+      label: "First below"
+    second_below:
+      label: "Second below"
+    bottom:
+      label: Bottom

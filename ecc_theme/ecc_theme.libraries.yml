@@ -139,3 +139,7 @@ threecol_33_34_33:
   css:
     theme:
       layouts/threecol_33_34_33/threecol_33_34_33.css: { weight: 1 }
+layout_twocol_bricks:
+  css:
+    theme:
+      layouts/twocol_bricks/twocol_bricks.css: { weight: 1 }

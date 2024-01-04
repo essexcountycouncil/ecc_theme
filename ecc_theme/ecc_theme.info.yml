@@ -38,6 +38,7 @@ libraries-extend:
     - ecc_theme/type
     - ecc_theme/video
     - ecc_theme/threecol_33_34_33
+    - ecc_theme/layout_twocol_bricks
 
 regions:
   tabs: "Tabs"
