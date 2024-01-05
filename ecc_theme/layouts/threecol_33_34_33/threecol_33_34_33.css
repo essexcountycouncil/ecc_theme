@@ -3,7 +3,7 @@
  * Provides the layout styles for layout_threecol_33_34_33. Converted to CSS Grid with subgrid contents
  */
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .layout--threecol-33-34-33 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

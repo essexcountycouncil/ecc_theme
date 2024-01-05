@@ -80,10 +80,6 @@ div:has(.featured-teaser),
     object-fit: cover;
 }
 
-.featured-news__card article .card-content {
-    font-size: 1.25rem;
-}
-
 .featured-news__card,
 .news-card>.field__item {
     margin-top: 0;

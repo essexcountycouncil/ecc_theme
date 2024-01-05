@@ -37,18 +37,18 @@
 
 @media only screen and (min-width: 641px) {
 
-    .paragraph--type--page-section .layout__region--second .call-out-box {
+    .layout__region--second .call-out-box {
         margin-top: 0;
     }
 
-    .paragraph--type--page-section .layout.layout--twocol {
+    .layout.layout--twocol {
         flex-direction: row;
         column-gap: var(--grid-gap);
         justify-content: space-between;
     }
 
-    .paragraph--type--page-section .layout.layout--twocol>.layout__region--first,
-    .paragraph--type--page-section .layout.layout--twocol>.layout__region--second {
+    .layout.layout--twocol>.layout__region--first,
+    .layout.layout--twocol>.layout__region--second {
         flex: 0 1 calc(50% - calc(var(--grid-gap)/2));
         margin: 0;
         padding: 0;
