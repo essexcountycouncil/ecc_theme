@@ -25,7 +25,14 @@
     margin-bottom: 0;
 }
 
+/* 
 .layout:not(.layout--onecol) .media-with-text:not(.media-with-text--featured) .media-with-text__media * {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */
+
+.layout .media-with-text:not(.media-with-text--featured) .media-with-text__media * {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -289,15 +296,13 @@
     padding: calc(var(--spacing) * 1.25);
 }
 
-/* End */
+.lgd-row:has(.lgd-row__one-third)>* {
+    margin: 0;
+}
 
-/* Added for https://nomensa.atlassian.net/browse/ECCI-481 */
-
-
-/* End */
-
-/* Added for https://nomensa.atlassian.net/browse/ECCI-489 */
-
+.lgd-row:has(.lgd-row__one-third)>*+* {
+    margin-left: var(--spacing-large)
+}
 
 /* End */
 

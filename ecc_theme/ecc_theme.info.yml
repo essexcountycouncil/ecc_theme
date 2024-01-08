@@ -23,6 +23,7 @@ libraries-extend:
     - ecc_theme/guide
     - ecc_theme/headings
     - ecc_theme/hero
+    - ecc_theme/images
     - ecc_theme/inset
     - ecc_theme/layout
     - ecc_theme/link_block

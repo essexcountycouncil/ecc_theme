@@ -116,6 +116,10 @@ type:
   css:
     theme:
       css/ecc-shared/typography.css: { weight: 1 }
+images:
+  css:
+    theme:
+      css/ecc-shared/images.css: { weight: 1 }
 
 # Layouts
 the_center:

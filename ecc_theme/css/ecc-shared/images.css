@@ -1,0 +1,11 @@
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 641px) {
+    .layout--onecol__flexible img {
+        max-height: 500px;
+    }
+}

@@ -1,4 +1,13 @@
 h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+h1,
 .field--type-text-long h2,
 .navigation--quick-actions h2 {
     position: relative;

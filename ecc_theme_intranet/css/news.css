@@ -87,7 +87,6 @@ div:has(.featured-teaser),
 
 .featured-news__card article .card-content,
 .news-card article .card-content {
-    grid-column: 2 / span 2;
     padding: 0.5rem 1rem;
     display: flex;
     flex-direction: column;
