@@ -20,10 +20,6 @@
     margin: 0;
 }
 
-.lgd-teaser__content--localgov-news-article h3 {
-    margin-bottom: var(--spacing-smaller);
-}
-
 /** News cards */
 div:has(.featured-teaser),
 .featured-teaser {

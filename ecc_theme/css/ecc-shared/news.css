@@ -70,3 +70,7 @@
 .paragraph--type--news-1-4>.featured-news__card {
     margin-bottom: var(--grid-gap)
 }
+
+.lgd-teaser__content--localgov-news-article h3 {
+    margin-bottom: var(--spacing-smaller);
+}
