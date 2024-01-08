@@ -25,13 +25,6 @@
     margin-bottom: 0;
 }
 
-/* 
-.layout:not(.layout--onecol) .media-with-text:not(.media-with-text--featured) .media-with-text__media * {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-} */
-
 .layout .media-with-text:not(.media-with-text--featured) .media-with-text__media * {
     height: 100%;
     width: 100%;
