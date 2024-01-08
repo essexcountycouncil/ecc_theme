@@ -18,7 +18,7 @@
 }
 
 .banner__content .cludo-search-block-search-form .form-item,
-.banner__content .cludo-search-block-search-form .form-submit {
+.banner__content {
     display: inline-block;
 }
 
@@ -116,7 +116,7 @@
     text-indent: -999rem;
     direction: ltr;
     min-width: 3.5rem;
-    padding: var(--spacing);
+    padding: var(--spacing-small);
 }
 
 .cludo-search-block-search-form .form-submit:hover {

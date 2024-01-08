@@ -1,8 +1,17 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .ec-autogrid-25-25-50 {
     display: grid;
+    grid-gap: 0 var(--grid-gap);
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ec-autogrid-25-25-50 {
+    display: grid;
+    grid-gap: 0 var(--grid-gap);
     grid-template-columns: .33fr 0.33fr 0.711fr;
-    grid-gap: var(--spacing-largest);
+
   }
 
   .ec-autogrid-25-25-50>*:nth-child(3n+1) {

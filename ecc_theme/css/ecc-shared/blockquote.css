@@ -6,3 +6,10 @@ blockquote {
     background-size: 30px;
     padding-left: var(--spacing-largest);
 }
+
+.pull-out-quote {
+    padding-left: var(--quote-padding-left);
+    border-color: unset;
+    border-left: none;
+    background-color: var(--quote-background-color);
+}

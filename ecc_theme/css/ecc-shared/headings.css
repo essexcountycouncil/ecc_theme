@@ -1,9 +1,18 @@
 h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+h1,
 .field--type-text-long h2,
 .navigation--quick-actions h2 {
     position: relative;
-    margin-bottom: var(--spacing-largest);
-    padding-bottom: var(--spacing-smaller);
+    padding-bottom: var(--spacing-large);
+    margin: 0;
 }
 
 h1:after,
@@ -14,7 +23,7 @@ h1:after,
     width: 70px;
     height: 8px;
     position: absolute;
-    bottom: -15px;
+    bottom: 0;
     left: 0;
 }
 
@@ -26,4 +35,9 @@ h1:after,
 .service-statuses h2:after,
 .sidebar h2:after {
     content: none;
+}
+
+.lgd-page-title-block {
+    margin-bottom: var(--vertical-rhythm-spacing);
+    padding-bottom: var(--vertical-rhythm-spacing);
 }

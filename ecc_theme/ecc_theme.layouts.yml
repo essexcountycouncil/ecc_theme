@@ -2,7 +2,7 @@ layout_the_center:
   label: "The Center"
   path: layouts/the_center
   template: layout--thecenter
-  library: essex/the_center
+  library: ecc_theme/the_center
   category: "Columns: 1"
   default_region: content
   icon_map:
@@ -14,7 +14,7 @@ layout_autogrid:
   label: "Auto Grid"
   path: layouts/autogrid
   template: layout--autogrid
-  library: essex/autogrid
+  library: ecc_theme/autogrid
   category: "Custom"
   default_region: content
   icon_map:
@@ -26,7 +26,7 @@ layout_autogrid-25-25-50:
   label: "Autogrid 25-25-50"
   path: layouts/ec-autogrid-25-25-50
   template: layout--ec-autogrid-25-25-50
-  library: essex/ec-autogrid-25-25-50
+  library: ecc_theme/ec-autogrid-25-25-50
   category: "Custom"
   default_region: content
   icon_map:
@@ -38,7 +38,7 @@ ec-autogrid-50-50-c-50-50:
   label: "Autogrid 50-50-c-50-50"
   path: layouts/ec-autogrid-50-50-c-50-50
   template: layout--ec-autogrid-50-50-c-50-50
-  library: essex/ec-autogrid-50-50-c-50-50
+  library: ecc_theme/ec-autogrid-50-50-c-50-50
   category: "Custom"
   default_region: content
   icon_map:
@@ -47,3 +47,32 @@ ec-autogrid-50-50-c-50-50:
   regions:
     content:
       label: Content
+
+layout_twocol_bricks:
+  label: "Two column bricks"
+  path: layouts/twocol_bricks
+  template: layout--twocol-bricks
+  library: ecc_theme/layout_twocol_bricks
+  category: "Columns: 2"
+  default_region: middle
+  icon_map:
+    - [top]
+    - [first_above, second_above]
+    - [middle]
+    - [first_below, second_below]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first_above:
+      label: "First above"
+    second_above:
+      label: "Second above"
+    middle:
+      label: Middle
+    first_below:
+      label: "First below"
+    second_below:
+      label: "Second below"
+    bottom:
+      label: Bottom

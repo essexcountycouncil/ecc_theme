@@ -6,6 +6,10 @@ p.callout {
     font-weight: var(--font-semibold);
 }
 
+.call-out-box__content h2:empty {
+    display: none;
+}
+
 .call-out-box__link {
     color: var(--color-link);
 }
@@ -14,11 +18,19 @@ p.callout {
     background-color: var(--color-black);
 }
 
+.call-out-box--no-image {
+    background-color: var(--color-white);
+}
+
 /* Call out box - variants */
-.call-out-box--blue {
+.call-out-box--default .call-out-box__content {
+    --call-out-box-bg-color: var(--color-accent);
+}
+
+.call-out-box--blue .call-out-box__content {
     --call-out-box-bg-color: var(--background-blue);
 }
 
-.call-out-box--black {
+.call-out-box--black .call-out-box__content {
     --call-out-box-bg-color: var(--color-black);
 }

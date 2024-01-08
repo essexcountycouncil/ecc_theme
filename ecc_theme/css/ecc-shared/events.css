@@ -42,7 +42,7 @@
     padding: var(--spacing);
 }
 
-.field__item:first-of-type .field--name-localgov-text:has(> h2),
+/* .field__item:first-of-type .field--name-localgov-text:has(> h2),
 .path-frontpage article>.field__items {
     padding-top: clamp(0.75rem, 2vw, var(--spacing))
-}
+} */

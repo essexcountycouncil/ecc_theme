@@ -1,0 +1,9 @@
+.field--type-datetime {
+    margin-top: calc(var(--spacing) * 0.75);
+    margin-bottom: var(--spacing);
+}
+
+.lgd-teaser__content--localgov-news-article .field--name-localgov-news-date {
+    color: var(--color-grey-mid);
+    font-size: var(--font-size-small);
+}

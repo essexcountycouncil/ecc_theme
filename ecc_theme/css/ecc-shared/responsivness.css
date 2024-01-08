@@ -3,16 +3,6 @@
     padding-left: var(--spacing-padding-horizontal);
 }
 
-@media only screen and (max-width: 767px) {
-    .lgd-row__one-third {
-        margin-bottom: var(--spacing-large);
-    }
-}
-
-.field__item .field--name-localgov-text:has(> h2) {
-    padding-top: clamp(var(--spacing), 3vw, var(--spacing-large))
-}
-
 .lgd-region--content-bottom {
     margin-top: var(--spacing-largest);
 }
@@ -30,11 +20,5 @@
     .ecc-container {
         width: 926px;
         margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .lgd-row__one-third {
-        margin-bottom: var(--spacing-large);
     }
 }

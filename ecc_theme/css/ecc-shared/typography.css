@@ -1,0 +1,13 @@
+p,
+li {
+    max-width: var(--p-max-width, 75ch);
+    text-wrap: pretty;
+}
+
+.newsroom-teaser,
+.featured-news__card article,
+.news-card article,
+p {
+    word-break: break-word;
+    word-wrap: break-word;
+}

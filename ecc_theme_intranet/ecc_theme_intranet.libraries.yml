@@ -51,11 +51,6 @@ layout.css:
     theme:
       css/layout.css: { weight: 2 }
 
-media_with_text:
-  css:
-    theme:
-      css/media-with-text.css: { weight: 2 }
-
 forms:
   css:
     theme:

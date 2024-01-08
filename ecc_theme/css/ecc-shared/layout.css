@@ -1,42 +1,41 @@
-/* Three column layout responsiveness */
-.layout--threecol-33-34-33 {
-    justify-content: space-between;
+.featured-teaser,
+.featured-teasers__teasers,
+.featured-teasers__teasers>*,
+.featured-teasers__teasers .field__item {
+    height: 100%;
 }
 
-.paragraph--type--page-section .layout--threecol-33-34-33 .layout__region--first,
-.paragraph--type--page-section .layout--threecol-33-34-33 .layout__region--second,
-.paragraph--type--page-section .layout--threecol-33-34-33 .layout__region--third,
-.path-frontpage .layout--threecol-33-34-33 .layout__region--top,
-.path-frontpage .layout--threecol-33-34-33 .layout__region--bottom {
-    padding: 0
+.node__content {
+    display: grid;
+    grid-gap: var(--grid-gap-smaller);
 }
 
-.layout--twocol>.layout__region>*+* {
-    margin-top: var(--spacing-largest);
+.lgd-row__two-thirds>*+* {
+    margin-top: var(--grid-gap);
+}
+
+.layout--onecol .layout__region {
+    padding: 0;
+}
+
+.layout__region>* {
+    margin-bottom: initial;
+    padding-top: var(--spacing-gap-smaller);
+    padding-bottom: var(--spacing-gap-smaller);
 }
 
 .layout__region:empty {
     display: none;
 }
 
-/* section paragragh type layout  */
-.paragraph--type--page-section .layout.layout--twocol>* {
-    padding: 0;
-}
-
 .paragraph--type--page-section .layout__region--second .call-out-box {
     margin-bottom: 0;
 }
 
-/**/
-.layout:not(.layout--onecol) .media-with-text:not(.media-with-text--featured) .media-with-text__media * {
+.layout .media-with-text:not(.media-with-text--featured) .media-with-text__media * {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.layout--twocol>.layout__region>*+* {
-    margin-top: var(--spacing-largest);
 }
 
 .layout__region:empty {
@@ -45,19 +44,285 @@
 
 @media only screen and (min-width: 641px) {
 
-    .paragraph--type--page-section .layout__region--second .call-out-box {
+    .layout__region--second .call-out-box {
         margin-top: 0;
     }
 
-    .paragraph--type--page-section .layout.layout--twocol {
+    .layout.layout--twocol {
         flex-direction: row;
-        gap: var(--spacing-small);
+        column-gap: var(--grid-gap);
         justify-content: space-between;
     }
 
-    .paragraph--type--page-section .layout.layout--twocol>.layout__region--first,
-    .paragraph--type--page-section .layout.layout--twocol>.layout__region--second {
-        flex: 0 1 calc(50% - var(--spacing-small));
+    .layout.layout--twocol>.layout__region--first,
+    .layout.layout--twocol>.layout__region--second {
+        flex: 0 1 calc(50% - calc(var(--grid-gap-smaller)));
         margin: 0;
+        padding: 0;
     }
 }
+
+/* Prelimanary css */
+
+.featured-news__card article,
+.news-card article {
+    background-color: transparent;
+}
+
+.node--type-localgov-news-article {
+    display: grid;
+    height: 100%;
+    align-items: stretch;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+}
+
+@media (min-width: 641px) {
+    .news-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: var(--grid-gap);
+        margin: 0;
+    }
+
+    .news-card article .card-image,
+    .news-card article .card-content {
+        grid-column: 1 / span 3;
+    }
+
+    .featured-news__card .card-image {
+        grid-column: 1 / span 2;
+    }
+
+    .featured-news__card article .card-content {
+        grid-column: 3 / span 2;
+        min-height: 240px;
+    }
+
+    .featured-news__card article .card-content {
+        padding: 1.25rem 1rem;
+    }
+
+    .featured-news__card article {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .featured-news__card article .card-content {
+        grid-column: 3 / span 2;
+        padding: 0.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Added for https://nomensa.atlassian.net/browse/ECCI-472 */
+.ecc-restricted-content {
+    margin-bottom: var(--spacing);
+}
+
+.news-article__content .ecc-restricted-content {
+    margin-bottom: 0px;
+}
+
+.ecc-restricted-content a.button {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    font-size: calc(var(--spacing) * 1.3125);
+    padding: calc(var(--spacing) / 4) calc(var(--spacing) * 1.125);
+}
+
+.ecc-restricted-content a.button:focus {
+    color: black;
+}
+
+.ecc-restricted-content a.button>svg {
+    width: 17px;
+    height: 21px;
+    margin-right: calc(var(--spacing) / 2);
+}
+
+/* End */
+
+/* Small change added for https://nomensa.atlassian.net/browse/ECCI-420 */
+@media screen and (min-width: 640px) {
+    .ecc-restricted-content {
+        margin-bottom: 0px;
+    }
+
+    .ecc-restricted-content a.button {
+        font-size: calc(var(--spacing) * 1.25);
+        margin-bottom: 0px;
+    }
+
+    .ecc-restricted-content a.button>svg {
+        margin-right: calc(var(--spacing) * 0.75);
+    }
+}
+
+.ecc-restricted-content a.button:not(:focus) {
+    background: black;
+}
+
+.ecc-restricted-content__container {
+    width: 100%;
+    border: 2px solid black;
+    margin: calc(var(--spacing) * 2) 0;
+    padding: 1.25rem;
+}
+
+@media screen and (min-width: 1025px) {
+    .ecc-restricted-content__container {
+        padding: calc(var(--spacing) * 2.25) calc(var(--spacing) * 5);
+    }
+}
+
+/* End */
+
+/* Added for https://nomensa.atlassian.net/browse/ECCI-480 */
+.ecc-related-news-container .field__item {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
+.ecc-related-news-container article {
+    display: block;
+}
+
+.ecc-related-news-container article img {
+    aspect-ratio: 383 / 241;
+    object-fit: cover;
+    width: 100%;
+}
+
+.ecc-related-news-item {
+    margin-bottom: calc(var(--spacing) * 2.063);
+    border-bottom: 1px solid #C7C7C7;
+}
+
+.ecc-related-news-item .ecc-restricted-content {
+    margin-bottom: var(--vertical-rhythm-spacing);
+}
+
+@media screen and (min-width: 960px) {
+    .ecc-related-news-container article {
+        display: grid;
+        grid-gap: var(--grid-gap);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        height: 100%;
+    }
+
+    .ecc-related-news-container article>.node__content {
+        grid-column: 2 / span 2;
+        padding: 0.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ecc-related-news-item {
+        padding-bottom: calc(var(--spacing) * 3.125);
+    }
+}
+
+/* End */
+
+/* Added for https://nomensa.atlassian.net/browse/ECCI-421 */
+.ecc-restricted-content__container .content {
+    font-size: calc(var(--spacing) * 1.875);
+    font-family: var(--font-heading-3);
+}
+
+/* end */
+
+/* Added for border bottom hotfix - overriding styles in news.css from line 43 to line 52 */
+.newsroom-teaser,
+.featured-news__card article,
+.news-card article {
+    border: none;
+}
+
+.newsroom-teaser,
+.newsroom-teaser>.newsroom-teaser__content,
+.featured-news__card article>.card-content,
+.news-card article>.card-content {
+    position: relative;
+}
+
+.featured-news__card article>.card-content:before,
+.news-card article>.card-content:before,
+.newsroom-teaser:before,
+.newsroom-teaser>.newsroom-teaser__content .newsroom-teaser__summary:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--color-accent)
+}
+
+.newsroom-teaser:before {
+    display: none;
+}
+
+@media screen and (min-width: 640px) {
+    .newsroom-teaser:before {
+        display: block;
+    }
+
+    .newsroom-teaser>.newsroom-teaser__content .newsroom-teaser__summary:before {
+        display: none;
+    }
+}
+
+/* End */
+
+/* Added for https://nomensa.atlassian.net/browse/ECCI-472 */
+.featured-news__card .node--view-mode-card-anonymous .card-content .node__content,
+.news-card .node--view-mode-card-anonymous .card-content .node__content {
+    justify-content: end;
+}
+
+.featured-news__card .card-content h3,
+.news-card .card-content h3 {
+    font-size: calc(var(--spacing) * 1.563);
+    margin-bottom: 0px;
+}
+
+.featured-news__card article .card-content,
+.news-card article .card-content {
+    position: relative;
+    font-size: calc(var(--spacing) * 1.125);
+}
+
+.featured-news__card article .card-content,
+.news-card article .card-content {
+    padding: calc(var(--spacing) * 1.25);
+}
+
+.lgd-row:has(.lgd-row__one-third)>* {
+    margin: 0;
+}
+
+.lgd-row:has(.lgd-row__one-third)>*+* {
+    margin-left: var(--spacing-large)
+}
+
+/* End */
+
+/* Added for https://nomensa.atlassian.net/browse/ECCI-417 */
+.featured-news__card .node--view-mode-card-anonymous .card-content .node__content {
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .paragraph--type--news-1-4 .featured-news__card .card-content {
+        height: 100%;
+        min-height: auto;
+    }
+}
+
+/* End */

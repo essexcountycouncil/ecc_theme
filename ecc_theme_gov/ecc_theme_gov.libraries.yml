@@ -42,8 +42,3 @@ news:
   css:
     theme:
       css/news.css: { weight: 2 }
-
-media_with_text:
-  css:
-    theme:
-      css/media-with-text.css: { weight: 2 }

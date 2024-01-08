@@ -2,6 +2,7 @@
 .lgd-teaser-list .views-row.news-row {
     border-bottom: 0;
     padding-bottom: 0;
+    margin: 0;
 }
 
 .news-column {
@@ -29,12 +30,6 @@
     margin-bottom: var(--spacing-smaller);
 }
 
-.views-row .lgd-teaser__content--localgov-news-article .field--name-localgov-news-date {
-    color: #6f6f6f;
-    font-size: 0.75rem;
-    margin-bottom: var(--spacing);
-}
-
 .newsroom-teaser__title a div {
     display: inline-block;
 }
@@ -46,15 +41,4 @@
     background-color: var(--color-focus);
     -webkit-box-shadow: 0 -2px var(--color-focus), 0 4px var(--color-black);
     box-shadow: 0 -2px var(--color-focus), 0 4px var(--color-black);
-}
-
-/* Related news heading */
-.news-article__related-title {
-    margin-top: var(--spacing-larger);
-}
-
-@media only screen and (min-width: 768px) {
-    .news-article__related-title {
-        margin-top: var(--spacing-mega);
-    }
 }

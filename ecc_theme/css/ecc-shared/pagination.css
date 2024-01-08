@@ -1,5 +1,8 @@
-.pager__item.is-active a {
+.ecc-pager .pager__items li.is-active {
     font-weight: var(--font-semibold);
+}
+
+.pager__item.is-active a {
     text-decoration: none;
 }
 
