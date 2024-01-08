@@ -65,3 +65,8 @@
     object-fit: cover;
     aspect-ratio: 9/5;
 }
+
+.paragraph--type--newsroom-component>.featured-news__card,
+.paragraph--type--news-1-4>.featured-news__card {
+    margin-bottom: var(--grid-gap)
+}

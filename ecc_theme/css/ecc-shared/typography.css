@@ -8,6 +8,6 @@ li {
 .featured-news__card article,
 .news-card article,
 p {
+    word-break: break-word;
     word-wrap: break-word;
-    word-wrap: break-all;
 }
