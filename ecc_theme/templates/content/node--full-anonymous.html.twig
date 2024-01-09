@@ -1,6 +1,7 @@
 {#
 /**
  * @file
+ * Theme override to display a node.
  *
  * Available variables:
  * - node: The node entity with limited access to object properties and methods.
@@ -14,7 +15,7 @@
  *   Calling other methods, such as node.delete(), will result in an exception.
  *   See \Drupal\node\Entity\Node for a full list of public properties and
  *   methods for the node object.
- * - label: The title of the node.
+ * - label: (optional) The title of the node.
  * - content: All node items. Use {{ content }} to print them all,
  *   or print a subset such as {{ content.field_example }}. Use
  *   {{ content|without('field_example') }} to temporarily suppress the printing
@@ -22,8 +23,8 @@
  * - author_picture: The node author user entity, rendered using the "compact"
  *   view mode.
  * - metadata: Metadata for this node.
- * - date: Themed creation date field.
- * - author_name: Themed author name field.
+ * - date: (optional) Themed creation date field.
+ * - author_name: (optional) Themed author name field.
  * - url: Direct URL of the current node.
  * - display_submitted: Whether submission information should be displayed.
  * - attributes: HTML attributes for the containing element.
@@ -63,58 +64,96 @@
  *   is an administrator.
  *
  * @see template_preprocess_node()
+ *
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
  */
 #}
 
-{%
-  set classes = [
-  'news-article',
-  'node',
-  'node--type-' ~ node.bundle|clean_class,
-  node.isPromoted() ? 'node--promoted',
-  node.isSticky() ? 'node--sticky',
-  not node.isPublished() ? 'node--unpublished',
-  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-]
+{# 
+  Restrict width of the content area to two-thirds of the screen for 
+  some content types. This is helpful to reduce the line-length for 
+  better readability.
+#}
+{% set restricted_width_content_types = [
+    'localgov_services_page',
+    'localgov_event',
+    'localgov_step_by_step_overview',
+    'localgov_services_status'
+  ] 
 %}
 
+{% set content_type = node.bundle %}
+
 {% if not localgov_base_remove_css %}
-  {{ attach_library('localgov_base/news') }}
+  {{ attach_library('localgov_base/full') }}
+  {% if content_type == 'localgov_directories_venue' 
+        or content_type == 'localgov_directories_page' 
+        or content_type == 'localgov_directory' %}
+    {{ attach_library('localgov_base/directories') }}
+  {% endif %}
+
+  {% if content_type == 'localgov_event' %}
+    {{ attach_library('localgov_base/events') }}
+  {% endif %}
+
+  {% if content_type == 'localgov_step_by_step_overview'
+        or content_type == 'localgov_step_by_step_page' %}
+    {{ attach_library('localgov_base/step-by-step') }}
+  {% endif %}
 {% endif %}
 
-<article{{ attributes.addClass(classes) }}>
+{%
+  set classes = [
+    content_type|clean_class,
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    content_type in restricted_width_content_types ? 'node--with-restricted-width',
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+
+<article{{ attributes.addClass(classes).removeAttribute('role') }}>
+
   <div class="lgd-container padding-horizontal">
-    <div class="lgd-row">
-      <div class="lgd-row__two-thirds">
-        <h1{{ title_attributes.addClass('news-article__title') }}>
-          {{ label }}
-        </h1>
-        <div class="news-article__metadata">
-          <time datetime="{{ node.localgov_news_date.value }}" class="news-article__metadata-item news-article__metadata-item--date">
-            {{ content.localgov_news_date.0['#markup'] }}
-          </time>
-          {% if node.localgov_news_categories.value %}
-            <ul class="news-article__metadata-item news-article__metadata-item--categories" aria-label="{{ 'Article categories'|t }}">
-              {% for key,value in node.localgov_news_categories.value %}
-                <li class="news-article__category">
-                  {{ content.localgov_news_categories[key] }}
-                </li>
-              {% endfor %}
-            </ul>
-          {% endif %}
+    {{ title_prefix }}
+    {% if label and not page %}
+      <h2{{ title_attributes }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    {{ title_suffix }}  
+
+    {% if display_submitted %}
+      <footer class="node__meta">
+        {{ author_picture }}
+        <div{{ author_attributes.addClass('node__submitted') }}>
+          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+          {{ metadata }}
         </div>
-        <div{{ content_attributes.addClass('news-article__content node__content') }}>
+      </footer>
+    {% endif %} 
 
-          {{ content|without('localgov_news_date', 'localgov_news_categories', 'localgov_news_related') }}
+    {% if content_type in restricted_width_content_types %}
+      <div class="node__restricted-width-section">
+    {% endif %} 
 
-          {% if node.localgov_news_related.value %}
-            <h2 class="news-article__related-title">{{ 'Related news'|t }}</h2>
-            {{ content.localgov_news_related }}
-          {% endif %}
-
-        </div>
+      <div{{ content_attributes.addClass(content_type|clean_class ~ '__content', 'node__content') }}>
+        {{ content|without('localgov_subsites_content') }}
       </div>
-    </div>
   </div>
+
+  {% if node.localgov_subsites_content.value %}
+    {{ content.localgov_subsites_content }}
+  {% endif %}
+  
+
+  {% if content_type in restricted_width_content_types %}
+    </div>
+  {% endif %}
 
 </article>

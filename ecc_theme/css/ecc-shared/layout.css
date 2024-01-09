@@ -1,8 +1,3 @@
-.node__content {
-    display: grid;
-    grid-gap: var(--grid-gap-smaller);
-}
-
 .lgd-row__two-thirds>*+* {
     margin-top: var(--grid-gap);
 }
@@ -63,21 +58,21 @@
 }
 
 .node--type-localgov-news-article {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    align-items: stretch;
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content;
+
 }
 
 @media (min-width: 641px) {
-    .news-card {
+    .field--name-field-news-cards-x4 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: var(--grid-gap);
         margin: 0;
     }
 
+    /* 
     .news-card article .card-image,
     .news-card article .card-content {
         grid-column: 1 / span 3;
@@ -105,7 +100,7 @@
         padding: 0.5rem 1rem;
         display: flex;
         flex-direction: column;
-    }
+    } */
 }
 
 /* Added for https://nomensa.atlassian.net/browse/ECCI-472 */
@@ -214,10 +209,6 @@
         display: flex;
         flex-direction: column;
     }
-
-    .ecc-related-news-item {
-        padding-bottom: calc(var(--spacing) * 3.125);
-    }
 }
 
 /* End */
@@ -231,30 +222,10 @@
 /* end */
 
 /* Added for border bottom hotfix - overriding styles in news.css from line 43 to line 52 */
-.newsroom-teaser,
+/* .newsroom-teaser,
 .featured-news__card article,
 .news-card article {
     border: none;
-}
-
-.newsroom-teaser,
-.newsroom-teaser>.newsroom-teaser__content,
-.featured-news__card article>.card-content,
-.news-card article>.card-content {
-    position: relative;
-}
-
-.featured-news__card article>.card-content:before,
-.news-card article>.card-content:before,
-.newsroom-teaser:before,
-.newsroom-teaser>.newsroom-teaser__content .newsroom-teaser__summary:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: var(--color-accent)
 }
 
 .newsroom-teaser:before {
@@ -269,7 +240,7 @@
     .newsroom-teaser>.newsroom-teaser__content .newsroom-teaser__summary:before {
         display: none;
     }
-}
+} */
 
 /* End */
 
@@ -294,6 +265,7 @@
 .featured-news__card article .card-content,
 .news-card article .card-content {
     padding: calc(var(--spacing) * 1.25);
+    height: 100%;
 }
 
 .lgd-row:has(.lgd-row__one-third)>* {

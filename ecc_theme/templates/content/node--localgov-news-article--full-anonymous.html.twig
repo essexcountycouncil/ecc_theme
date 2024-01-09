@@ -2,6 +2,9 @@
 /**
  * @file
  *
+ * Copied from localgov_base. It could be simplified if required, as many
+ * fields are hidden in the View Display.
+ *
  * Available variables:
  * - node: The node entity with limited access to object properties and methods.
  *   Only method names starting with "get", "has", or "is" and a few common
@@ -86,9 +89,6 @@
   <div class="lgd-container padding-horizontal">
     <div class="lgd-row">
       <div class="lgd-row__two-thirds">
-        <h1{{ title_attributes.addClass('news-article__title') }}>
-          {{ label }}
-        </h1>
         <div class="news-article__metadata">
           <time datetime="{{ node.localgov_news_date.value }}" class="news-article__metadata-item news-article__metadata-item--date">
             {{ content.localgov_news_date.0['#markup'] }}
@@ -103,14 +103,18 @@
             </ul>
           {% endif %}
         </div>
+
+        <h1{{ title_attributes.addClass('news-article__title') }}>
+          {{ label }}
+        </h1>
+
         <div{{ content_attributes.addClass('news-article__content node__content') }}>
 
-          {{ content|without('localgov_news_date', 'localgov_news_categories', 'localgov_news_related') }}
+          <!--cludooff: index-->
+          {{ content|without('localgov_news_date', 'localgov_news_categories', 'localgov_news_related', 'sign_in') }}
+          <!--cludoon: index-->
 
-          {% if node.localgov_news_related.value %}
-            <h2 class="news-article__related-title">{{ 'Related news'|t }}</h2>
-            {{ content.localgov_news_related }}
-          {% endif %}
+          {{ elements.sign_in }}
 
         </div>
       </div>

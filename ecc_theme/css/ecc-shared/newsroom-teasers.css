@@ -1,0 +1,16 @@
+div:has(.newsroom-teaser),
+.newsroom-teaser {
+    height: 100%;
+}
+
+.newsroom-teaser {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.newsroom-teaser .newsroom-teaser__summary {
+    flex-grow: 1;
+    margin-top: 0;
+}
