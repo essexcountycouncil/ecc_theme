@@ -1,10 +1,3 @@
-.featured-teaser,
-.featured-teasers__teasers,
-.featured-teasers__teasers>*,
-.featured-teasers__teasers .field__item {
-    height: 100%;
-}
-
 .node__content {
     display: grid;
     grid-gap: var(--grid-gap-smaller);

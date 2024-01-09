@@ -1,0 +1,25 @@
+div:has(.featured-teaser),
+.featured-teaser {
+    height: 100%;
+}
+
+.featured-teaser {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-teaser__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.featured-teaser__content>* {
+    margin: auto 0;
+}
+
+.featured-teaser__content .field--name-localgov-text {
+    flex-grow: 1;
+
+}

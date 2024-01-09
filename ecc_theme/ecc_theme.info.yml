@@ -17,6 +17,7 @@ libraries-extend:
     - ecc_theme/cookies
     - ecc_theme/datetime
     - ecc_theme/events
+    - ecc_theme/featured_teasers
     - ecc_theme/fonts
     - ecc_theme/footer
     - ecc_theme/forms
