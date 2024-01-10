@@ -59,7 +59,6 @@
 
 .media-with-text--featured .media-with-text__inner .media-with-text__body {
     grid-row: 1;
-    align-self: center;
     width: auto;
     margin: var(--spacing-largest);
 }
