@@ -1,3 +1,8 @@
+/*
+This CSS file, headings.css, is used to style various heading elements (h1 to h6) and some specific heading elements within certain classes.
+*/
+
+/* Aims to create more even lines when the text wraps. */
 h1,
 h2,
 h3,
@@ -6,6 +11,8 @@ h5,
 h6 {
     text-wrap: balance;
 }
+
+
 
 h1,
 .field--type-text-long h2,

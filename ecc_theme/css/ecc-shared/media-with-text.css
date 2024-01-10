@@ -65,10 +65,6 @@
 
 }
 
-/* .media-with-text.media-with-text--media-bottom .media-with-text__inner img {
-    max-height: 600px;
-} */
-
 @media screen and (max-width: 560px) {
     .media-with-text__media img {
         max-height: 200px;

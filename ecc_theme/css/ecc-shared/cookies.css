@@ -1,4 +1,7 @@
-/* Cookie banner */
+/*
+This CSS file is used to create a visually distinct cookie notice component, which can be used to inform users about the use of cookies on the website.
+*/
+
 .cookies-notice {
     background-color: #4179aa;
     color: var(--color-white);

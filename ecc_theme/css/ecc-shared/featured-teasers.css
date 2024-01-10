@@ -1,3 +1,7 @@
+/*
+This CSS file, featured-teasers.css, is used to style a featured teaser component.
+*/
+
 div:has(.featured-teaser),
 .featured-teaser {
     height: 100%;

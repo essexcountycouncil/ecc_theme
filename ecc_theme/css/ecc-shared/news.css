@@ -1,3 +1,6 @@
+/*
+This CSS file, news.css, is used to style a news article component.
+*/
 .news-article .lgd-row__two-thirds {
     display: grid;
     grid-column: auto;

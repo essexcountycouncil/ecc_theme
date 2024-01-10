@@ -1,3 +1,7 @@
+/*
+This CSS file, fonts.css, is used to import and define the usage of a custom font named 'Lexend' 
+*/
+
 @font-face {
     font-family: 'Lexend';
     src: url('../../assets/fonts/ecc-shared/Lexend-Regular.woff2') format('woff2'),

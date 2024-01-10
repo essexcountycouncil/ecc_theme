@@ -1,4 +1,6 @@
-/* Alert banners */
+/* 
+This CSS file, alert-banner.css, is used to style an alert banner component. Alert banners are typically used to display important messages to users.
+*/
 
 .localgov-alert-banner {
     margin: var(--spacing);

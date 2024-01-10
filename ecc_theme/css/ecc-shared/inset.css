@@ -1,3 +1,6 @@
+/*
+This CSS file, inset.css, is used to style a component with the class .inset and its child element with the class .section-heading. 
+*/
 .inset {
     background: #f5f5f5;
     border-left: 12px solid #dee0e2;

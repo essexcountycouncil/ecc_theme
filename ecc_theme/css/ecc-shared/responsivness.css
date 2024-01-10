@@ -1,3 +1,7 @@
+/*
+This CSS file, responsiveness.css, is used to style various components and ensure they are responsive to different screen sizes. 
+*/
+
 .lgd-page-section {
     padding-right: var(--spacing-padding-horizontal);
     padding-left: var(--spacing-padding-horizontal);

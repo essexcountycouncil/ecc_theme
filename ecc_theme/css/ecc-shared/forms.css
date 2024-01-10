@@ -1,3 +1,7 @@
+/*
+This CSS file, forms.css, is used to style a website feedback form and some other form elements.
+*/
+
 .website-feedback-form-container {
     background-color: var(--background-blue);
     margin-top: var(--spacing-mega);

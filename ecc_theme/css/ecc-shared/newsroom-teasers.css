@@ -1,3 +1,6 @@
+/*
+This CSS file, newsroom-teasers.css, is used to style a newsroom teaser component. 
+*/
 div:has(.newsroom-teaser),
 .newsroom-teaser {
     height: 100%;
