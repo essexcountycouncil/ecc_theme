@@ -22,7 +22,7 @@
     background: var(--color-white);
     padding: 0.2em 0.7rem;
     font-weight: var(--font-semibold);
-    margin-bottom: var(--spacing);
+    margin-bottom: var(--spacing-largest);
 }
 
 .banner__content h1:after {

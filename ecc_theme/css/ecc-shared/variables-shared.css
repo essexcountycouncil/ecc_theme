@@ -61,7 +61,7 @@ body {
   --table-bg-color: transparent;
   --tabs-button-bg-color: var(--color-grey-lighter);
   --quote-background-color: var(--color-white);
-
+  --background-blue: #004C94;
 
   /**
   Icons
@@ -98,5 +98,4 @@ body {
   --table-bg-color: transparent;
   --table-border: none;
   --touch-size: 45px;
-  --cabbage: #bada55;
 }

@@ -20,7 +20,7 @@
     grid-template-columns: 1fr;
 }
 
-.media-with-text--default .media-with-text__body {
+.media-with-text__body {
     background-color: #c3d3e5;
     display: flex;
     flex-direction: column;

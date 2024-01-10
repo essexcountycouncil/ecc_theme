@@ -2,6 +2,16 @@
 This CSS code is used to create a visually distinct "call-out box" component, which can be used to highlight important content on a webpage. The different selectors allow for different variations of the call-out box, such as a default version, a version with a blue background, and a version without an image.
 */
 
+.call-out-box__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.call-out-box__content .field--type-text-long {
+    flex-grow: 1;
+}
+
 .call-out-box__content h2 {
     color: var(--color-white);
 }
@@ -16,6 +26,8 @@ p.callout {
 
 .call-out-box__link {
     color: var(--color-link);
+    display: inline-block;
+    width: fit-content;
 }
 
 .callout.callout-primary {
@@ -24,6 +36,7 @@ p.callout {
 
 .call-out-box--no-image {
     background-color: var(--color-white);
+    height: 100%;
 }
 
 /* Call out box - variants */

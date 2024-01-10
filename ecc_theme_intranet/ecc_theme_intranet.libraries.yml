@@ -37,16 +37,7 @@ main_menu:
     theme:
       css/main-menu.css: { weight: 2 }
 
-footer:
-  css:
-    theme:
-      css/footer.css: { weight: 2 }
 layout.css:
   css:
     theme:
       css/layout.css: { weight: 2 }
-
-forms:
-  css:
-    theme:
-      css/forms.css: { weight: 2 }

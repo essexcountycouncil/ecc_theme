@@ -72,6 +72,10 @@ forms:
   css:
     theme:
       css/ecc-shared/forms.css: { weight: 1 }
+footer:
+  css:
+    theme:
+      css/ecc-shared/footer.css: { weight: 1 }
 nav:
   css:
     theme:

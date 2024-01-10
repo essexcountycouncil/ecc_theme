@@ -5,12 +5,11 @@ body {
   --banner-content-bg-color: #414745;
   --call-out-box-bg-color: #4179aa;
   --color-link: #4179aa;
-  --color-section-footer-bg: #414745;
+  --color-section-footer-bg: var(--color-black);
   --color-section-header-bg: #e40037;
-  --color-section-pre-footer-bg: #444a48;
+  --color-section-pre-footer-bg: var(--background-blue);
 
   /** misc */
   --header-logo-width: 200px;
   --line-height: 1.3;
-  --cabbage: #bada55;
 }

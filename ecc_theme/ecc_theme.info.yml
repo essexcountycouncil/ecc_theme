@@ -20,6 +20,7 @@ libraries-extend:
     - ecc_theme/featured_teasers
     - ecc_theme/fonts
     - ecc_theme/forms
+    - ecc_theme/footer
     - ecc_theme/guide
     - ecc_theme/headings
     - ecc_theme/hero

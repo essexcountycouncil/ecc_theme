@@ -8,8 +8,6 @@ libraries:
   - ecc_theme_intranet/variables_intranet
   - ecc_theme_intranet/branding
   - ecc_theme_intranet/buttons
-  - ecc_theme_intranet/footer
-  - ecc_theme_intranet/forms
   - ecc_theme_intranet/header
   - ecc_theme_intranet/hero
   - ecc_theme_intranet/layout
