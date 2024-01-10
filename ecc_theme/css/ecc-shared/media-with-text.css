@@ -2,8 +2,13 @@
     margin: 0;
 }
 
-.media-with-text .media-with-text__media {
-    width: 100%;
+.media-with-text .media-with-text__media,
+.media-with-text .media-with-text__media * {
+    height: 100%;
+}
+
+.media-with-text--media-right.media-with-text .media-with-text__media {
+    padding-right: var(--spacing);
 }
 
 .media-with-text--media-top .media-with-text__media {
