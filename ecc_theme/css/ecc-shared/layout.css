@@ -68,6 +68,7 @@
     .field--name-field-news-cards-x4 {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-auto-rows: min-content;
         grid-gap: var(--grid-gap);
         margin: 0;
     }
@@ -245,27 +246,21 @@
 /* End */
 
 /* Added for https://nomensa.atlassian.net/browse/ECCI-472 */
-.featured-news__card .node--view-mode-card-anonymous .card-content .node__content,
-.news-card .node--view-mode-card-anonymous .card-content .node__content {
-    justify-content: end;
+
+
+
+.featured-news__card article .card-content,
+.news-card article .card-content {
+    position: relative;
+    font-size: calc(var(--spacing) * 1.125);
+    padding: calc(var(--spacing) * 1.25);
+    height: 100%;
 }
 
 .featured-news__card .card-content h3,
 .news-card .card-content h3 {
     font-size: calc(var(--spacing) * 1.563);
     margin-bottom: 0px;
-}
-
-.featured-news__card article .card-content,
-.news-card article .card-content {
-    position: relative;
-    font-size: calc(var(--spacing) * 1.125);
-}
-
-.featured-news__card article .card-content,
-.news-card article .card-content {
-    padding: calc(var(--spacing) * 1.25);
-    height: 100%;
 }
 
 .lgd-row:has(.lgd-row__one-third)>* {

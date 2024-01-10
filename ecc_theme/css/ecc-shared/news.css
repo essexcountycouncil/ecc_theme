@@ -20,11 +20,16 @@
     aspect-ratio: 9/5;
 }
 
-/* .news-article__content {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-gap: var(--grid-gap-smaller);
-} */
+.card-content,
+.news-article__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grid-gap-smaller);
+}
+
+.card-content {
+    gap: initial;
+}
 
 /* Related news heading */
 .news-article__related-title {
