@@ -32,12 +32,6 @@
     justify-content: center;
 }
 
-@media (max-width: 760px) {
-    .cludo-search-block-search-form form {
-        margin: 5rem 0 8rem;
-    }
-}
-
 .cludo-search-block-search-form form input#edit-search-keys {
     padding: var(--spacing-small);
 }

@@ -1,3 +1,6 @@
+/*
+This CSS file, variables-shared.css, is used to define a set of CSS custom properties (variables) that can be used throughout other CSS files. 
+*/
 body {
   /**
     Fonts
@@ -43,6 +46,7 @@ body {
   --alert-banner-bg-color-minor: #ecb720;
   --alert-banner-color: var(--color-black);
   --breadcrumbs-link-color: var(--color-black);
+  --background-blue: #004C94;
   --color-accent: #e40037;
   --color-blue: #4179aa;
   --color-danger: #e40037;
@@ -52,12 +56,14 @@ body {
   --color-grey-lightest: #ededed;
   --color-grey-mid: #6f6f6f;
   --color-success: #9361b3;
+  --color-link: #004c94;
   --quote-author-color: var(--color-black);
   --service-statuses-container-bg-color: #4179aa;
   --sidebar-exposed-form-bg-color: var(--color-white);
   --table-bg-color: transparent;
   --tabs-button-bg-color: var(--color-grey-lighter);
   --quote-background-color: var(--color-white);
+
 
 
   /**
@@ -95,5 +101,5 @@ body {
   --table-bg-color: transparent;
   --table-border: none;
   --touch-size: 45px;
-  --cabbage: #bada55;
+
 }

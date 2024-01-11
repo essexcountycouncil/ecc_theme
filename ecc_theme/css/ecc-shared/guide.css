@@ -1,3 +1,6 @@
+/*
+This CSS file, guide.css, is used to style a guide navigation component. 
+*/
 .block-localgov-guides-contents {
     margin: var(--spacing-largest) 0;
 }

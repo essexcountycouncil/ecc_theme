@@ -1,3 +1,6 @@
+/*
+This CSS file, news.css, is used to style a news article component.
+*/
 .news-article .lgd-row__two-thirds {
     display: grid;
     grid-column: auto;
@@ -20,10 +23,15 @@
     aspect-ratio: 9/5;
 }
 
+.card-content,
 .news-article__content {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-gap: var(--grid-gap-smaller);
+    display: flex;
+    flex-direction: column;
+    gap: var(--grid-gap-smaller);
+}
+
+.card-content {
+    gap: initial;
 }
 
 /* Related news heading */
@@ -69,4 +77,17 @@
 .paragraph--type--newsroom-component>.featured-news__card,
 .paragraph--type--news-1-4>.featured-news__card {
     margin-bottom: var(--grid-gap)
+}
+
+.lgd-teaser__content--localgov-news-article h3 {
+    margin-bottom: var(--spacing-smaller);
+}
+
+.news-card>*+* {
+    margin-top: var(--spacing-largest);
+}
+
+.featured-news__card article,
+.news-card article {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }

@@ -17,9 +17,10 @@ libraries-extend:
     - ecc_theme/cookies
     - ecc_theme/datetime
     - ecc_theme/events
+    - ecc_theme/featured_teasers
     - ecc_theme/fonts
-    - ecc_theme/footer
     - ecc_theme/forms
+    - ecc_theme/footer
     - ecc_theme/guide
     - ecc_theme/headings
     - ecc_theme/hero
@@ -30,6 +31,7 @@ libraries-extend:
     - ecc_theme/media_with_text
     - ecc_theme/nav
     - ecc_theme/news
+    - ecc_theme/newsroom_teasers
     - ecc_theme/pagination
     - ecc_theme/responsivness
     - ecc_theme/services

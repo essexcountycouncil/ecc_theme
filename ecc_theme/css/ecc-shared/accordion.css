@@ -1,3 +1,6 @@
+/*
+This CSS file, accordion.css, is used to style an accordion component. An accordion is a UI pattern where content is hidden and shown in collapsible panels.
+*/
 .accordion-pane button {
     background-color: var(--color-link);
     border-color: var(--color-link);

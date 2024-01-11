@@ -28,10 +28,6 @@ layout:
   css:
     theme:
       css/ecc-shared/layout.css: { weight: 1 }
-footer:
-  css:
-    theme:
-      css/ecc-shared/footer.css: { weight: 1 }
 call_out:
   css:
     theme:
@@ -76,6 +72,10 @@ forms:
   css:
     theme:
       css/ecc-shared/forms.css: { weight: 1 }
+footer:
+  css:
+    theme:
+      css/ecc-shared/footer.css: { weight: 1 }
 nav:
   css:
     theme:
@@ -120,6 +120,14 @@ images:
   css:
     theme:
       css/ecc-shared/images.css: { weight: 1 }
+featured_teasers:
+  css:
+    theme:
+      css/ecc-shared/featured-teasers.css: { weight: 1 }
+newsroom_teasers:
+  css:
+    theme:
+      css/ecc-shared/newsroom-teasers.css: { weight: 1 }
 
 # Layouts
 the_center:

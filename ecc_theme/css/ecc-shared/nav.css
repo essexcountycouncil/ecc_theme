@@ -1,3 +1,6 @@
+/*
+This CSS file, nav.css, is used to style a navigation component, specifically a previous-next navigation. 
+*/
 /* Also see Sidebar.css */
 
 /** Correct display of list item marker */
@@ -92,8 +95,6 @@ nav.navigation--quick-actions li a:after {
 }
 
 @media (max-width: 760px) {
-
-
     nav.navigation--quick-actions h2 {
         display: block;
     }

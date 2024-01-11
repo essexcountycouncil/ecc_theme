@@ -1,3 +1,8 @@
+/**
+ * This CSS code defines the styling for blockquote elements.
+ * It is used to visually distinguish quoted content from the surrounding text.
+*/
+
 blockquote {
     font-size: var(--font-size-h3);
     background-image: var(--icon-quote);

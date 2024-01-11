@@ -1,3 +1,6 @@
+/*
+This CSS file, contact.css, is used to style a contact component. 
+*/
 .paragraph--type--localgov-contact {
     margin: var(--spacing) 0;
     padding: var(--spacing-smallest) 0 var(--spacing-smallest) var(--spacing-larger);

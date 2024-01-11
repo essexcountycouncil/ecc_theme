@@ -1,3 +1,7 @@
+/*
+This CSS file, drupal.css, is used to style various elements within a Drupal CMS
+*/
+
 /* Drupal editor toolbar */
 #toolbar-administration * {
     z-index: 99999;

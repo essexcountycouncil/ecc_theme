@@ -27,6 +27,10 @@
     margin-top: 0.25em;
 }
 
+/*
+This CSS file, events.css, is used to style an events listing component. 
+*/
+
 .view-localgov-events-listing .calendar .inner .month {
     color: var(--color-accent);
 }
@@ -41,8 +45,3 @@
     /* space for adding chevron image */
     padding: var(--spacing);
 }
-
-/* .field__item:first-of-type .field--name-localgov-text:has(> h2),
-.path-frontpage article>.field__items {
-    padding-top: clamp(0.75rem, 2vw, var(--spacing))
-} */

@@ -1,3 +1,7 @@
+/*
+This CSS file, video.css, is used to style embedded video content.
+*/
+
 /* Embedded video content */
 .media-oembed-content {
     aspect-ratio: 16/9;

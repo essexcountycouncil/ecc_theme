@@ -1,5 +1,10 @@
+/*
+This CSS file, date-time.css, is used to style datetime fields and specific elements within a news article teaser. 
+*/
 .field--type-datetime {
     margin-top: calc(var(--spacing) * 0.75);
+    color: var(--color-grey-mid);
+    font-size: var(--font-size-small);
     margin-bottom: var(--spacing);
 }
 

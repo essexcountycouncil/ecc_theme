@@ -26,10 +26,6 @@
     margin: 0;
 }
 
-.views-row .lgd-teaser__content--localgov-news-article h3 {
-    margin-bottom: var(--spacing-smaller);
-}
-
 .newsroom-teaser__title a div {
     display: inline-block;
 }

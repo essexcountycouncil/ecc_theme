@@ -1,3 +1,6 @@
+/*
+This CSS file, pagination.css, is used to style a pagination component. 
+*/
 .ecc-pager .pager__items li.is-active {
     font-weight: var(--font-semibold);
 }

@@ -1,18 +1,5 @@
-.lgd-page-section>.layout>.layout__region {
-    padding: 0;
-}
-
-.layout__region>* {
-    margin: var(--spacing-larger) 0;
-}
-
 .field--name-localgov-subsites-content>.field__item {
     margin: var(--spacing-largest) clamp(var(--spacing-smallest), 2.5vw, var(--spacing-largest));
-}
-
-.paragraph--type--page-section .layout__region {
-    padding: 0;
-
 }
 
 .field__item:first-of-type .field--name-localgov-text:has(> h2),
@@ -48,9 +35,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .layout__region>* {
-        margin: 0;
-    }
 
     /* Layout grid */
     .layout:not(.layout--onecol) .media-with-text:not(.media-with-text--featured) {
