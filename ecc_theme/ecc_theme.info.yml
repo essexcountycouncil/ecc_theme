@@ -17,6 +17,7 @@ libraries-extend:
     - ecc_theme/cookies
     - ecc_theme/datetime
     - ecc_theme/events
+    - ecc_theme/edit-tabs
     - ecc_theme/featured_teasers
     - ecc_theme/fonts
     - ecc_theme/forms
@@ -33,6 +34,7 @@ libraries-extend:
     - ecc_theme/news
     - ecc_theme/newsroom_teasers
     - ecc_theme/pagination
+    - ecc_theme/page-sections
     - ecc_theme/responsivness
     - ecc_theme/services
     - ecc_theme/sidebar
@@ -42,6 +44,7 @@ libraries-extend:
     - ecc_theme/video
     - ecc_theme/threecol_33_34_33
     - ecc_theme/layout_twocol_bricks
+    
 
 regions:
   tabs: "Tabs"

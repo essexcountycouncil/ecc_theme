@@ -7,6 +7,10 @@
     padding-top: clamp(0.75rem, 2vw, var(--spacing))
 }
 
+.paragraph--type--localgov-text {
+  max-width: var(--width-restricted-width-section);
+}
+
 @media only screen and (min-width: 640px) {
 
     .layout--threecol-33-34-33>.layout__region--first,
