@@ -110,7 +110,7 @@
     text-indent: -999rem;
     direction: ltr;
     min-width: 3.5rem;
-    padding: var(--spacing-small);
+    padding: var(--spacing);
 }
 
 .cludo-search-block-search-form .form-submit:hover {
