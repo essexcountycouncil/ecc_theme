@@ -92,9 +92,20 @@
 
 }
 
+.media-with-text--circle img {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    max-height: 300px
+}
+
 @media screen and (max-width: 560px) {
     .media-with-text__media img {
         max-height: 200px;
+    }
+
+    .media-with-text--circle img {
+        max-height: 400px;
     }
 }
 
@@ -105,6 +116,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+}
 
-
+@media screen and (min-width: 768px) {
+    .media-with-text--circle img {
+        max-height: 479px;
+    }
 }
