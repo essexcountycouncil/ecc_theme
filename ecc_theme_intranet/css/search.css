@@ -13,6 +13,10 @@
     margin: 0;
 }
 
+.banner__content .cludo-search-block-search-form .form-item-search-keys {
+    max-width: 515px;
+  }
+
 .banner__content .cludo-search-block-search-form .form-item-search-keys>label {
     display: none;
 }

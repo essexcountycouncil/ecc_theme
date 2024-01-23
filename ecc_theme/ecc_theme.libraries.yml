@@ -129,6 +129,21 @@ newsroom_teasers:
     theme:
       css/ecc-shared/newsroom-teasers.css: { weight: 1 }
 
+page-sections:
+  css:
+    theme:
+      css/ecc-shared/page-sections.css: { weight: 1}
+
+
+# @TODO: remove this library when
+# https://github.com/localgovdrupal/localgov_base/issues/518
+# is resolved
+edit-tabs:
+  css:
+    theme:
+      css/ecc-shared/edit-tabs.css: { weight: 1}
+
+
 # Layouts
 the_center:
   css:

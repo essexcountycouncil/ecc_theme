@@ -63,6 +63,8 @@ body {
   --table-bg-color: transparent;
   --tabs-button-bg-color: var(--color-grey-lighter);
   --quote-background-color: var(--color-white);
+  --color-tint-1: #f4e8ea;
+  --color-tint-2: #f4edf4;
 
 
 
