@@ -2,6 +2,10 @@
     margin-top: var(--grid-gap);
 }
 
+.layout--onecol .layout__region>*+* {
+    margin-top: var(--grid-gap);
+}
+
 .layout--onecol .layout__region {
     padding: 0;
 }
