@@ -95,7 +95,6 @@ function ecc_theme_suggestions_form_element_label_alter(&$suggestions, array $va
     }
   }
 
-*
 /**
  * Implements hook_preprocess_HOOK().
  * @TODO: remove this function if
