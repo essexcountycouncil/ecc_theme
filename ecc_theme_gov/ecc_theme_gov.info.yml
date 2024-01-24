@@ -3,7 +3,7 @@ description: "Your sub-theme, which uses ecc_theme as its base theme."
 type: theme
 core_version_requirement: ^8.8 || ^9 || ^10
 base theme: "ecc_theme"
-logo: "assets/images/ESS_logo_long_red.svg"
+logo: "assets/images/ECC_logo_long_red.svg"
 
 libraries:
   - ecc_theme_gov/variables_gov
