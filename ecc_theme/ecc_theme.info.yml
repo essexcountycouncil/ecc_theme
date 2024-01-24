@@ -27,6 +27,7 @@ libraries-extend:
     - ecc_theme/hero
     - ecc_theme/images
     - ecc_theme/inset
+    - ecc_theme/ia_block
     - ecc_theme/layout
     - ecc_theme/link_block
     - ecc_theme/media_with_text

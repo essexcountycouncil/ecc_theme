@@ -108,6 +108,10 @@ inset:
   css:
     theme:
       css/ecc-shared/inset.css: { weight: 1 }
+ia_block:
+  css:
+    theme:
+      css/ecc-shared/ia-block.css: { weight: 1 }
 link_block:
   css:
     theme:
