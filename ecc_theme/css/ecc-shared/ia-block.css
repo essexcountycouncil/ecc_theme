@@ -1,0 +1,8 @@
+/*
+This CSS file, ia-block.css, is used to style an ia-block component and its child elements. 
+*/
+
+.ia-block * > a.ia-block__title-link,
+.ia-block * a {
+    color: var(--color-link);
+}
