@@ -8,7 +8,6 @@ This CSS file, services.css, is used to style a feature block component within a
     background-color: #3a7d64;
     text-align: center;
     float: left;
-    width: calc(50% - 0.5rem);
     margin-bottom: 1rem;
     overflow: hidden;
 }
