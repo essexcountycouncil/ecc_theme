@@ -40,6 +40,10 @@ cookies:
   css:
     theme:
       css/ecc-shared/cookies.css: { weight: 1 }
+curve:
+  css:
+    theme:
+      css/ecc-shared/curve.css: { weight: 1 }      
 step_by_step:
   css:
     theme:
