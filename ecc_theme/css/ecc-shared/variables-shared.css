@@ -52,6 +52,7 @@ body {
   --color-danger: #e40037;
   --color-dusty-green: #00823b;
   --color-green: #3a7d64;
+  --color-grey: #d9d9d9;
   --color-grey-lighter: #d4d4d4;
   --color-grey-lightest: #ededed;
   --color-grey-mid: #6f6f6f;
@@ -65,7 +66,6 @@ body {
   --quote-background-color: var(--color-white);
   --color-tint-1: #f4e8ea;
   --color-tint-2: #f4edf4;
-
 
 
   /**
