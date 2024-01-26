@@ -32,11 +32,6 @@
     margin: 0;
 }
 
-.field__item:has(.lgd-page-section--full-width),
-.field__item:has(.lgd-page-section--full-width-contained-content) {
-    margin: 0;
-}
-
 div.lgd-page-section--curve .media-with-text__body {
     padding-top: 0;
     background: var(--color-grey);
@@ -66,12 +61,6 @@ div:has(.lgd-page-section--curve) .media-with-text__media {
     justify-content: left;
     align-items: top;
 
-}
-
-.media-with-text--circle img {
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {

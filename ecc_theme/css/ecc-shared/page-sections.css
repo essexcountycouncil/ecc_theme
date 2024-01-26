@@ -149,3 +149,8 @@
       height: 100%;
     }
   }
+
+  .field__item:has(.lgd-page-section--full-width),
+  .field__item:has(.lgd-page-section--full-width-contained-content) {
+    margin: 0;
+  }
