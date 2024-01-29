@@ -16,7 +16,8 @@
     flex-grow: 1;
 }
 
-.media-with-text--media-bottom .media-with-text__inner {
+.media-with-text--media-bottom .media-with-text__inner,
+.media-with-text--media-top .media-with-text__inner {
     grid-template-columns: 1fr;
 }
 
@@ -63,12 +64,13 @@
     grid-template-columns: 1fr 2fr;
 }
 
-.media-with-text--media-right.media-with-text--featured .media-with-text__inner .media-with-text__body {
+.media-with-text--media-right.media-with-text--featured .media-with-text__inner .media-with-text__body,
+.media-with-text--media-top.media-with-text--featured .media-with-text__inner .media-with-text__body {
     grid-column: 1/2;
 }
 
 .media-with-text--media-left.media-with-text--featured .media-with-text__inner .media-with-text__body {
-    grid-column: 2/3;
+    grid-column: 3/3;
 }
 
 .media-with-text--featured .contextual-region {
@@ -87,7 +89,8 @@
     padding-right: var(--spacing);
 }
 
-.media-with-text.media-with-text--media-bottom .media-with-text__inner {
+.media-with-text.media-with-text--media-bottom .media-with-text__inner, 
+.media-with-text.media-with-text--media-top .media-with-text__inner {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -98,6 +101,20 @@
     aspect-ratio: 1/1;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.media-with-text--circle .media-with-text__body {
+    background-color: white;
+}
+
+.media-with-text.media-with-text--media-right .media-with-text__inner,
+.media-with-text.media-with-text--media-left .media-with-text__inner {
+    display: grid;
+    grid-template-columns: 1fr
+}
+
+.media-with-text.media-with-text--media-right .media-with-text__inner .media-with-text__body {
+    grid-area: 2
 }
 
 @media screen and (max-width: 560px) {
@@ -116,14 +133,16 @@
 
 @media screen and (min-width: 561px) {
 
-    .media-with-text .media-with-text__inner {
+    .media-with-text .media-with-text__inner,
+    .media-with-text.media-with-text--media-right .media-with-text__inner,
+    .media-with-text.media-with-text--media-left .media-with-text__inner {
         height: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .media-with-text--featured .media-with-text__inner {
-        display: block;
+    .media-with-text.media-with-text--media-right .media-with-text__inner .media-with-text__body {
+        grid-area: 1
     }
 }
 
