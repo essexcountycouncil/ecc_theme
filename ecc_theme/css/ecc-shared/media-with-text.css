@@ -113,7 +113,6 @@
     grid-template-columns: 1fr
 }
 
-
 .media-with-text.media-with-text--media-right .media-with-text__inner .media-with-text__body {
     grid-area: 2
 }
