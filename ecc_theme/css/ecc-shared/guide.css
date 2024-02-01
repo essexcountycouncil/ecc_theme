@@ -1,40 +1,40 @@
 /*
-This CSS file, guide.css, is used to style a guide navigation component. 
+This CSS file, guide.css, is used to style a guide navigation component.
 */
 .block-localgov-guides-contents {
-    margin: var(--spacing-largest) 0;
+  margin: var(--spacing-largest) 0;
 }
 
 .lgd-guide-nav {
-    background-color: var(--color-white) !important;
-    border: 1px solid var(--color-black);
+  border: 1px solid var(--color-black);
+  background-color: var(--color-white) !important;
 }
 
-.lgd-guide-nav .lgd-guide-nav__list-item>a {
-    font-weight: var(--font-semibold);
-    display: inline-block;
+.lgd-guide-nav .lgd-guide-nav__list-item > a {
+  display: inline-block;
+  font-weight: var(--font-semibold);
 }
 
 .lgd-guide-nav__list {
-    padding-left: 1.25rem;
-    list-style: none;
+  padding-left: 1.25rem;
+  list-style: none;
 }
 
 .lgd-guide-nav__list-item {
-    position: relative;
-    padding-left: 1.25rem;
+  position: relative;
+  padding-left: 1.25rem;
 }
 
 .lgd-guide-nav__list-item::before {
-    content: '\2022';
-    position: absolute;
-    left: 0;
-    top: -5px;
-    font-size: var(--font-size-largest);
+  position: absolute;
+  top: -5px;
+  left: 0;
+  content: "\2022";
+  font-size: var(--font-size-largest);
 }
 
 @media only screen and (min-width: 768px) {
-    .lgd-guide-nav__list-item {
-        margin-right: var(--spacing-large);
-    }
+  .lgd-guide-nav__list-item {
+    margin-right: var(--spacing-large);
+  }
 }

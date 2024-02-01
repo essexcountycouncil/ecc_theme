@@ -1,28 +1,28 @@
 /*
-This CSS file, contact.css, is used to style a contact component. 
+This CSS file, contact.css, is used to style a contact component.
 */
 .paragraph--type--localgov-contact {
-    margin: var(--spacing) 0;
-    padding: var(--spacing-smallest) 0 var(--spacing-smallest) var(--spacing-larger);
-    border-left: 8px solid var(--color-grey-light);
+  margin: var(--spacing) 0;
+  padding: var(--spacing-smallest) 0 var(--spacing-smallest) var(--spacing-larger);
+  border-left: 8px solid var(--color-grey-light);
 }
 
 .paragraph--type--localgov-contact .field {
-    margin: var(--spacing-smallest) 0;
+  margin: var(--spacing-smallest) 0;
 }
 
 .paragraph--type--localgov-contact .field--name-localgov-contact-heading {
-    font-size: var(--font-size-h3);
-    font-weight: var(--heading-3-font-weight);
-    line-height: var(--heading-3-line-height);
-    margin-bottom: var(--spacing);
+  margin-bottom: var(--spacing);
+  font-size: var(--font-size-h3);
+  font-weight: var(--heading-3-font-weight);
+  line-height: var(--heading-3-line-height);
 }
 
-.paragraph--type--localgov-contact .field:not(.field--type-address):not(.field--type-office-hours) .field__label,
-.paragraph--type--localgov-contact .field:not(.field--type-address):not(.field--type-office-hours) .field__item {
-    display: inline-block;
+.paragraph--type--localgov-contact .field:not(.field--type-address, .field--type-office-hours) .field__label,
+.paragraph--type--localgov-contact .field:not(.field--type-address, .field--type-office-hours) .field__item {
+  display: inline-block;
 }
 
 .lgd-region--content .paragraph--type--localgov-contact a {
-    word-break: break-word;
+  word-break: break-word;
 }

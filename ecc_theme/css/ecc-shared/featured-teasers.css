@@ -4,39 +4,39 @@ This CSS file, featured-teasers.css, is used to style a featured teaser componen
 
 div:has(.featured-teaser),
 .featured-teaser {
-    height: 100%;
+  height: 100%;
 }
 
 .featured-teaser {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .featured-teaser__content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
 }
 
-.featured-teaser__content>* {
-    margin: auto 0;
+.featured-teaser__content > * {
+  margin: auto 0;
 }
 
 .featured-teaser__content .field--name-localgov-text {
-    flex-grow: 1;
-
+  flex-grow: 1;
 }
 
 .featured-teasers__teasers {
-    --columns: 1;
-    display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
-    gap: var(--spacing);
+  --columns: 1;
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  gap: var(--spacing);
+}
+
+@media screen and (min-width: 768px) {
+  .featured-teasers__teasers {
+    --columns: 3;
   }
-  
-  @media screen and (min-width: 768px) {
-    .featured-teasers__teasers {
-      --columns: 3;
-    }
-  }
+}

@@ -1,11 +1,11 @@
 .branding .branding__item--logo a:focus {
-    box-shadow: 0 0 0 3px var(--color-black);
-    outline: none;
-    background: transparent;
+  outline: none;
+  background: transparent;
+  box-shadow: 0 0 0 3px var(--color-black);
 }
 
 .branding__logo img {
-    width: 100%;
-    padding-block: clamp(0.45rem, 1.7vw, 0.7rem);
-    padding-inline-end: clamp(0.45rem, 1.7vw, 0.7rem);
+  width: 100%;
+  padding-block: clamp(0.45rem, 1.7vw, 0.7rem);
+  padding-inline-end: clamp(0.45rem, 1.7vw, 0.7rem);
 }

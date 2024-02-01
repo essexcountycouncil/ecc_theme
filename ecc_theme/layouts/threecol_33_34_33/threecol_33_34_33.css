@@ -20,8 +20,7 @@
     grid-gap: 0 var(--grid-gap);
   }
 
-  .layout--threecol-33-34-33>.layout__region {
+  .layout--threecol-33-34-33 > .layout__region {
     padding: 0 !important;
   }
-
 }

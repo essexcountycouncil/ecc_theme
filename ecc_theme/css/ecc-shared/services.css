@@ -4,72 +4,72 @@ This CSS file, services.css, is used to style a feature block component within a
 
 /* Labelled icon component */
 .services--feature-block {
-    border-radius: 0.5rem;
-    background-color: #3a7d64;
-    text-align: center;
-    float: left;
-    margin-bottom: 1rem;
-    overflow: hidden;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: #3a7d64;
 }
 
 .services--feature-block:nth-of-type(odd) {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .services--feature-block:nth-of-type(even) {
-    margin-left: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 @media (max-width: 400px) {
-    .services--feature-block {
-        width: 100%;
-        float: none;
-        margin-inline: 0;
-    }
+  .services--feature-block {
+    float: none;
+    width: 100%;
+    margin-inline: 0;
+  }
 
-    .services--feature-block:nth-of-type(odd),
-    .services--feature-block:nth-of-type(even) {
-        margin-inline: 0;
-    }
+  .services--feature-block:nth-of-type(odd),
+  .services--feature-block:nth-of-type(even) {
+    margin-inline: 0;
+  }
 }
 
 .services--feature-block a {
-    display: block;
-    padding: 1rem 1.25rem;
-    color: var(--color-white);
-    text-decoration: none;
-    width: 100%;
-    min-height: 97px;
+  display: block;
+  width: 100%;
+  min-height: 97px;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 .services--feature-block a:hover {
-    text-decoration: underline
+  text-decoration: underline;
 }
 
 .services--feature-block a:focus {
-    color: var(--color-black);
+  color: var(--color-black);
 }
 
 .services--feature-icon {
-    margin-bottom: 0.75rem;
-    font-size: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
-    .services--feature-block {
-        margin-right: 1.25rem;
-    }
+  .services--feature-block {
+    margin-right: 1.25rem;
+  }
 
-    .services--feature-block:nth-of-type(2n) {
-        margin-right: 0;
-    }
+  .services--feature-block:nth-of-type(2n) {
+    margin-right: 0;
+  }
 }
 
 .service-landing-page__contact {
-    border-color: var(--color-link);
+  border-color: var(--color-link);
 }
 
 .service-statuses__label {
-    color: var(--color-white);
-    font-weight: var(--font-semibold);
+  color: var(--color-white);
+  font-weight: var(--font-semibold);
 }

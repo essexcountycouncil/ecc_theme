@@ -1,41 +1,41 @@
 /*
-This CSS file, step-by-step.css, is used to style a step-by-step navigation component. 
+This CSS file, step-by-step.css, is used to style a step-by-step navigation component.
 */
 
 /* Step by step navigation */
 
 .block-views-blocklocalgov-step-by-step-navigation-steps-for-overview,
 .block-views-blocklocalgov-step-by-step-navigation-steps {
-    padding-right: var(--spacing-padding-horizontal);
-    padding-left: var(--spacing-padding-horizontal);
-    max-width: var(--width-container);
-    margin-right: auto;
-    margin-left: auto;
+  max-width: var(--width-container);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--spacing-padding-horizontal);
+  padding-left: var(--spacing-padding-horizontal);
 }
 
 .step-by-step-pages {
-    max-width: 48rem;
+  max-width: 48rem;
 }
 
 .step-by-step-pages ol.step-list .step .step__title a {
-    color: var(--color-link);
-    display: inline-block;
-    font-weight: var(--font-semibold);
+  display: inline-block;
+  color: var(--color-link);
+  font-weight: var(--font-semibold);
 }
 
 .step-by-step-pages ol.step-list .step .step__title .step-show {
-    display: block;
+  display: block;
 }
 
 .step-by-step-pages .step-master {
-    color: var(--color-black);
+  color: var(--color-black);
 }
 
 /* Step by step navigation sidebar */
 .sidebar .lgd-region__inner .step-by-step__navigation-sidebar {
-    background: var(--color-grey-lightest);
-    border-width: 0.3125rem 0 0 0;
-    border-style: solid;
-    border-color: var(--color-accent);
-    margin: 0 var(--spacing-smaller);
+  margin: 0 var(--spacing-smaller);
+  border-width: 0.3125rem 0 0 0;
+  border-style: solid;
+  border-color: var(--color-accent);
+  background: var(--color-grey-lightest);
 }

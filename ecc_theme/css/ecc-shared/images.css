@@ -1,15 +1,15 @@
 /*
-This CSS file, images.css, is used to style image elements. 
+This CSS file, images.css, is used to style image elements.
 */
 
 img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 641px) {
-    .layout--onecol__flexible img {
-        max-height: 500px;
-    }
+  .layout--onecol__flexible img {
+    max-height: 500px;
+  }
 }

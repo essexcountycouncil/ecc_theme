@@ -1,93 +1,93 @@
-/* 
+/*
 This CSS file, alert-banner.css, is used to style an alert banner component. Alert banners are typically used to display important messages to users.
 */
 
 .localgov-alert-banner {
-    margin: var(--spacing);
+  margin: var(--spacing);
 }
 
 .localgov-alert-banner--major,
 .localgov-alert-banner--announcement,
 .localgov-alert-banner--minor {
-    background: var(--color-white);
-    border-width: 5px;
-    border-style: solid;
+  border-width: 5px;
+  border-style: solid;
+  background: var(--color-white);
 }
 
 .localgov-alert-banner--major {
-    border-color: var(--alert-banner-bg-color-major);
+  border-color: var(--alert-banner-bg-color-major);
 }
 
 .localgov-alert-banner--announcement {
-    border-color: var(--color-green);
+  border-color: var(--color-green);
 }
 
 .localgov-alert-banner--announcement .localgov-alert-banner__close {
-    border-color: var(--color-black);
+  border-color: var(--color-black);
 }
 
 .localgov-alert-banner--notable-person .localgov-alert-banner__close:hover,
 .localgov-alert-banner--notable-person .localgov-alert-banner__close:focus {
-    color: var(--color-black);
+  color: var(--color-black);
 }
 
 .localgov-alert-banner--minor {
-    border-color: var(--alert-banner-bg-color-minor);
+  border-color: var(--alert-banner-bg-color-minor);
 }
 
 .localgov-alert-banner--notable-person,
 .localgov-alert-banner--notable-person .localgov-alert-banner__close,
 .localgov-alert-banner--notable-person a {
-    color: var(--color-white);
+  color: var(--color-white);
 }
 
 .localgov-alert-banner--notable-person {
-    margin-bottom: var(--spacing);
+  margin-bottom: var(--spacing);
 }
 
 .localgov-alert-banner__actions {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .localgov-alert-banner__close {
-    border: 1px solid var(--color-black);
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-small);
+  border: 1px solid var(--color-black);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-normal);
 }
 
 .localgov-alert-banner__close:hover,
 .localgov-alert-banner__close:focus {
-    color: var(--color-black);
-    border: 1px solid var(--color-black);
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
 }
 
 .localgov-alert-banner .localgov-alert-banner__title {
-    padding-bottom: 0;
-    margin-bottom: var(--spacing);
+  margin-bottom: var(--spacing);
+  padding-bottom: 0;
 }
 
 .localgov-alert-banner .localgov-alert-banner__inner {
-    background-position: 0 35px;
-    background-repeat: no-repeat;
-    background-size: 35px;
-    padding-left: var(--spacing-jumbo);
-    padding-top: var(--spacing-larger);
+  padding-top: var(--spacing-larger);
+  padding-left: var(--spacing-jumbo);
+  background-repeat: no-repeat;
+  background-position: 0 35px;
+  background-size: 35px;
 }
 
 @media only screen and (min-width: 768px) {
-    .localgov-alert-banner .localgov-alert-banner__inner {
-        padding-left: calc(var(--spacing-jumbo) * 3);
-    }
+  .localgov-alert-banner .localgov-alert-banner__inner {
+    padding-left: calc(var(--spacing-jumbo) * 3);
+  }
 }
 
 .localgov-alert-banner--major .localgov-alert-banner__inner {
-    background-image: var(--icon-emergency_red);
+  background-image: var(--icon-emergency_red);
 }
 
 .localgov-alert-banner--announcement .localgov-alert-banner__inner {
-    background-image: var(--icon-info_green);
+  background-image: var(--icon-info_green);
 }
 
 .localgov-alert-banner--minor .localgov-alert-banner__inner {
-    background-image: var(--icon-warning_yellow);
+  background-image: var(--icon-warning_yellow);
 }

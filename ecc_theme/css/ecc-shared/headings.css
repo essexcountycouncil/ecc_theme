@@ -9,46 +9,44 @@ h3,
 h4,
 h5,
 h6 {
-    text-wrap: balance;
+  text-wrap: balance;
 }
-
-
 
 h1,
 .field--type-text-long h2,
 .navigation--quick-actions h2 {
-    position: relative;
-    padding-bottom: var(--spacing-large);
-    margin: 0;
+  position: relative;
+  margin: 0;
+  padding-bottom: var(--spacing-large);
 }
 
-h1:after,
-.field--type-text-long h2:after,
-.navigation--quick-actions h2:after {
-    content: '';
-    background-color: var(--color-accent);
-    width: 70px;
-    height: 8px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+h1::after,
+.field--type-text-long h2::after,
+.navigation--quick-actions h2::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 8px;
+  content: "";
+  background-color: var(--color-accent);
 }
 
-.service-landing-page__contact h2:after,
-.localgov-alert-banner h2:after,
-.call-out-box h2:after,
-.service-landing-page__sidebar h2:after,
-.media-with-text h2:after,
-.service-statuses h2:after,
-.sidebar h2:after {
-    content: none;
+.service-landing-page__contact h2::after,
+.localgov-alert-banner h2::after,
+.call-out-box h2::after,
+.service-landing-page__sidebar h2::after,
+.media-with-text h2::after,
+.service-statuses h2::after,
+.sidebar h2::after {
+  content: none;
 }
 
 .lgd-page-title-block {
-    margin-bottom: var(--vertical-rhythm-spacing);
-    padding-bottom: var(--vertical-rhythm-spacing);
+  margin-bottom: var(--vertical-rhythm-spacing);
+  padding-bottom: var(--vertical-rhythm-spacing);
 }
 
 .field--type-text-long h2 {
-    margin-top: 1.5rem;
-  }
+  margin-top: 1.5rem;
+}

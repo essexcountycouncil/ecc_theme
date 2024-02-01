@@ -1,13 +1,13 @@
 {
-  "name": "localgov_subtheme",
+  "name": "ecc_theme",
   "version": "1.0.0",
-  "description": "NPM scripts for the localgov_base theme.",
+  "description": "NPM scripts for the ecc_theme theme.",
   "main": "index.js",
   "scripts": {
     "start": "npm run lint:css",
     "lint:css": "stylelint \"**/*.css\" --fix"
   },
-  "author": "Mark Conroy",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "stylelint": "^14.0.1",

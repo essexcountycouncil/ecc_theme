@@ -4,16 +4,16 @@ This CSS file, drupal.css, is used to style various elements within a Drupal CMS
 
 /* Drupal editor toolbar */
 #toolbar-administration * {
-    z-index: 99999;
+  z-index: 99999;
 }
 
 /* WYSIWYG */
 .field--name-body a {
-    display: inline;
+  display: inline;
 }
 
 /* Wrap long email addresses. */
 .lgd-region--content a {
-    word-break: normal;
-    overflow-wrap: break-word;
+  word-break: normal;
+  overflow-wrap: break-word;
 }

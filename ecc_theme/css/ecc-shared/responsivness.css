@@ -1,28 +1,27 @@
 /*
-This CSS file, responsiveness.css, is used to style various components and ensure they are responsive to different screen sizes. 
+This CSS file, responsiveness.css, is used to style various components and ensure they are responsive to different screen sizes.
 */
 
 .lgd-page-section {
-    padding-right: var(--spacing-padding-horizontal);
-    padding-left: var(--spacing-padding-horizontal);
+  padding-right: var(--spacing-padding-horizontal);
+  padding-left: var(--spacing-padding-horizontal);
 }
 
 .lgd-region--content-bottom {
-    margin-top: var(--spacing-largest);
+  margin-top: var(--spacing-largest);
 }
 
 .views-col:nth-child(2) {
-    padding: 0 2rem;
+  padding: 0 2rem;
 }
 
-/**/
 .views-col:nth-child(2) {
-    padding: 0 2rem;
+  padding: 0 2rem;
 }
 
 @media only screen and (min-width: 1200px) {
-    .ecc-container {
-        width: 926px;
-        margin: 0 auto;
-    }
+  .ecc-container {
+    width: 926px;
+    margin: 0 auto;
+  }
 }

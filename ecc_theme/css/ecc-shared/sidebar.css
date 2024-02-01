@@ -1,8 +1,8 @@
 /*
-This CSS file, sidebar.css, is used to style various sidebar components. 
+This CSS file, sidebar.css, is used to style various sidebar components.
 */
-.sidebar .lgd-region__inner>*,
-.blog-channel__sidebar>*,
-.newsroom__sidebar>* {
-    border: 1px solid var(--color-black);
+.sidebar .lgd-region__inner > *,
+.blog-channel__sidebar > *,
+.newsroom__sidebar > * {
+  border: 1px solid var(--color-black);
 }

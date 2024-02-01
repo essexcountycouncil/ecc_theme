@@ -2,35 +2,34 @@
 This CSS file, accordion.css, is used to style an accordion component. An accordion is a UI pattern where content is hidden and shown in collapsible panels.
 */
 .accordion-pane button {
-    background-color: var(--color-link);
-    border-color: var(--color-link);
-    position: relative;
+  position: relative;
+  border-color: var(--color-link);
+  background-color: var(--color-link);
 }
 
-.accordion-pane button:after {
-    content: '';
-    background-image: var(--icon-chevron-white);
-    background-position: 100% 50%;
-    background-repeat: no-repeat;
-    width: 22px;
-    height: 11px;
-    position: absolute;
-    right: var(--spacing-larger);
-    top: 1.25rem;
+.accordion-pane button::after {
+  position: absolute;
+  top: 1.25rem;
+  right: var(--spacing-larger);
+  width: 22px;
+  height: 11px;
+  content: "";
+  background-image: var(--icon-chevron-white);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 
-.accordion-pane button[aria-expanded="true"]:after {
-    transform: rotate(180deg);
+.accordion-pane button[aria-expanded="true"]::after {
+  transform: rotate(180deg);
 }
 
 .accordion-pane button:hover,
 .accordion-pane button:focus {
-    background-color: var(--color-white);
-    color: var(--color-link);
+  color: var(--color-link);
+  background-color: var(--color-white);
 }
 
-.accordion-pane button:hover:after,
-.accordion-pane button:focus:after {
-    background-image: var(--icon-chevron-blue);
-
+.accordion-pane button:hover::after,
+.accordion-pane button:focus::after {
+  background-image: var(--icon-chevron-blue);
 }
