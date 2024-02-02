@@ -1,256 +1,253 @@
 /* Search */
 .lgd-header .region-primary-menu {
-    order: 1;
+  order: 1;
 }
 
 .lgd-header .lgd-region--search {
-    width: 100%;
-    max-width: 440px;
-    margin-top: 0;
+  width: 100%;
+  max-width: 440px;
+  margin-top: 0;
 }
 
 .lgd-header .cludo-search-block-search-form .form-item-search-keys {
-    margin: 0;
+  margin: 0;
 }
 
 .banner__content .cludo-search-block-search-form .form-item-search-keys {
-    max-width: 515px;
-  }
+  max-width: 515px;
+}
 
-.banner__content .cludo-search-block-search-form .form-item-search-keys>label {
-    display: none;
+.banner__content .cludo-search-block-search-form .form-item-search-keys > label {
+  display: none;
 }
 
 .banner__content .cludo-search-block-search-form .form-item,
 .banner__content {
-    display: inline-block;
+  display: inline-block;
 }
 
 .banner .cludo-search-block-search-form .form-submit {
-    border: 0;
+  border: 0;
 }
 
 .cludo-search-block-search-form form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cludo-search-block-search-form form input#edit-search-keys {
-    padding: var(--spacing-small);
+  padding: var(--spacing-small);
 }
 
 .path-frontpage .cludo-search-block-search-form .js-form-item-search-keys input {
-    min-height: 59px;
+  min-height: 59px;
 }
 
 @media (min-width: 760px) {
-    .path-frontpage .cludo-search-block-search-form input {
-        font-size: var(--font-size-large);
-    }
+  .path-frontpage .cludo-search-block-search-form input {
+    font-size: var(--font-size-large);
+  }
 }
 
 .path-frontpage .cludo-search-block-search-form input::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #5e5e5e;
-    opacity: 1;
-    /* Firefox */
+  opacity: 1;
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5e5e5e;
+  /* Firefox */
 }
 
 .path-frontpage .cludo-search-block-search-form input::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: #5e5e5e;
+  /* Microsoft Edge */
+  color: #5e5e5e;
 }
 
 .cludo-search-block-search-form .form-item {
-    border: 1px solid var(--color-black);
-    margin-right: var(--spacing-smaller);
-    margin-bottom: 0;
+  margin-right: var(--spacing-smaller);
+  margin-bottom: 0;
+  border: 1px solid var(--color-black);
 }
 
 .path-frontpage .cludo-search-block-search-form .form-item {
-    border: 0;
+  border: 0;
 }
 
 .path-frontpage .cludo-search-block-search-form .form-item,
 .path-frontpage .cludo-search-block-search-form input {
-    border-radius: var(--border-radius);
-    min-height: 100%;
+  min-height: 100%;
+  border-radius: var(--border-radius);
 }
 
 .path-frontpage .cludo-search-block-search-form input,
 .path-frontpage .cludo-search-block-search-form .form-submit {
-    border: 1px solid #989898;
+  border: 1px solid #989898;
 }
 
 @media (min-width: 760px) {
 
-    .path-frontpage .cludo-search-block-search-form .form-item,
-    .path-frontpage .cludo-search-block-search-form input {
-        width: 100%;
-    }
+  .path-frontpage .cludo-search-block-search-form .form-item,
+  .path-frontpage .cludo-search-block-search-form input {
+    width: 100%;
+  }
 }
 
 .path-frontpage .cludo-search-block-search-form .form-submit {
-    height: 59px;
-    width: 50px;
-    border-radius: var(--border-radius);
+  width: 50px;
+  height: 59px;
+  border-radius: var(--border-radius);
 }
 
 .cludo-search-block-search-form .form-item input:focus,
 .cludo-search-block-search-form .form-submit:focus {
-    outline-offset: 0;
-    box-shadow: inset 0 0 0 2px;
-    outline: 3px solid var(--color-focus);
-    color: var(--color-black);
+  color: var(--color-black);
+  outline: 3px solid var(--color-focus);
+  outline-offset: 0;
+  box-shadow: inset 0 0 0 2px;
 }
 
 .cludo-search-block-search-form .form-submit {
-    background-color: var(--color-white);
-    background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.7008 19.0204L17.4165 14.7368C17.2231 14.5435 16.961 14.4361 16.686 14.4361H15.9855C17.1716 12.9194 17.8763 11.0118 17.8763 8.93663C17.8763 4 13.8756 0 8.93815 0C4.00068 0 0 4 0 8.93663C0 13.8733 4.00068 17.8733 8.93815 17.8733C11.0137 17.8733 12.9216 17.1686 14.4386 15.9828V16.6831C14.4386 16.9581 14.546 17.2202 14.7394 17.4135L19.0237 21.6971C19.4276 22.101 20.0808 22.101 20.4804 21.6971L21.6965 20.4812C22.1004 20.0773 22.1004 19.4243 21.7008 19.0204ZM8.93815 14.4361C5.90004 14.4361 3.43775 11.9785 3.43775 8.93663C3.43775 5.89903 5.89574 3.43716 8.93815 3.43716C11.9763 3.43716 14.4386 5.89474 14.4386 8.93663C14.4386 11.9742 11.9806 14.4361 8.93815 14.4361Z' fill='%23000'/%3E%3C/svg%3E%0A");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 1.5rem;
-    text-indent: -999rem;
-    direction: ltr;
-    min-width: 3.5rem;
-    padding: var(--spacing);
+  min-width: 3.5rem;
+  padding: var(--spacing);
+  text-indent: -999rem;
+  direction: ltr;
+  background-color: var(--color-white);
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.7008 19.0204L17.4165 14.7368C17.2231 14.5435 16.961 14.4361 16.686 14.4361H15.9855C17.1716 12.9194 17.8763 11.0118 17.8763 8.93663C17.8763 4 13.8756 0 8.93815 0C4.00068 0 0 4 0 8.93663C0 13.8733 4.00068 17.8733 8.93815 17.8733C11.0137 17.8733 12.9216 17.1686 14.4386 15.9828V16.6831C14.4386 16.9581 14.546 17.2202 14.7394 17.4135L19.0237 21.6971C19.4276 22.101 20.0808 22.101 20.4804 21.6971L21.6965 20.4812C22.1004 20.0773 22.1004 19.4243 21.7008 19.0204ZM8.93815 14.4361C5.90004 14.4361 3.43775 11.9785 3.43775 8.93663C3.43775 5.89903 5.89574 3.43716 8.93815 3.43716C11.9763 3.43716 14.4386 5.89474 14.4386 8.93663C14.4386 11.9742 11.9806 14.4361 8.93815 14.4361Z' fill='%23000'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 1.5rem;
 }
 
 .cludo-search-block-search-form .form-submit:hover {
-    background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.7008 19.0204L17.4165 14.7368C17.2231 14.5435 16.961 14.4361 16.686 14.4361H15.9855C17.1716 12.9194 17.8763 11.0118 17.8763 8.93663C17.8763 4 13.8756 0 8.93815 0C4.00068 0 0 4 0 8.93663C0 13.8733 4.00068 17.8733 8.93815 17.8733C11.0137 17.8733 12.9216 17.1686 14.4386 15.9828V16.6831C14.4386 16.9581 14.546 17.2202 14.7394 17.4135L19.0237 21.6971C19.4276 22.101 20.0808 22.101 20.4804 21.6971L21.6965 20.4812C22.1004 20.0773 22.1004 19.4243 21.7008 19.0204ZM8.93815 14.4361C5.90004 14.4361 3.43775 11.9785 3.43775 8.93663C3.43775 5.89903 5.89574 3.43716 8.93815 3.43716C11.9763 3.43716 14.4386 5.89474 14.4386 8.93663C14.4386 11.9742 11.9806 14.4361 8.93815 14.4361Z' fill='%23e40037'/%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.7008 19.0204L17.4165 14.7368C17.2231 14.5435 16.961 14.4361 16.686 14.4361H15.9855C17.1716 12.9194 17.8763 11.0118 17.8763 8.93663C17.8763 4 13.8756 0 8.93815 0C4.00068 0 0 4 0 8.93663C0 13.8733 4.00068 17.8733 8.93815 17.8733C11.0137 17.8733 12.9216 17.1686 14.4386 15.9828V16.6831C14.4386 16.9581 14.546 17.2202 14.7394 17.4135L19.0237 21.6971C19.4276 22.101 20.0808 22.101 20.4804 21.6971L21.6965 20.4812C22.1004 20.0773 22.1004 19.4243 21.7008 19.0204ZM8.93815 14.4361C5.90004 14.4361 3.43775 11.9785 3.43775 8.93663C3.43775 5.89903 5.89574 3.43716 8.93815 3.43716C11.9763 3.43716 14.4386 5.89474 14.4386 8.93663C14.4386 11.9742 11.9806 14.4361 8.93815 14.4361Z' fill='%23e40037'/%3E%3C/svg%3E%0A");
 }
 
 /* Search results page */
 
 body.path-csearch .cludo-search-search-form input.form-text {
-    max-height: 52px;
+  max-height: 52px;
 }
 
 @media only screen and (min-width: 1024px) {
-    body.path-csearch .cludo-search-search-form input.form-text {
-        width: 764px;
-
-    }
+  body.path-csearch .cludo-search-search-form input.form-text {
+    width: 764px;
+  }
 }
 
 #cludo-search-results {
-    max-width: 768px;
+  max-width: 768px;
 }
 
 #cludo-search-results ul .search-results-item h2 {
-    margin-bottom: var(--vertical-rhythm-spacing);
-    color: var(--color-link);
-    text-decoration: underline;
-    margin-bottom: 0;
+  margin-bottom: var(--vertical-rhythm-spacing);
+  margin-bottom: 0;
+  text-decoration: underline;
+  color: var(--color-link);
 }
 
 #cludo-search-results .search-results-item a {
-    margin-bottom: 1.875rem;
+  margin-bottom: 1.875rem;
 }
 
 #cludo-search-results .search-results-item a:hover h2 {
-    text-decoration-thickness: max(3px, 0.225rem, 0.12em);
+  text-decoration-thickness: max(3px, 0.225rem, 0.12em);
 }
 
 @media only screen and (min-width: 768px) {
 
-    #cludo-search-results ul.search_page_list li,
-    #cludo-search-results .search-result-count,
-    #cludo-search-results ul .search-results-item>p {
-        font-size: 1.125rem
-            /* 18 px */
-    }
+  #cludo-search-results ul.search_page_list li,
+  #cludo-search-results .search-result-count,
+  #cludo-search-results ul .search-results-item > p {
+    font-size: 1.125rem
+    /* 18 px */
+  }
 
-    #cludo-search-results ul .search-results-item h2 {
-        font-size: 1.565rem;
-        /* 25px */
-    }
+  #cludo-search-results ul .search-results-item h2 {
+    font-size: 1.565rem;
+    /* 25px */
+  }
 }
 
 body.path-csearch #edit-prompt {
-    display: none;
-
+  display: none;
 }
 
 body.path-csearch .cludo-search-form #edit-basic {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 body.path-csearch .cludo-search-form #edit-submit {
-    background-color: transparent;
-    width: 52px;
-    height: 52px;
-    margin: 0 0 0 0.5rem;
-    background-image: url('../assets/images/icons/magnifying-glass.svg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 1.5rem;
-    text-indent: -999rem;
-    direction: ltr;
-    border-color: var(--input-border-color);
+  width: 52px;
+  height: 52px;
+  margin: 0 0 0 0.5rem;
+  text-indent: -999rem;
+  direction: ltr;
+  border-color: var(--input-border-color);
+  background-color: transparent;
+  background-image: url("../assets/images/icons/magnifying-glass.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 1.5rem;
 }
 
 body.path-csearch .cludo-search-form #edit-submit:hover {
-    background-image: url('../assets/images/icons/magnifying-glass-red.svg');
+  background-image: url("../assets/images/icons/magnifying-glass-red.svg");
 }
 
 body.path-csearch .cludo-search-form #edit-search-keys:focus,
 body.path-csearch .cludo-search-form #edit-submit:focus {
-    outline-offset: 0;
-    box-shadow: inset 0 0 0 2px;
-    outline: 3px solid var(--color-focus);
-    color: var(--color-black);
+  color: var(--color-black);
+  outline: 3px solid var(--color-focus);
+  outline-offset: 0;
+  box-shadow: inset 0 0 0 2px;
 }
 
 body.path-csearch .cludo-search-form button:focus,
 body.path-csearch .cludo-search-form button:hover,
 body.path-csearch .cludo-search-form input[type="submit"]:focus,
 body.path-csearch .cludo-search-form input[type="submit"]:hover {
-    --button-text-color-hover: white;
+  --button-text-color-hover: white;
 }
 
 body.path-csearch .search_page_list {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
 }
 
 body.path-csearch .search_page_list .active,
 body.path-csearch .search_page_list a {
-    display: block;
-    height: 100%;
+  display: block;
+  height: 100%;
 }
 
 body.path-csearch #cludo-search-results ul.search_page_list li {
-    text-align: center;
-    min-width: var(--touch-size);
-    min-height: var(--touch-size);
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 0 0 auto;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--touch-size);
+  min-height: var(--touch-size);
+  padding: 0;
+  text-align: center;
 }
 
 body.path-csearch #cludo-search-results ul.search_page_list li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 body.path-csearch .search_autocomplete {
-    list-style-type: none;
-    border: var(--border);
-    padding: var(--spacing-smaller);
-    margin-top: -3px;
-
+  margin-top: -3px;
+  padding: var(--spacing-smaller);
+  list-style-type: none;
+  border: var(--border);
 }
 
 body.path-csearch .search_autocomplete li {
-    padding: var(--spacing-smaller);
-    cursor: pointer;
+  padding: var(--spacing-smaller);
+  cursor: pointer;
 }

@@ -1,17 +1,17 @@
 /*
-This CSS file, typography.css, is used to style various text elements. 
+This CSS file, typography.css, is used to style various text elements.
 */
 
 p,
 li {
-    max-width: var(--p-max-width, 75ch);
-    text-wrap: pretty;
+  max-width: var(--p-max-width, 75ch);
+  text-wrap: pretty;
 }
 
 .newsroom-teaser,
 .featured-news__card article,
 .news-card article,
 p {
-    word-break: break-word;
-    word-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }

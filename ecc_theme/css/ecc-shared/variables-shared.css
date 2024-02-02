@@ -1,11 +1,11 @@
 /*
-This CSS file, variables-shared.css, is used to define a set of CSS custom properties (variables) that can be used throughout other CSS files. 
+This CSS file, variables-shared.css, is used to define a set of CSS custom properties (variables) that can be used throughout other CSS files.
 */
 body {
   /**
     Fonts
   */
-  --font-primary: 'Lexend', Arial, Helvetica, sans-serif;
+  --font-primary: "Lexend", arial, helvetica, sans-serif;
   --font-secondary: var(--font-primary);
 
   /**
@@ -46,7 +46,7 @@ body {
   --alert-banner-bg-color-minor: #ecb720;
   --alert-banner-color: var(--color-black);
   --breadcrumbs-link-color: var(--color-black);
-  --background-blue: #004C94;
+  --background-blue: #004c94;
   --color-accent: #e40037;
   --color-blue: #4179aa;
   --color-danger: #e40037;
@@ -61,16 +61,15 @@ body {
   --quote-author-color: var(--color-black);
   --service-statuses-container-bg-color: #4179aa;
   --sidebar-exposed-form-bg-color: var(--color-white);
-  --table-bg-color: transparent;
   --tabs-button-bg-color: var(--color-grey-lighter);
   --quote-background-color: var(--color-white);
   --color-tint-1: #f4e8ea;
   --color-tint-2: #f4edf4;
 
-
   /**
   Icons
   */
+  /* stylelint-disable-next-line */
   --icon-DONP_white: url(/themes/contrib/ecc_theme/ecc_theme/assets/images/ecc-shared/icons/icon_DONP_white.svg);
   --icon-chevron-blue: url(/themes/contrib/ecc_theme/ecc_theme/assets/images/ecc-shared/icons/chevron-blue.svg);
   --icon-chevron-white-right: url(/themes/contrib/ecc_theme/ecc_theme/assets/images/ecc-shared/icons/chevron-white-right);
@@ -103,5 +102,4 @@ body {
   --table-bg-color: transparent;
   --table-border: none;
   --touch-size: 45px;
-
 }

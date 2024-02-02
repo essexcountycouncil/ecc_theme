@@ -1,5 +1,5 @@
 name: "ECC Theme - Gov"
-description: "Your sub-theme, which uses ecc_theme as its base theme."
+description: "ECC Theme Gov theme, which uses ecc_theme as its base theme."
 type: theme
 core_version_requirement: ^8.8 || ^9 || ^10
 base theme: "ecc_theme"

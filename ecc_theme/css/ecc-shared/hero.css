@@ -1,35 +1,34 @@
 /*
-This CSS file, hero.css, is used to style a hero banner component. 
+This CSS file, hero.css, is used to style a hero banner component.
 */
 
 /* Hero and Hero content */
 
 .hero__container {
-    position: relative;
-    margin-bottom: var(--spacing-larger)
+  position: relative;
+  margin-bottom: var(--spacing-larger);
 }
 
 /* .button__content */
 .path-frontpage .banner__content {
-    background: transparent;
-    border: 0;
+  border: 0;
+  background: transparent;
 }
 
-/* */
-
 .banner--primary .field--name-localgov-title {
-    font-weight: var(--font-semibold);
+  font-weight: var(--font-semibold);
 }
 
 .banner--primary .banner__image img {
-    max-height: 350px;
+  max-height: 350px;
 }
 
 .banner--primary .banner__content {
-    --banner-content-bg-color: transparent;
-    border: 0;
-    padding: 0 var(--spacing-padding-horizontal);
-    margin: 0;
-    width: 100%;
-    max-width: 100%;
+  --banner-content-bg-color: transparent;
+
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 var(--spacing-padding-horizontal);
+  border: 0;
 }

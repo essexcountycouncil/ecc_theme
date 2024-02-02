@@ -3,30 +3,29 @@ This CSS file, tables.css, is used to style table components.
 */
 
 .tablefield-wrapper {
-    overflow-x: auto;
+  overflow-x: auto;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 table caption {
-    text-align: left;
-    font-weight: var(--font-semibold);
+  text-align: left;
+  font-weight: var(--font-semibold);
 }
 
 thead th {
-    border-bottom: 2px solid var(--color-black);
-
+  border-bottom: 2px solid var(--color-black);
 }
 
 thead th,
 tbody td {
-    padding: 1.625rem 1.625rem 1.625rem 0;
+  padding: 1.625rem 1.625rem 1.625rem 0;
 }
 
 tbody tr {
-    border-bottom: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
 }

@@ -1,19 +1,19 @@
 /*
-This CSS file, newsroom-teasers.css, is used to style a newsroom teaser component. 
+This CSS file, newsroom-teasers.css, is used to style a newsroom teaser component.
 */
 div:has(.newsroom-teaser),
 .newsroom-teaser {
-    height: 100%;
+  height: 100%;
 }
 
 .newsroom-teaser {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
 }
 
 .newsroom-teaser .newsroom-teaser__summary {
-    flex-grow: 1;
-    margin-top: 0;
+  flex-grow: 1;
+  margin-top: 0;
 }

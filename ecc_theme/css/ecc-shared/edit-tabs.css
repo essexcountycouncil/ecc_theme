@@ -4,8 +4,8 @@
   is resolved.
 */
 .region-tabs {
-    position: sticky;
-    top: var(--drupal-displace-offset-top, 53px);
-    z-index: 100;
-  }
-  /* End @TODO */
+  position: sticky;
+  z-index: 100;
+  top: var(--drupal-displace-offset-top, 53px);
+}
+/* End @TODO */

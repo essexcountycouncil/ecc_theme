@@ -4,17 +4,17 @@
 */
 
 blockquote {
-    font-size: var(--font-size-h3);
-    background-image: var(--icon-quote);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 30px;
-    padding-left: var(--spacing-largest);
+  padding-left: var(--spacing-largest);
+  background-image: var(--icon-quote);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 30px;
+  font-size: var(--font-size-h3);
 }
 
 .pull-out-quote {
-    padding-left: var(--quote-padding-left);
-    border-color: unset;
-    border-left: none;
-    background-color: var(--quote-background-color);
+  padding-left: var(--quote-padding-left);
+  border-color: unset;
+  border-left: none;
+  background-color: var(--quote-background-color);
 }

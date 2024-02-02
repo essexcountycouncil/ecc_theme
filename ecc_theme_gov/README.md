@@ -4,7 +4,7 @@ This is the ecc_theme_gov a place for all the custom css, templates and layouts 
 
 Code shared between the two sites are in this theme with custom code in the individaul themes which are sub-themes (which inherit from) of this one.
 
-## Theme Heirarchy
+## Theme Hierarchy
 
                                     ecc_theme_intranet
 stable9 > localgov_base > ecc_theme >

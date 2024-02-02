@@ -1,47 +1,47 @@
 .view-localgov-events-listing .views-col {
-    display: flex;
-    padding: var(--spacing) 0;
+  display: flex;
+  padding: var(--spacing) 0;
 }
 
 @media only screen and (min-width: 642px) {
-    .view-localgov-events-listing .views-col {
-        margin-right: var(--spacing-large);
-    }
+  .view-localgov-events-listing .views-col {
+    margin-right: var(--spacing-large);
+  }
 
-    .view-localgov-events-listing .views-col.col-3 {
-        margin-right: 0;
-    }
+  .view-localgov-events-listing .views-col.col-3 {
+    margin-right: 0;
+  }
 }
 
 .view-localgov-events-listing .calendar {
-    padding: var(--spacing-small);
-    background: var(--color-grey-lighter);
-    text-align: center;
-    font-weight: var(--heading-font-weight);
-    margin-right: var(--spacing-small);
+  margin-right: var(--spacing-small);
+  padding: var(--spacing-small);
+  text-align: center;
+  background: var(--color-grey-lighter);
+  font-weight: var(--heading-font-weight);
 }
 
 .view-localgov-events-listing .calendar .inner {
-    background: var(--color-grey-lightest);
-    padding: var(--spacing-smallest) var(--spacing-small);
-    margin-top: 0.25em;
+  margin-top: 0.25em;
+  padding: var(--spacing-smallest) var(--spacing-small);
+  background: var(--color-grey-lightest);
 }
 
 /*
-This CSS file, events.css, is used to style an events listing component. 
+This CSS file, events.css, is used to style an events listing component.
 */
 
 .view-localgov-events-listing .calendar .inner .month {
-    color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .view-localgov-events-listing .event-info h3 a,
 .view-localgov-events-listing .more-link a {
-    color: var(--color-black);
+  color: var(--color-black);
 }
 
-.view-localgov-events-listing .more-link a:after {
-    content: "";
-    /* space for adding chevron image */
-    padding: var(--spacing);
+.view-localgov-events-listing .more-link a::after {
+  /* space for adding chevron image */
+  padding: var(--spacing);
+  content: "";
 }
