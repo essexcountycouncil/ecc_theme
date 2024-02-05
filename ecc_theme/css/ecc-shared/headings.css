@@ -17,14 +17,15 @@ h1,
 .navigation--quick-actions h2 {
   position: relative;
   margin: 0;
-  padding-bottom: var(--spacing-large);
+  padding-bottom: var(--spacing-small);
+  margin-bottom: var(--spacing-largest)
 }
 
 h1::after,
 .field--type-text-long h2::after,
 .navigation--quick-actions h2::after {
   position: absolute;
-  bottom: 0;
+  bottom: -15px;
   left: 0;
   width: 70px;
   height: 8px;
