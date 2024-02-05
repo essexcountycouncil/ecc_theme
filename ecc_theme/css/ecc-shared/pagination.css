@@ -29,7 +29,3 @@ a.lgd-prev-next__link:hover .link_title {
   margin-left: 0.625rem;
 }
 
-.lgd-prev-next__list .lgd-prev-next__link {
-  border-color: var(--color-black);
-  background-color: var(--color-black);
-}
