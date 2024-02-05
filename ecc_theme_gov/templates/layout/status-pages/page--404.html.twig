@@ -1,0 +1,28 @@
+{% extends "@localgov_base/layout/status-pages/page-status.html.twig" %}
+
+{% block page_content %}
+  <div class="lgd-container">
+    <div class="lgd-row">
+      <div class="lgd-row__full">
+        <div class="padding-horizontal">
+          <p>{{ 'If you typed the web address, check it is correct.' |t }}</p>
+          <p>{{ 'If you pasted the web address, check you copied the entire address.' |t }}</p>
+          <p>{{ 'For help finding what you were looking for:' |t }}</p>
+          <ul>
+            <li>
+              {{  'try typing keywords in the Search box' |t }}
+            </li>
+            <li>
+              {{ 'if you were looking for a news story, try the ' |t }}
+              <a href="/news">{{ 'news section' |t }}</a>
+            </li>
+          </ul>
+          <p>
+            {{ 'Let us know if information is missing by ' |t }}
+            <a href="/form/feedback-form">{{ 'giving feedback' |t }}</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
