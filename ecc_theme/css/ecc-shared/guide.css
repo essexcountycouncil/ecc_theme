@@ -30,7 +30,7 @@ This CSS file, guide.css, is used to style a guide navigation component.
   top: -5px;
   left: 0;
   content: "\2022";
-  font-size: var(--font-size-largest);
+  font-size: 1.75rem;
 }
 
 @media only screen and (min-width: 768px) {
