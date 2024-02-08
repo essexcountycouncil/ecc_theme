@@ -62,3 +62,7 @@ There are several custom layouts in the project. These layouts should be availab
 ## Assets
 
 Assets directory contains shared fonts, site avatars, and logos.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
