@@ -63,10 +63,6 @@ There are several custom layouts in the project. These layouts should be availab
 
 Assets directory contains shared fonts, site avatars, and logos.
 
-## Coding standards
+## Contributing
 
-CSS must meet [Drupal coding standards](https://www.drupal.org/docs/develop/standards/javascript/javascript-coding-standards).
-
-Use `npm start` to run linting.
-This uses the Drupal core file `.eslintrc.json`, and depends on this package
-being in a Drupal project in the `themes/contrib` folder.
+See [CONTRIBUTING.md](CONTRIBUTING.md)
