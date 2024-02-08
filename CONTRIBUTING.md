@@ -3,8 +3,8 @@
 ## Using this repository
 
 The themes in this repository are intended to be used with:
-- [Essex public website](https://gitlab.nomensa.com/essex-county-council/essex-gov-uk-drupal/)
-- [Essex intranet website](https://gitlab.nomensa.com/essex-county-council/essex-intranet-drupal)
+- [Essex public website](https://github.com/essexcountycouncil/essex-gov-uk-drupal)
+- [Essex intranet website](https://github.com/essexcountycouncil/essex-intranet-drupal)
 
 Running `composer install` will install this repository in the correct location - `web/themes/contrib/ecc_theme`
 
