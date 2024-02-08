@@ -24,6 +24,7 @@ ddev composer require essexcountycouncil/ecc_theme --prefer-install=source
 - Manually run linting (@todo automate linting)
 - Commit the changes to a new feature or bugfix branch
   - Prefix the commit message with a Jira number e.g. `LP-99: Some change`
+  - [Sign the commit](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits)
 - Create a pull request to the _main_ branch
 - Ask another developer to review the PR
 - When approved, merge the PR
@@ -33,7 +34,7 @@ ddev composer require essexcountycouncil/ecc_theme --prefer-install=source
 ### Update both website projects to use the new tag
 - Create a new branch from _develop_
 
-  `ddev composer require essexcountycouncil/ecc_theme --prefer-install=source`
+  `ddev composer require essexcountycouncil/ecc_theme`
 - Commit the change to composer.lock
 - Create a pull request to the _develop_ branch
 - Ask another developer to review the PR (should be trivial but is required)
@@ -41,7 +42,7 @@ ddev composer require essexcountycouncil/ecc_theme --prefer-install=source
 
 ## Coding standards
 
-CSS and JavaScript must meet Drupal coding standards.
+CSS and JavaScript must meet [Drupal coding standards](https://www.drupal.org/docs/develop/standards).
 
 Use `npm start` to run linting. This uses the Drupal core file [.eslintrc.json](https://git.drupalcode.org/project/drupal/-/blob/10.2.x/core/.eslintrc.json), 
 and depends on this package being in a Drupal project in the themes/contrib 
