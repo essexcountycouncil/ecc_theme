@@ -13,11 +13,6 @@ service_cta_block:
     theme:
       css/service-cta-block.css: { weight: 2 }
 
-buttons:
-  css:
-    theme:
-      css/buttons.css: { weight: 2 }
-
 header:
   css:
     theme:
