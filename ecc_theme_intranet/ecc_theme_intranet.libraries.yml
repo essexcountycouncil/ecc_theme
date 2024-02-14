@@ -37,6 +37,11 @@ main_menu:
     theme:
       css/main-menu.css: { weight: 2 }
 
+news:
+  css:
+    theme:
+      css/news.css: { weight: 2 }
+
 layout.css:
   css:
     theme:
