@@ -1,8 +1,0 @@
-.button {
-  width: max-content;
-  padding: var(--spacing-small) var(--spacing);
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--color-white);
-  background: var(--color-accent);
-}

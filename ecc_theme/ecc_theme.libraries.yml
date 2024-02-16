@@ -28,6 +28,10 @@ layout:
   css:
     theme:
       css/ecc-shared/layout.css: { weight: 1 }
+buttons:
+  css:
+    theme:
+      css/ecc-shared/buttons.css: { weight: 1 }
 call_out:
   css:
     theme:
