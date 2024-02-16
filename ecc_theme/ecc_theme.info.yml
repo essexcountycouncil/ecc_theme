@@ -46,7 +46,9 @@ libraries-extend:
     - ecc_theme/video
     - ecc_theme/threecol_33_34_33
     - ecc_theme/layout_twocol_bricks
-    
+
+ckeditor5-stylesheets:
+  - css/ecc-shared/ckeditor.css
 
 regions:
   tabs: "Tabs"
