@@ -8,7 +8,6 @@ logo: "/assets/images/ECC_logo_intranet_white.svg"
 libraries:
   - ecc_theme_intranet/variables_intranet
   - ecc_theme_intranet/branding
-  - ecc_theme_intranet/buttons
   - ecc_theme_intranet/header
   - ecc_theme_intranet/hero
   - ecc_theme_intranet/layout

@@ -12,6 +12,7 @@ libraries-extend:
     - ecc_theme/accordion
     - ecc_theme/alerts
     - ecc_theme/blockquote
+    - ecc_theme/buttons
     - ecc_theme/call_out
     - ecc_theme/contact
     - ecc_theme/cookies
