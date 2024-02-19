@@ -193,6 +193,10 @@
     margin-left: var(--spacing-large);
   }
 
+  .lgd-row .service-cta-block__list-item {
+    margin-bottom: var(--vertical-rhythm-spacing);
+  }
+
   .featured-news__card .node--view-mode-card-anonymous .card-content .node__content {
     height: auto;
   }
