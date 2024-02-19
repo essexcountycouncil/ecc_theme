@@ -47,6 +47,8 @@ body {
   --alert-banner-color: var(--color-black);
   --breadcrumbs-link-color: var(--color-black);
   --background-blue: #004c94;
+  --btn-start-bg-color: #00823b;
+  --btn-start-color-hover: #00823b;
   --color-accent: #e40037;
   --color-blue: #4179aa;
   --color-danger: #e40037;
