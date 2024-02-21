@@ -17,8 +17,8 @@ h1,
 .navigation--quick-actions h2 {
   position: relative;
   margin: 0;
+  margin-bottom: var(--spacing-largest);
   padding-bottom: var(--spacing-small);
-  margin-bottom: var(--spacing-largest)
 }
 
 h1::after,
