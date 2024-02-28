@@ -18,7 +18,7 @@ h1,
   position: relative;
   margin: 0;
   margin-bottom: var(--spacing-largest);
-  padding-bottom: var(--spacing-small);
+  padding-bottom: var(--spacing-smaller);
 }
 
 h1::after,
@@ -43,9 +43,8 @@ h1::after,
   content: none;
 }
 
-.lgd-page-title-block {
-  margin-bottom: var(--vertical-rhythm-spacing);
-  padding-bottom: var(--vertical-rhythm-spacing);
+.lgd-page-title-block__subheader {
+  margin-bottom: var(--spacing-large);
 }
 
 .field--type-text-long h2 {
