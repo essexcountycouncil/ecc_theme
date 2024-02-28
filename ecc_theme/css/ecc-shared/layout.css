@@ -209,12 +209,19 @@
     color: var(--color-black);
   }
 
-  .lgd-row:has(.lgd-row__one-third) > * {
-    margin: 0;
+  .lgd-row__full {
+    width: calc(100% - var(--grid-column-spacing));
   }
 
-  .lgd-row:has(.lgd-row__one-third) > * + * {
-    margin-left: var(--spacing-large);
+  .service-landing-page__service.field__item.lgd-row__one-third {
+    margin-right: calc(var(--grid-column-spacing) / 2);
+    margin-left: calc(var(--grid-column-spacing) / 2);
+  }
+
+  .lgd-teaser-list .service-landing-page__service {
+    margin-bottom: var(--vertical-rhythm-spacing);
+    padding-bottom: var(--vertical-rhythm-spacing);
+    border-bottom: var(--border);
   }
 
   .lgd-row .service-cta-block__list-item {
