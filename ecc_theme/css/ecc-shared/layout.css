@@ -205,7 +205,8 @@
     font-size: calc(var(--spacing) * 1.563);
   }
 
-  .news-card article a {
+  .news-card article a,
+  .featured-news__card article a {
     color: var(--color-black);
   }
 

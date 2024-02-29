@@ -83,8 +83,11 @@ This CSS file, news.css, is used to style a news article component.
   margin-bottom: var(--spacing-smaller);
 }
 
-.news-card > * + * {
-  margin-top: var(--spacing-largest);
+@media (max-width: 640px) {
+
+  .news-card > * + * {
+    margin-top: var(--spacing-largest);
+  }
 }
 
 .featured-news__card article,
