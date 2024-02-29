@@ -20,7 +20,7 @@ body {
   --font-size-larger: clamp(1.4375rem, 1.3rem + 0.5vw, 1.5625rem);
   --font-size-largest: clamp(2.1875rem, 2rem + 0.75vw, 2.375rem);
   --font-size-small: clamp(0.875rem, 0.7rem + 0.5vw, 1rem);
-  --font-size: clamp(1rem, 0.85rem + 0.5vw, 1.125rem);
+  --font-size: 1rem;
 
   /**
     Font-weight
