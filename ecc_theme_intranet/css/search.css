@@ -40,6 +40,11 @@
   min-height: 59px;
 }
 
+@media (max-width: 759px) {
+  .cludo-search-block-search-form form {
+    margin: 5rem 0 7.25rem;
+  }
+}
 @media (min-width: 760px) {
   .path-frontpage .cludo-search-block-search-form input {
     font-size: var(--font-size-large);

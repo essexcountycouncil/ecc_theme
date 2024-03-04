@@ -100,6 +100,19 @@
   height: 100%;
 }
 
+.paragraph.paragraph--type--newsroom-component {
+  padding-top: 0;
+}
+
+.paragraph--type--localgov-text {
+  margin: var(--spacing-larger) 0;
+  padding: 0;
+}
+
+.paragraph--type--localgov-media-with-text {
+  padding-top: 0;
+}
+
 .paragraph--type--localgov-newsroom-teaser2 .news-card article > .card-content::before {
   position: absolute;
   right: 0;
