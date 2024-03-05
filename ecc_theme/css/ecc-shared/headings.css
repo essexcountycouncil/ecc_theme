@@ -43,10 +43,20 @@ h1::after,
   content: none;
 }
 
+.lgd-page-title-block {
+  margin-bottom: var(--spacing-large);
+}
+
 .lgd-page-title-block__subheader {
   margin-bottom: var(--spacing-large);
 }
 
 .field--type-text-long h2 {
   margin-top: 1.5rem;
+}
+
+@media (min-width: 760px) {
+  .lgd-page-title-block {
+    font-size: 1.125rem;
+  }
 }
