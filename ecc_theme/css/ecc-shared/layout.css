@@ -133,6 +133,7 @@
   padding: calc(var(--spacing) * 1.25);
 }
 
+.featured-teaser a,
 .news-card article a,
 .featured-news__card article a {
   color: var(--color-black);
