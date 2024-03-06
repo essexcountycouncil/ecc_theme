@@ -6,7 +6,12 @@ This CSS file, hero.css, is used to style a hero banner component.
 
 .hero__container {
   position: relative;
-  margin-bottom: var(--spacing-larger);
+  /*
+   * This margin is causing space between the header and the breadcrumb.
+   * Keep it as a comment for now.
+   *
+   * margin-bottom: var(--spacing-larger);
+  */
 }
 
 /* .button__content */

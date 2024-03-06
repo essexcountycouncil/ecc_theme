@@ -76,7 +76,7 @@ This CSS file, news.css, is used to style a news article component.
 
 .paragraph--type--newsroom-component > .featured-news__card,
 .paragraph--type--news-1-4 > .featured-news__card {
-  margin-bottom: var(--grid-gap);
+  margin-bottom: var(--spacing);
 }
 
 .lgd-teaser__content--localgov-news-article h3 {
@@ -93,7 +93,12 @@ This CSS file, news.css, is used to style a news article component.
   }
 }
 
-.featured-news__card article,
-.news-card article {
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+@media (min-width: 768px) {
+  .paragraph--type--news-1-4 .featured-news__card {
+    grid-column: 1 / 2;
+  }
+
+  .paragraph--type--news-1-4 .featured-news__card:first-of-type {
+    margin-bottom: 0;
+  }
 }
