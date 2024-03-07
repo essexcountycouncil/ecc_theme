@@ -4,8 +4,15 @@ This CSS file, date-time.css, is used to style datetime fields and specific elem
 .field--type-datetime {
   margin-top: calc(var(--spacing) * 0.75);
   margin-bottom: var(--spacing);
-  color: var(--color-grey-mid);
   font-size: var(--font-size-small);
+
+  /*
+   * As per the design and the live site the date is black.
+   * If there is a place where the date is grey then the change has to be customized with a parent class of the component, not global.
+   * Keep it as a comment for now.
+   *
+   * color: var(--color-grey-mid);
+  */
 }
 
 .lgd-teaser__content--localgov-news-article .field--name-localgov-news-date {

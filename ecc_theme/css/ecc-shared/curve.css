@@ -38,15 +38,21 @@ div.lgd-page-section--curve .media-with-text__body {
   background: var(--color-grey);
 }
 
+div.lgd-page-section--curve .media-with-text__body {
+  padding-top: 0;
+  background: var(--color-grey);
+  padding-right: clamp(5.5rem, 5vw, 10rem);
+}
+
 div.lgd-page-section--curve .media-with-text__body .field--name-localgov-text p {
   font-size: clamp(1.5625rem, 1.3rem + 1.2vw, 2.1875rem);
   font-weight: 500;
   line-height: 1.25715;
 }
 
-div.lgd-page-section--curve .media-with-text__body a {
-  color: var(--color-link-dark);
+div.lgd-page-section--curve .media-with-text--circle .media-with-text__body a {
   font-size: clamp(1.5625rem, 1.3rem + 1.2vw, 2.1875rem);
+  background-color: transparent;
 }
 
 .lgd-page-section--curve .media-with-text__body h2 {
