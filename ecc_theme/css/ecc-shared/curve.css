@@ -55,14 +55,14 @@ div.lgd-page-section--curve .media-with-text__body a {
   line-height: 1;
 }
 
-div:has(.lgd-page-section--curve) .media-with-text__media {
+div.lgd-page-section--curve .media-with-text__media {
   display: flex;
   align-items: top;
   justify-content: left;
 }
 
 @media screen and (min-width: 768px) {
-  div:has(.lgd-page-section--curve) .media-with-text__media {
+  div.lgd-page-section--curve .media-with-text__media {
     justify-content: center;
   }
 }
