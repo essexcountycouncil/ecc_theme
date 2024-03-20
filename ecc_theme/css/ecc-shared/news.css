@@ -43,6 +43,7 @@ This CSS file, news.css, is used to style a news article component.
   .news-article__related-title {
     margin-top: var(--spacing-mega);
   }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -92,6 +93,11 @@ This CSS file, news.css, is used to style a news article component.
     margin-top: var(--spacing-largest);
   }
 }
+@media (max-width: 767px) {
+  .lgd-teaser-list .lgd-teaser__content {
+    margin-top: 20px;
+  }
+}
 
 @media (min-width: 768px) {
   .paragraph--type--news-1-4 .featured-news__card {
@@ -100,5 +106,9 @@ This CSS file, news.css, is used to style a news article component.
 
   .paragraph--type--news-1-4 .featured-news__card:first-of-type {
     margin-bottom: 0;
+  }
+
+  .lgd-teaser-list .node--type-localgov-news-article {
+    flex-direction: row;
   }
 }
