@@ -224,5 +224,4 @@ This CSS file, news.css, is used to style a news article component.
   .featured-news__card:first-of-type {
     margin-bottom: var(--spacing-largest);
   }
-
 }
