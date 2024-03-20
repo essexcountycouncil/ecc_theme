@@ -33,8 +33,7 @@
   display: none;
 }
 
-.layout--threecol-33-34-33,
-.layout--twocol {
+.layout--threecol-33-34-33 {
   /*
       @todo:
         Once we have the subsite landing pages converted to use the new
@@ -51,27 +50,21 @@
 }
 
 .layout--twocol {
-  display: flex;
-  flex-flow: wrap;
+  display: block;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 1025px) {
   .layout--twocol {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
   }
 }
+
 
 @media only screen and (min-width: 641px) {
 
   .layout__region--second .call-out-box {
     margin-top: 0;
-  }
-
-  .layout.layout--twocol {
-    display: grid;
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: var(--grid-gap);
   }
 
   .layout.layout--twocol > .layout__region--first,
@@ -124,6 +117,19 @@
   left: 0;
   height: 3px;
   content: "";
+  background: var(--color-accent);
+}
+
+.featured-news__card article>.card-content:before,
+.news-card article>.card-content:before,
+.newsroom-teaser:before,
+.newsroom-teaser>.newsroom-teaser__content .newsroom-teaser__summary:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
   background: var(--color-accent);
 }
 
