@@ -368,3 +368,9 @@
     bottom: -3px;
   }
 }
+
+#cludo-search-results .loading,
+.cludo-search-results .loading {
+  max-width: none;
+  width: auto;
+}
