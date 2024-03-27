@@ -89,7 +89,7 @@ function ecc_theme_suggestions_form_element_label_alter(&$suggestions, array $va
         // prevent form hijacking.
         $suggestions[] = 'form_element_label__edit_data_use_policy';
         break;
-  
+
       default:
         break;
     }
@@ -113,5 +113,25 @@ function essex_preprocess_block(&$variables) {
       // Attach library.
       $variables['#attached']['library'][] = 'essex/edit-tabs';
     }
+  }
+}
+
+/**
+ * Implements hook_preprocess_html().
+ *
+ */
+function ecc_theme_preprocess_html(&$variables) {
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if ($route_name === 'view.localgov_events_listing.page_all_events') {
+    $variables['attributes']['class'][] = 'events-listing-page';
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function ecc_theme_views_pre_render($view) {
+  if ($view->id() === 'localgov_events_listing' && $view->current_display === 'page_all_events') {
+    $view->element['#attached']['library'][] = 'ecc_theme/events-listing-page';
   }
 }
