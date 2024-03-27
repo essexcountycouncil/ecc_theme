@@ -47,7 +47,7 @@ cookies:
 curve:
   css:
     theme:
-      css/ecc-shared/curve.css: { weight: 1 }      
+      css/ecc-shared/curve.css: { weight: 1 }
 step_by_step:
   css:
     theme:
@@ -104,6 +104,22 @@ events:
   css:
     theme:
       css/ecc-shared/events.css: { weight: 1 }
+
+events-listing-page:
+  css:
+    theme:
+      css/ecc-shared/events-listing-page.css: {}
+
+add-to-calendar:
+  css:
+    theme:
+      css/ecc-shared/add-to-calendar.css: {}
+  js:
+    js/add-to-calendar.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
+
 video:
   css:
     theme:
