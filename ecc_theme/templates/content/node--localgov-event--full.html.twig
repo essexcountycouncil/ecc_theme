@@ -133,7 +133,7 @@
 
       <div{{ content_attributes.addClass(content_type|clean_class ~ '__content', 'node__content') }}>
         {{ content.localgov_event_date }}
-        {% include "@essex/_components/add-to-calendar.twig" %}
+        {% include "@ecc_theme/_components/add-to-calendar.twig" %}
         {{ content|without('localgov_event_date') }}
       </div>
 
