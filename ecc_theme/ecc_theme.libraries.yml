@@ -110,6 +110,11 @@ events-listing-page:
     theme:
       css/ecc-shared/events-listing-page.css: {}
 
+event-teaser:
+  css:
+    theme:
+      css/ecc-shared/event-teaser.css: {}
+
 add-to-calendar:
   css:
     theme:

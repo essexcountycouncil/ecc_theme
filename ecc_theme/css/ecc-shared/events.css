@@ -45,3 +45,7 @@ This CSS file, events.css, is used to style an events listing component.
   padding: var(--spacing);
   content: "";
 }
+
+.view-display-id-events_list_block .more-link a {
+  color: var(--color-link);
+}
