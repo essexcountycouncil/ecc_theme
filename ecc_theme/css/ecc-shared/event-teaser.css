@@ -1,0 +1,22 @@
+.event-teaser__image + .event-teaser__content {
+  margin-block-start: var(--spacing);
+}
+
+.event-teaser__content > * + * {
+  margin-block-start: var(--spacing);
+}
+
+.event-teaser__content h2,
+.event-teaser__content ul {
+  margin-bottom: 0;
+}
+
+.event-teaser .field--name-localgov-event-date {
+  font-size: var(--font-size-small);
+  color: var(--color-grey-dark);
+}
+
+.event-teaser .field--name-localgov-event-date ul {
+  list-style-type: none;
+  padding: 0;
+}
