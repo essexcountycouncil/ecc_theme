@@ -131,6 +131,7 @@ function ecc_theme_preprocess_html(&$variables) {
  * Implements hook_views_pre_render().
  */
 function ecc_theme_views_pre_render($view) {
+  $view->element['#attached']['library'][] = 'ecc_theme/grid';
   if ($view->id() === 'localgov_events_listing' && $view->current_display === 'page_all_events') {
     $view->element['#attached']['library'][] = 'ecc_theme/events-listing-page';
   }
