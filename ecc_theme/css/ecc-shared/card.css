@@ -1,0 +1,22 @@
+.card__image + .card__content {
+  margin-block-start: var(--spacing);
+}
+
+.card__content > * + * {
+  margin-block-start: var(--spacing);
+}
+
+.card__content h2,
+.card__content ul {
+  margin-bottom: 0;
+}
+
+.card .field--name-localgov-event-date {
+  font-size: var(--font-size-small);
+  color: var(--color-grey-dark);
+}
+
+.card .field--name-localgov-event-date ul {
+  list-style-type: none;
+  padding: 0;
+}

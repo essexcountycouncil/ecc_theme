@@ -1,0 +1,16 @@
+{#
+  We are creating an empty array here, so we can add fields to it based on the
+  content type we are working with, if those fields are already being printed
+  elsewhere in the template (such as image fields).
+#}
+{% set content_without_fields = [] %}
+
+{% if node.localgov_event_image.value %}
+  {% set card_image = content.localgov_event_image %}
+{% endif %}
+
+{% if node.bundle == 'localgov_event' %}
+  {% set content_without_fields = content_without_fields|merge(['localgov_event_image']) %}
+{% endif %}
+
+{% include "@ecc_theme/_components/card.twig" %}
