@@ -8,6 +8,11 @@ fonts:
       css/ecc-shared/fonts.css: { weight: 1 }
 
 # Components
+grid:
+  css:
+    theme:
+      css/ecc-shared/grid.css: { weight: 1 }
+
 accordion:
   css:
     theme:
