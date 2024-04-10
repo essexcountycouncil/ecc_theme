@@ -1,6 +1,7 @@
 .view-display-id-page_all_events .view-content {
   container-type: inline-size;
   container-name: event-teaser-container;
+  margin-bottom: var(--vertical-rhythm-spacing);
 }
 
 .view-display-id-page_all_events .views-row + .views-row {
@@ -33,11 +34,12 @@
   }
 }
 
+.events-listing-page .sidebar--first .lgd-region__inner > * {
+  border: none;
+}
+
 @media screen and (min-width: 768px) {
   .events-listing-page .sidebar--first {
     border-right: var(--border);
-  }
-  .events-listing-page .sidebar--first .lgd-region__inner > * {
-    border: none;
   }
 }
