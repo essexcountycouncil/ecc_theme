@@ -66,36 +66,46 @@
  * @see template_preprocess_node()
  */
 #}
+
+{#
+  Creating a 'bundle' variable here in case we ever need to use this template
+  for other entity types, such as user, paragraphs, etc.
+  We can also use this class if there is specific theming needed for different
+  content types (there should not be). E.g card--news, card--event.
+#}
+{% set bundle = bundle|default(node.bundle) %}
+
+{# Our default heading level is h2. #}
+{% set card_heading_level = card_heading_level|default('h2') %}
+
 {%
   set classes = [
-    'event-teaser',
-    'node',
-    'node--type-' ~ node.bundle|clean_class,
+    'card',
+    'card--' ~ bundle|clean_class,
     not node.isPublished() ? 'node--unpublished',
-    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
 
-{{ attach_library('ecc_theme/event-teaser') }}
+{{ attach_library('ecc_theme/card') }}
 
 <article{{ attributes.addClass(classes) }}>
 
-  {% if node.localgov_event_image.value %}
-    <div class="event-teaser__image">
-      {{ content.localgov_event_image }}
+  {% if card_image %}
+    <div class="card__image">
+      {{ card_image }}
     </div>
   {% endif %}
 
-  <div{{ content_attributes.addClass('event-teaser__content') }}>
+  <div{{ content_attributes.addClass('card__content') }}>
     {{ title_prefix }}
     {% if label and not page %}
-      <h2{{ title_attributes }}>
+      <{{ card_heading_level }}{{ title_attributes }}>
         <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
+      </{{ card_heading_level }}>
     {% endif %}
     {{ title_suffix }}
 
-    {{ content|without('localgov_event_image') }}
+    {{ content|without(content_without_fields) }}
   </div>
 
 </article>

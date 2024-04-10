@@ -13,6 +13,11 @@
   width: 100%;
   margin-bottom: var(--spacing-large);
 }
+@media screen and (min-width: 500px) {
+  .view-display-id-page_all_events .field--name-field-media-image img {
+    max-width: 300px;
+  }
+}
 
 @container event-teaser-container (min-width: 500px) {
   .view-display-id-page_all_events .views-row {
