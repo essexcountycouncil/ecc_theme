@@ -1,0 +1,61 @@
+.subsite-extra--color-fostering {
+  .menu--subsites__title {
+    font-weight: bold;
+    font-size: var(--font-size-h2);
+  }
+
+  .menu--subsites {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .menu--subsites a {
+    text-decoration-line: none;
+  }
+
+  .menu--subsites > .menu-item a {
+    display: block;
+    padding: var(--spacing);
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: var(--font-size-h3);
+
+  }
+
+  .menu--subsites > .menu-item--active-trail a,
+  .menu--subsites > .menu-item a:focus,
+  .menu--subsites > .menu-item a:hover {
+    color: var(--color-white);
+    background-color: var(--background-fostering);
+  }
+
+  @media screen and (min-width: 48rem) {
+
+    .lgd-region--subsites-menu .menu--subsites {
+      display: flex;
+    }
+
+    .menu--subsites > .menu-item {
+      margin-right: var(--spacing-smaller);
+      margin-left: var(--spacing-smaller);
+    }
+
+    .menu--subsites > .menu-item a {
+      border: 1px solid transparent;
+      background-color: transparent;
+    }
+
+    .menu--subsites > .menu-item--active-trail a,
+    .menu--subsites > .menu-item a:focus,
+    .menu--subsites > .menu-item a:hover {
+      color: var(--color-white);
+      background-color: var(--background-fostering);
+    }
+
+    .menu--subsites > .menu-item a:hover {
+      border-color: var(--color-white);
+    }
+  }
+}
+

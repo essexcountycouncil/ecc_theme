@@ -1,0 +1,12 @@
+.subsite-extra--color-fostering {
+  .lgd-header__inner,
+  .region-subsites-menu {
+    background-color: var(--background-fostering);
+  }
+  nav.navigation--subsites {
+    background-color: var(--background-fostering);
+    a {
+      text-decoration-line: none;
+    }
+  }
+}

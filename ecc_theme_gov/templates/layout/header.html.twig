@@ -9,7 +9,18 @@
       <div class="lgd-row__full">
         <div class="lgd-header__inner">
 
-          {{ page.header }}
+          {% if not page.subsite_override %}
+            {{ page.header }}
+          {% else %}
+            <div class="branding">
+              <div class="branding__item branding__item--logo">
+                <a href="/" rel="home" class="branding__logo">
+                  {{ page.subsite.logo }}
+                </a>
+              </div>
+            </div>
+
+          {% endif %}
 
           {% if has_primary_menu or has_search or has_secondary_menu %}
             {#
