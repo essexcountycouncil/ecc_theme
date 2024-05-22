@@ -8,6 +8,34 @@
     }
   }
 
+  .subsite-extra__header {
+    display: unset;
+  }
+
+  .subsite-extra__header-toggle {
+    button {
+      background: transparent;
+      display: flex;
+      text-align: left;
+      text-decoration: underline;
+      border: 0;
+      width: 100%;
+      justify-content: space-between;
+    }
+    button:hover,
+    button:focus {
+      color: var(--color-white);
+    }
+    button::after {
+      content: "";
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path style='fill:white' d='M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z'/></svg>") no-repeat;
+      padding: 10px;
+    }
+    button[aria-expanded=true]:after {
+      transform: rotate(180deg);
+    }
+  }
+
   .menu--subsites__title {
     font-weight: bold;
     font-size: var(--font-size-h2);
@@ -17,6 +45,7 @@
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
+    gap: 0;
   }
 
   .menu--subsites a {
@@ -29,14 +58,19 @@
     color: var(--color-white);
     font-weight: bold;
     font-size: var(--font-size-medium);
-
+    background: transparent;
   }
 
   .menu--subsites > .menu-item--active-trail a,
-  .menu--subsites > .menu-item a:focus,
   .menu--subsites > .menu-item a:hover {
-    color: var(--color-white);
-    background-color: var(--background-fostering);
+    color: var(--background-fostering);
+    background-color: var(--color-white);
+  }
+
+  .menu--subsites > .menu-item a:focus {
+    color: unset;
+    box-shadow: inset 5px 5px 0px var(--color-focus), inset -5px -5px 0px var(--color-focus);
+    background: transparent;
   }
 
   @media screen and (min-width: 48rem) {
@@ -52,18 +86,11 @@
     }
 
     .menu--subsites > .menu-item a {
-      border: 1px solid transparent;
       background-color: transparent;
     }
 
     .menu--subsites > .menu-item--active-trail a,
-    .menu--subsites > .menu-item a:focus,
     .menu--subsites > .menu-item a:hover {
-      color: var(--color-white);
-      background-color: var(--background-fostering);
-    }
-
-    .menu--subsites > .menu-item--active-trail a {
       color: var(--background-fostering);
       background-color: var(--color-white);
     }
@@ -75,6 +102,21 @@
 
     .subsite-extra__header-toggle-button {
       display: none;
+    }
+  }
+
+  @media screen and (max-width: 48rem) {
+    .lgd-region--subsites-menu {
+      padding-inline: 0;
+    }
+
+    .subsite-menu__menu-container {
+      margin-top: var(--spacing-large);
+      border: 1px solid var(--color-white);
+    }
+
+    .menu--subsites {
+      margin-top: 0;
     }
   }
 }

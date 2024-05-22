@@ -24,14 +24,6 @@
     <h2 class="subsite-extra__title">
       {{ subsite_homepage_link }}
     </h2>
-    <div class="subsite-extra__header-toggle">
-      <button
-        class="subsite-extra__header-toggle-button"
-        aria-controls="subsite-extra-menu"
-        aria-expanded="false">
-        <span class="subsite-extra__header-toggle-text">{{ 'In this section'|t }}</span>
-      </button>
-    </div>
   </div>
 {% endif %}
 
@@ -63,6 +55,15 @@
     %}
 
   {% if items %}
+  <div class="subsite-menu__menu-container">
+    <div class="subsite-extra__header-toggle">
+      <button
+        class="subsite-extra__header-toggle-button"
+        aria-controls="subsite-extra-menu"
+        aria-expanded="false">
+        <span class="subsite-extra__header-toggle-text">{{ 'In this section'|t }}</span>
+      </button>
+    </div>
     {% if menu_level == 0 %}
       <ul{{ attributes.addClass(menu_classes).setAttribute('id', 'subsite-extra-menu') }}>
     {% else %}
@@ -85,5 +86,6 @@
       </li>
     {% endfor %}
     </ul>
+  </div>
   {% endif %}
 {% endmacro %}
