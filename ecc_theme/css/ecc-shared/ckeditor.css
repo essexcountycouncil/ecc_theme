@@ -44,3 +44,11 @@
   color: #00823b;
   background-color: #fff;
 }
+
+.ck-content .button-start--fostering {
+  background-color: #5c2472;
+}
+
+.ck-content .button-start--fostering:hover {
+  color: #5c2472;
+}
