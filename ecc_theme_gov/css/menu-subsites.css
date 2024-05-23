@@ -31,7 +31,7 @@
     }
     button::after {
       content: "";
-      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path style='fill:white' d='M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z'/></svg>") no-repeat;
+      background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill='white' d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/></svg>") no-repeat;
       padding: 10px;
     }
     button[aria-expanded=true]:after {
@@ -76,10 +76,10 @@
     background: transparent;
   }
 
-.menu--subsites > .menu-item--active-trail a:focus {
-  color: var(--color-black);
-  background-color: var(--color-white);
-}
+  .menu--subsites > .menu-item--active-trail a:focus {
+    color: var(--color-black);
+    background-color: var(--color-white);
+  }
 
   @media screen and (min-width: 48rem) {
 
@@ -114,6 +114,10 @@
   }
 
   @media screen and (max-width: 48rem) {
+    .lgd-header__nav--primary {
+      border-bottom: 1px solid var(--color-white);
+    }
+
     .lgd-region--subsites-menu {
       padding-inline: 0;
     }
