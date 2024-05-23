@@ -1,4 +1,6 @@
 body.subsite-extra--color-fostering {
+  --color-accent: var(--background-fostering);
+
   .lgd-header {
     background-color: var(--background-fostering);
     padding-bottom: 0;
@@ -13,9 +15,5 @@ body.subsite-extra--color-fostering {
     a {
       text-decoration-line: none;
     }
-  }
-  .main .lgd-page-title-block__title::after,
-  .main .field--type-text-long h2::after {
-    background-color: var(--background-fostering);
   }
 }
