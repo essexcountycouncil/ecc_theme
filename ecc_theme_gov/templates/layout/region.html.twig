@@ -32,6 +32,10 @@
     {{ attach_library('localgov_base/region-tabs') }}
   {% endif %}
 
+  {% if region == 'subsites_menu' %}
+    {{ attach_library('localgov_base/subsites-menu') }}
+  {% endif %}
+
   {% if region == 'sidebar_first' or region == 'sidebar_second' %}
     {{ attach_library('localgov_base/sidebar') }}
   {% endif %}
