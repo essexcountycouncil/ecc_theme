@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override to display a node.
+ * Theme override to display a LocalGov Event node.
  *
  * Available variables:
  * - node: The node entity with limited access to object properties and methods.
@@ -28,7 +28,7 @@
  * - url: Direct URL of the current node.
  * - display_submitted: Whether submission information should be displayed.
  * - attributes: HTML attributes for the containing element.
- *   The attributes.class element may contain one or more of the following
+ *   The attributes.class element may contain one or more of the followingservices_landing
  *   classes:
  *   - node: The current template type (also known as a "theming hook").
  *   - node--type-[type]: The current node type. For example, if the node is an
@@ -64,79 +64,48 @@
  *   is an administrator.
  *
  * @see template_preprocess_node()
- *
- * @todo Remove the id attribute (or make it a class), because if that gets
- *   rendered twice on a page this is invalid CSS for example: two lists
- *   in different view modes.
  */
 #}
 
 {#
-  Restrict width of the content area to two-thirds of the screen for
-  some content types. This is helpful to reduce the line-length for
-  better readability.
+  Creating a 'bundle' variable here in case we ever need to use this template
+  for other entity types, such as user, paragraphs, etc.
+  We can also use this class if there is specific theming needed for different
+  content types (there should not be). E.g card--news, card--event.
 #}
-{% set restricted_width_content_types = [
-    'localgov_event',
-  ]
-%}
+{% set bundle = bundle|default(node.bundle) %}
 
-{% set content_type = node.bundle %}
-
-{% if not localgov_base_remove_css %}
-  {{ attach_library('localgov_base/full') }}
-{% endif %}
-
-{{ attach_library('localgov_base/events') }}
+{# Our default heading level is h2. #}
+{% set card_heading_level = card_heading_level|default('h2') %}
 
 {%
   set classes = [
-    content_type|clean_class,
-    'node',
-    'node--type-' ~ node.bundle|clean_class,
-    content_type in restricted_width_content_types ? 'node--with-restricted-width',
-    node.isPromoted() ? 'node--promoted',
-    node.isSticky() ? 'node--sticky',
+    'card',
+    'card--' ~ bundle|clean_class,
     not node.isPublished() ? 'node--unpublished',
-    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
 
-<article{{ attributes.addClass(classes).removeAttribute('role') }}>
+{{ attach_library('ecc_theme/card') }}
+
+<article{{ attributes.addClass(classes) }}>
+
+  {% if card_image %}
+    <div class="card__image">
+      {{ card_image }}
+    </div>
+  {% endif %}
+
+  <div{{ content_attributes.addClass('card__content') }}>
     {{ title_prefix }}
+    {% if label and not page %}
+      <{{ card_heading_level }}{{ title_attributes }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </{{ card_heading_level }}>
+    {% endif %}
     {{ title_suffix }}
 
-  <div class="lgd-container padding-horizontal">
-    <div class="node__restricted-width-section">
-      {% set atc_title = node.title.value %}
-
-      {% if node.localgov_event_date.value %}
-        {% set atc_start_date = node.localgov_event_date.value %}
-      {% endif %}
-
-      {% if node.localgov_event_date.end_value %}
-        {% set atc_end_date = node.localgov_event_date.end_value %}
-      {% endif %}
-
-      {% if node.localgov_event_date.0.rrule %}
-        {% set atc_rrule = node.localgov_event_date.0.rrule %}
-      {% endif %}
-
-      {% if node.body.value %}
-        {% set atc_details = node.body.value %}
-      {% endif %}
-
-      {% set atc_location_variable = node.localgov_event_location.entity.postal_address.value.0 %}
-      {% if atc_location_variable %}
-        {% set atc_location = atc_location_variable.address_line1 ~ ', ' ~ atc_location_variable.locality ~ ', ' ~ atc_location_variable.postal_code %}
-      {% endif %}
-
-      <div{{ content_attributes.addClass(content_type|clean_class ~ '__content', 'node__content') }}>
-        {{ content.localgov_event_date }}
-        {% include "@ecc_theme/_components/add-to-calendar.twig" %}
-        {{ content|without('localgov_event_date') }}
-      </div>
-
-    </div>
+    {{ content|without(content_without_fields) }}
   </div>
+
 </article>

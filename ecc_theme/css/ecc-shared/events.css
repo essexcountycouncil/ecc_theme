@@ -45,3 +45,11 @@ This CSS file, events.css, is used to style an events listing component.
   padding: var(--spacing);
   content: "";
 }
+
+.localgov-event__content > * + * {
+  margin-block-start: var(--vertical-rhythm-spacing);
+}
+
+.view-display-id-events_list_block .more-link a {
+  color: var(--color-link);
+}

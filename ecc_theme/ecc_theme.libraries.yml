@@ -8,6 +8,11 @@ fonts:
       css/ecc-shared/fonts.css: { weight: 1 }
 
 # Components
+grid:
+  css:
+    theme:
+      css/ecc-shared/grid.css: { weight: 1 }
+
 accordion:
   css:
     theme:
@@ -109,6 +114,11 @@ events-listing-page:
   css:
     theme:
       css/ecc-shared/events-listing-page.css: {}
+
+card:
+  css:
+    theme:
+      css/ecc-shared/card.css: {}
 
 add-to-calendar:
   css:
