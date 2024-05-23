@@ -17,4 +17,9 @@ blockquote {
   border-color: unset;
   border-left: none;
   background-color: var(--quote-background-color);
+  margin-bottom: 0;
+}
+
+.paragraph--type--localgov-quote {
+  margin-bottom: calc(var(--grid-gap) * -1) !important;
 }
