@@ -1,9 +1,5 @@
 /* Search */
 
-.lgd-region--search {
-  margin-top: var(--spacing-large);
-}
-
 .lgd-region--search .form-submit {
   border-width: var(--border-width-medium);
   border-color: var(--header-search-button-bg-color);
