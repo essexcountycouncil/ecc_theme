@@ -21,7 +21,7 @@ libraries-extend:
   # of those extending localgov_base/global
   localgov_base/global:
     - ecc_theme_gov/subsites
-    - ecc_theme_gov/menu_subsites
+    - ecc_theme_gov/subsites-menu
 
 regions:
   tabs: "Tabs"
