@@ -64,10 +64,14 @@
     background: transparent;
   }
 
-  .menu--subsites > .menu-item--active-trail a,
-  .menu--subsites > .menu-item a:hover {
+  .menu--subsites > .menu-item--active-trail a {
     color: var(--background-fostering);
     background-color: var(--color-white);
+  }
+
+  .menu--subsites > .menu-item a:hover {
+    color: var(--color-white);
+    background-color: color-mix(in srgb, var(--background-fostering), black 25%);
   }
 
   .menu--subsites > .menu-item a:focus {
@@ -90,22 +94,14 @@
 
     .lgd-region--subsites-menu .menu--subsites {
       display: flex;
+      flex-wrap: nowrap;
+      align-items: stretch;
       margin-left: calc(var(--spacing-padding-horizontal) * -1);
     }
 
     .menu--subsites > .menu-item a {
       background-color: transparent;
-    }
-
-    .menu--subsites > .menu-item--active-trail a,
-    .menu--subsites > .menu-item a:hover {
-      color: var(--background-fostering);
-      background-color: var(--color-white);
-    }
-
-    .menu--subsites > .menu-item a:hover {
-      border-color: var(--color-white);
-      border-bottom: 0;
+      height: 100%;
     }
 
     .subsite-extra__header-toggle-button {
