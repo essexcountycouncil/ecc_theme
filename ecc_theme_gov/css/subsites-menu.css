@@ -104,6 +104,10 @@
       height: 100%;
     }
 
+    .menu--subsites > .menu-item--active-trail a {
+      background-color: var(--color-white);
+    }
+
     .subsite-extra__header-toggle-button {
       display: none;
     }
