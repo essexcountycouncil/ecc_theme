@@ -9,7 +9,18 @@
       <div class="lgd-row__full">
         <div class="lgd-header__inner">
 
-          {{ page.header }}
+          {% if not page.subsite_override %}
+            {{ page.header }}
+          {% else %}
+            <div class="branding">
+              <div class="branding__item branding__item--logo">
+                <a href="/" rel="home" class="branding__logo">
+                  {{ page.subsite.logo }}
+                </a>
+              </div>
+            </div>
+
+          {% endif %}
 
           {% if has_primary_menu or has_search or has_secondary_menu %}
             {#
@@ -19,7 +30,7 @@
                 the services menu will be positioned).
             #}
 
-            
+
               {% if has_secondary_menu %}
               <div class="lgd-header__toggles">
                 <button
@@ -47,7 +58,7 @@
                 </button>
                 </div>
               {% endif %}
-            
+
 
             {% if has_primary_menu or has_search %}
               <div id="lgd-header__nav--primary" class="lgd-header__nav lgd-header__nav--primary">
@@ -73,4 +84,9 @@
       </div>
     </div>
   </div>
+  {% if has_subsites_menu %}
+    <div id="lgd-header__nav--subsites-menu" class="lgd-header__nav lgd-header__nav--subsites">
+      {{ page.subsites_menu }}
+    </div>
+  {% endif %}
 </header>

@@ -16,6 +16,13 @@ libraries:
   - ecc_theme_gov/search
   - ecc_theme_gov/service_cta_block
 
+libraries-extend:
+  # Add libraries that you want to load on every page of your site to the list
+  # of those extending localgov_base/global
+  localgov_base/global:
+    - ecc_theme_gov/subsites
+    - ecc_theme_gov/subsites-menu
+
 regions:
   tabs: "Tabs"
   header: "Header"
@@ -23,6 +30,7 @@ regions:
   mobile_search: "Mobile search"
   primary_menu: "Primary menu"
   secondary_menu: "Secondary menu"
+  subsites_menu: "Subsites menu"
   banner: "Banner"
   hero: "Hero"
   hero_content: "Hero Content"

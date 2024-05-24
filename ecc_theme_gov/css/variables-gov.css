@@ -3,7 +3,9 @@ body {
     Colours
   */
 
+  --color-purple: #5c2472;
   --background-blue: #004c94;
+  --background-fostering: var(--color-purple);
   --banner-content-bg-color: var(--color-white);
   --banner-content-text-color: var(--color-black);
   --color-section-header-bg: var(--color-white);

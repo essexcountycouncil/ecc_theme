@@ -37,3 +37,13 @@ news:
   css:
     theme:
       css/news.css: { weight: 2 }
+
+subsites-menu:
+  css:
+    theme:
+      css/subsites-menu.css: { weight: 2 }
+
+subsites:
+  css:
+    theme:
+      css/subsites.css: { weight: 2 }

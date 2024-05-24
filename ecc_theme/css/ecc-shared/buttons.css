@@ -26,6 +26,10 @@
   line-height: 1;
 }
 
+.button-start--fostering {
+  background-color: var(--background-fostering);
+}
+
 .button-start::after {
   position: relative;
   top: var(--btn-start-icon-top);
@@ -39,6 +43,10 @@
 .button-start:hover {
   color: var(--btn-start-color-hover);
   background-color: var(--btn-start-bg-color-hover);
+}
+
+.button-start--fostering:hover {
+  color: var(--background-fostering);
 }
 
 @media (max-width: 468px) {
