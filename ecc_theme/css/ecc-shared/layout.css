@@ -6,6 +6,10 @@
   margin-top: var(--grid-gap);
 }
 
+.paragraph--type--localgov-quote + .paragraph--type--localgov-text {
+  margin-top: var(--spacing-gap-smaller)
+}
+
 .layout--onecol .layout__region {
   padding: 0;
 }
