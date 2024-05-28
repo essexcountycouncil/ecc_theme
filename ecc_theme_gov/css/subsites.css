@@ -16,4 +16,8 @@ body.subsite-extra--color-fostering {
       text-decoration-line: none;
     }
   }
+
+  .lgd-region--search {
+    margin-top: 0.5rem;
+  }
 }
