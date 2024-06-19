@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Default node template for localgov_services_sub_landing pages.
+ */
+#}
+
+{%
+  set classes = [
+    'service-sublanding-page',
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+
+<article{{ attributes.addClass(classes).removeAttribute('role') }}>
+  <div class="lgd-container padding-horizontal">
+      <div class="lgd-row">
+
+        {# Begin Main Content #}
+        <div class="lgd-row__full">
+          {# Begin Services List #}
+          {% if node.localgov_topics.value %}
+            <h2 class="visually-hidden">{{ 'Services List'|t }}</h2>
+            <section class="service-sub-landing-page__services lgd-teaser-list">
+              {{ content.localgov_topics }}
+            </section>
+          {% endif %}
+          {# End Services List #}
+        </div>
+
+        <div{{ content_attributes.addClass(content_type|clean_class ~ '__content', 'node__content') }}>
+          {{ content|without('localgov_subsites_content', 'localgov_topics') }}
+        </div>
+
+
+    </div>
+  </div>
+</article>
