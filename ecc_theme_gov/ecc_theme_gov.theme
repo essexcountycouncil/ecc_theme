@@ -10,7 +10,7 @@ use Drupal\block\Entity\Block;
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
  */
-function ecc_theme_gov_theme_suggestions_form_element_label_alter(&$suggestions, array $variables) {
+function ecc_theme_gov_theme_suggestions_form_element_label_alter(&$suggestions, array $variables): void {
 
   switch ($variables['element']['#id']) {
     case (str_starts_with($variables['element']['#id'], 'edit-data-use-policy')):
@@ -26,3 +26,24 @@ function ecc_theme_gov_theme_suggestions_form_element_label_alter(&$suggestions,
   }
 }
 
+/**
+ * Implements hook_preprocess_breadcrumb().
+ */
+function ecc_theme_gov_preprocess_breadcrumb(&$variables): void {
+  // Get the current path alias.
+  $current_path = \Drupal::service('path.current')->getPath();
+  $alias = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+
+  // Manipulate the breadcrumbs for fostering pages.
+  if (str_starts_with($alias, '/children-young-people-and-families')) {
+    // If the breadcrumb array has more than one item and the second item's text
+    // is "Children, young people and families".
+    if (count($variables['breadcrumb']) > 1 && $variables['breadcrumb'][1]['text'] === 'Children, young people and families') {
+      // Unset the second breadcrumb item.
+      unset($variables['breadcrumb'][1]);
+    }
+
+    // Re-index the breadcrumb array.
+    $variables['breadcrumb'] = array_values($variables['breadcrumb']);
+  }
+}
