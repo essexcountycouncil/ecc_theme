@@ -2,10 +2,12 @@
   @TODO remove this CSS when
   https://github.com/localgovdrupal/localgov_base/issues/518
   is resolved.
+  Set top to a fixed value as drupal-displace-offset-top does fix the tabs
+  immediately below the toolbar.
 */
 .region-tabs {
   position: sticky;
   z-index: 100;
-  top: var(--drupal-displace-offset-top, 53px);
+  top: 53px;
 }
 /* End @TODO */
