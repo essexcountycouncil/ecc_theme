@@ -108,10 +108,10 @@ function essex_preprocess_block(&$variables) {
   if ($variables['logged_in']) {
     // Get block id.
     $block_id = $variables['elements']['#id'];
-    $variables['#attached']['library'][] = 'essex/edit-tabs';
+    $variables['#attached']['library'][] = 'ecc_theme/edit-tabs';
     if ($block_id === 'essex_localgov_tabs_scarfolk') {
       // Attach library.
-      $variables['#attached']['library'][] = 'essex/edit-tabs';
+      $variables['#attached']['library'][] = 'ecc_theme/edit-tabs';
     }
   }
 }
