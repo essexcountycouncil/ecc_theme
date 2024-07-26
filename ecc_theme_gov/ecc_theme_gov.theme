@@ -1,7 +1,5 @@
 <?php
 
-use Drupal\block\Entity\Block;
-
 /**
  * @file
  * Theme function for the Essex County Council Gov theme.
