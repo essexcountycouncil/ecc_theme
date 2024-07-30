@@ -5,6 +5,7 @@ This CSS file, accordion.css, is used to style an accordion component. An accord
   position: relative;
   border-color: var(--color-link);
   background-color: var(--color-link);
+  padding-right: 3.5em;
 }
 
 .accordion-pane button::after {
