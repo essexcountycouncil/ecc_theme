@@ -1,29 +1,24 @@
 <?php
 
+/**
+ * @file
+ * Theme functions for the Essex County Council base theme.
+ */
+
 use Drupal\block\Entity\Block;
 
 /**
- * @file
- * Theme function for the ecc_theme County Council theme theme.
- */
-
-/**
- * Implement hook_preprocess_HOOK
- *
- * @param $variables
- *   Template variables
- * @param $hook
- *   Type of template.
+ * Implements hook_preprocess_HOOK().
  *
  * Load blocks from specific region, so we can render them within a template.
  */
 function ecc_theme_preprocess_paragraph__localgov_banner_primary(&$variables, $hook) {
-  // Load active theme
+  // Load active theme.
   $theme = \Drupal::theme()->getActiveTheme()->getName();
-  // Load region blocks
+  // Load region blocks.
   $blocks = \Drupal::entityTypeManager()
     ->getStorage('block')
-    ->loadByProperties(array('theme' => $theme, 'region' => 'hero_content'));
+    ->loadByProperties(['theme' => $theme, 'region' => 'hero_content']);
 
   try {
     // Capture the region's viewable blocks and their settings.
@@ -40,7 +35,8 @@ function ecc_theme_preprocess_paragraph__localgov_banner_primary(&$variables, $h
 
     // Add the region's worth of viewable blocks to the available variables.
     $variables['banner_content'] = $build;
-  } catch (Exception $e) {
+  }
+  catch (Exception $e) {
     $variables['banner_content'] = NULL;
   }
 
@@ -70,7 +66,7 @@ function ecc_theme_preprocess_breadcrumb(&$variables) {
 
     // Append new item (text only) to breadcrumb for the current page title.
     $variables['breadcrumb'][] = [
-      'text' => $page_title
+      'text' => $page_title,
     ];
   }
   $variables['#cache']['contexts'][] = 'url';
@@ -81,23 +77,24 @@ function ecc_theme_preprocess_breadcrumb(&$variables) {
  */
 function ecc_theme_suggestions_form_element_label_alter(&$suggestions, array $variables) {
 
-    switch ($variables['element']['#id']) {
-      case (str_starts_with($variables['element']['#id'], 'edit-data-use-policy')):
-        // The first case is to make the Data use policy checkbox function
-        // properly. It's using `str_starts_with` because if the data use policy
-        // field wasn't selected, the id will have an appended `--<hash>` to
-        // prevent form hijacking.
-        $suggestions[] = 'form_element_label__edit_data_use_policy';
-        break;
+  switch ($variables['element']['#id']) {
+    case (str_starts_with($variables['element']['#id'], 'edit-data-use-policy')):
+      // The first case is to make the Data use policy checkbox function
+      // properly. It's using `str_starts_with` because if the data use policy
+      // field wasn't selected, the id will have an appended `--<hash>` to
+      // prevent form hijacking.
+      $suggestions[] = 'form_element_label__edit_data_use_policy';
+      break;
 
-      default:
-        break;
-    }
+    default:
+      break;
   }
+}
 
 /**
  * Implements hook_preprocess_HOOK().
- * @TODO: remove this function if
+ *
+ * @todo remove this function if
  * https://github.com/localgovdrupal/localgov_base/issues/518
  * is resolved.
  */
@@ -118,7 +115,6 @@ function essex_preprocess_block(&$variables) {
 
 /**
  * Implements hook_preprocess_html().
- *
  */
 function ecc_theme_preprocess_html(&$variables) {
   $route_name = \Drupal::routeMatch()->getRouteName();
