@@ -52,11 +52,13 @@ footer .menu--social-media .facebook:focus {
 }
 
 footer .menu--social-media .twitter {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-twitter-x' viewBox='0 0 16 16'%3E%3Cpath d='M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z'/%3E%3C/svg%3E");
+  background-image: url("data: image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20%20stroke%3D%22white%22%20fill%3D%22white%22%20d%3D%22M64%2032C28.7%2032%200%2060.7%200%2096V416c0%2035.3%2028.7%2064%2064%2064H384c35.3%200%2064-28.7%2064-64V96c0-35.3-28.7-64-64-64H64zm297.1%2084L257.3%20234.6%20379.4%20396H283.8L209%20298.1%20123.3%20396H75.8l111-126.9L69.7%20116h98l67.7%2089.5L313.6%20116h47.5zM323.3%20367.6L153.4%20142.9H125.1L296.9%20367.6h26.3z%22%2F%3E%3C%2Fsvg%3E");
+  background-size: 60%;
 }
 
 footer .menu--social-media .twitter:focus {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='black' class='bi bi-twitter-x' viewBox='0 0 16 16'%3E%3Cpath d='M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z'/%3E%3C/svg%3E");
+  background-image: url("data: image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M64%2032C28.7%2032%200%2060.7%200%2096V416c0%2035.3%2028.7%2064%2064%2064H384c35.3%200%2064-28.7%2064-64V96c0-35.3-28.7-64-64-64H64zm297.1%2084L257.3%20234.6%20379.4%20396H283.8L209%20298.1%20123.3%20396H75.8l111-126.9L69.7%20116h98l67.7%2089.5L313.6%20116h47.5zM323.3%20367.6L153.4%20142.9H125.1L296.9%20367.6h26.3z%22%2F%3E%3C%2Fsvg%3E");
+  background-size: 60%;
 }
 
 footer .menu--social-media .youtube {
