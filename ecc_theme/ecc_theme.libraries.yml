@@ -7,6 +7,13 @@ fonts:
     theme:
       css/ecc-shared/fonts.css: { weight: 1 }
 
+skip-link:
+  js:
+    js/skip-link.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
+
 # Components
 grid:
   css:
