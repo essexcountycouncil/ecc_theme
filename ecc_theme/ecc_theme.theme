@@ -121,6 +121,7 @@ function ecc_theme_preprocess_html(&$variables) {
   if ($route_name === 'view.localgov_events_listing.page_all_events') {
     $variables['attributes']['class'][] = 'events-listing-page';
   }
+    $variables['#attached']['library'][] = 'ecc_theme/skip-link';
 }
 
 /**
