@@ -21,7 +21,7 @@
   <div class="lgd-container padding-horizontal">
     {{ title_prefix }}
       <h2{{ title_attributes.addClass('lgd-guides__title') }}>
-        {{ 'Overview'|t }}
+        {{ guide_overview_title|default('Overview'|t) }}
       </h2>
     {{ title_suffix }}
 
