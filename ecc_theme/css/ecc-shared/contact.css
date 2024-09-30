@@ -26,3 +26,11 @@ This CSS file, contact.css, is used to style a contact component.
 .lgd-region--content .paragraph--type--localgov-contact a {
   word-break: break-word;
 }
+
+.office-hours__item-label {
+  padding-right: var(--spacing-smaller);
+}
+
+span.office-hours__item-label:after {
+  content: ":";
+}
