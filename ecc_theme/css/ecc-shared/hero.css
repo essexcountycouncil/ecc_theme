@@ -24,10 +24,6 @@ This CSS file, hero.css, is used to style a hero banner component.
   font-weight: var(--font-semibold);
 }
 
-.banner--primary .banner__image img {
-  max-height: 350px;
-}
-
 .banner--primary .banner__content {
   --banner-content-bg-color: transparent;
 
