@@ -130,6 +130,14 @@ add-to-calendar:
     - core/drupal
     - core/once
 
+facets-results-scroll:
+  js:
+    js/facets-scroll-to-results.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
+    - core/jquery
+
 video:
   css:
     theme:
