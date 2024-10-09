@@ -37,7 +37,13 @@
 
           <div class="accordion-pane">
             <div class="accordion-pane__title">
-              <h4 class="facet-group__title">{{ group_record.title }}</h4>
+              <h4 class="facet-group__title">
+                <span class="accordion-pane__heading">{{ group_record.title }}</span>
+                <button aria-expanded="false" hidden>
+                  {{ group_record.title }}
+                  <span class='accordion-icon' aria-hidden='true'></span>
+                </button>
+              </h4>
             </div>
             {% if checkedItems > 0 %}
               <span class="facet-group__checked-items sr-only">There are currently {{ checkedItems }} items selected in this group.</span>
