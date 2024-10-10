@@ -52,7 +52,22 @@ This CSS file, forms.css, is used to style a website feedback form and some othe
   left: -31px;
 }
 
+.facets-form fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.facets-form .facet-filter-checkboxes li {
+  list-style-type: none;
+}
+
 input[type="submit"] {
   border-color: var(--color-black);
   background-color: var(--color-black);
+}
+
+.form-actions [id^="edit-reset"] {
+  padding: var(--button-padding-vertical) var(--button-padding-horizontal) var(--button-padding-vertical) var(--button-padding-horizontal);
+  border: var(--border);
+  border-color: var(--color-accent);
 }

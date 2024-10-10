@@ -49,9 +49,40 @@
   color: var(--background-fostering);
 }
 
+.button--action {
+  position: relative;
+  display: none;
+  background-color: var(--color-info);
+  margin-bottom: var(--spacing-small);
+}
+
+.button--action::after {
+  position: absolute;
+  top: 1rem;
+  right: var(--spacing-larger);
+  width: 25px;
+  height: 14px;
+  content: "";
+  background-image: var(--icon-chevron-white);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  transform: rotate(-90deg);
+}
+
 @media (max-width: 468px) {
   .button-start {
     justify-content: center;
+    width: 100%;
+  }
+
+  #facets-filters-jump {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 600px) {
+  #facets-filters-jump {
+    display: inline-block;
     width: 100%;
   }
 }
