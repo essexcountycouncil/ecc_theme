@@ -1,5 +1,5 @@
 /**
- * @file JS file for Add to Calendar.
+ * @file JS file for scroll to facets form behavior.
  */
 
 (function localgovScrollToFacetResultsScript(Drupal, $) {
