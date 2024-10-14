@@ -1,0 +1,66 @@
+{#
+/**
+ * @file
+ * Default theme template for directory facet checkboxes.
+ *
+ * These checkboxes are used within the facets_form_checkbox facet widget.
+ *
+ * Available variables:
+ * - title: Optional list title.
+ * - grouped_options: checkboxes grouped by their corresponding LocalGov Directory facet type.  Each group array contains:
+ *   - title: Label of the facet type.
+ *   - items: Checkbox element.
+ *   - weight: Sorting weight of the facet type.
+ * - attributes: HTML attributes to be applied to the list.
+ *
+ * @see template_preprocess_checkboxes__localgov_directories_facets()
+ */
+#}
+{{ attach_library('localgov_subsites_paragraphs/localgov_accordion') }}
+
+<div class="facets-widget facets-widget--facets-form-checkbox">
+  {%- if title is not empty -%}
+    <h3>{{ title }}</h3>
+  {%- endif -%}
+
+  {% if grouped_options %}
+    <div class="accordion" data-accordion-allow-multiple>
+      <div{{ attributes }}>
+        {%- for group_id, group_record in grouped_options -%}
+
+          {% set checkedItems = 0 %}
+          {%- for checkbox in group_record.items -%}
+            {% if checkbox['#checked'] %}
+              {% set checkedItems = checkedItems + 1 %}
+            {% endif %}
+          {%- endfor -%}
+
+          <div class="accordion-pane">
+            <div class="accordion-pane__title">
+              <h4 class="facet-group__title">
+                <span class="accordion-pane__heading">{{ group_record.title }}</span>
+                <button aria-expanded="false" hidden>
+                  {{ group_record.title }}
+                  <span class='accordion-icon' aria-hidden='true'></span>
+                </button>
+              </h4>
+            </div>
+            {% if checkedItems > 0 %}
+              <span class="facet-group__checked-items sr-only">There are currently {{ checkedItems }} items selected in this group.</span>
+            {% else %}
+              <span class="facet-group__checked-items sr-only">There are no checked items in this group.</span>
+            {% endif %}
+
+            <div class="accordion-pane__content">
+              <ul{{ attributes.addClass('facet-filter-checkboxes') }}>
+                {%- for checkbox in group_record.items -%}
+                  <li>{{ checkbox }}</li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif %}
+</div>
