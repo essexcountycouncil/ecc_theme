@@ -29,11 +29,8 @@ This CSS file, hero.css, is used to style a hero banner component.
 }
 
 .banner--primary .banner__content {
-  --banner-content-bg-color: transparent;
-
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0 var(--spacing-padding-horizontal);
+  background-color: var(--alert-banner-bg-color-major);
+  color: white;
+  padding: 1em var(--spacing-padding-horizontal);
   border: 0;
 }
