@@ -171,7 +171,14 @@
 
 .lgd-page-section__arc--top.lgd-page-section--bg-colour-4 svg path,
 .lgd-page-section__arc--bottom.lgd-page-section--bg-colour-4 svg path {
+  --color-page-section-background-color-4: var(--color-tint-1);
   fill: var(--color-page-section-background-color-4);
+}
+
+.lgd-page-section__arc--top.lgd-page-section--bg-colour-5 svg path,
+.lgd-page-section__arc--bottom.lgd-page-section--bg-colour-5 svg path {
+  --color-page-section-background-color-5: var(--color-tint-2);
+  fill: var(--color-page-section-background-color-5);
 }
 
 .lgd-page-section--arc-bottom {
