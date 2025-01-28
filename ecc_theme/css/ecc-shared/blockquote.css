@@ -4,12 +4,19 @@
 */
 
 blockquote {
-  padding-left: var(--spacing-largest);
-  background-image: var(--icon-quote);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 30px;
   font-size: var(--font-size-h3);
+  display: flex;
+}
+
+blockquote.pull-out-quote__content:before {
+  background-color: var(--color-accent);
+  mask-image: var(--icon-quote);
+  content: '';
+  display: inline-block;
+  height: 22px;
+  width: 30px;
+  margin-right: 0.5em;
+  mask-size: 30px;
 }
 
 .pull-out-quote {
