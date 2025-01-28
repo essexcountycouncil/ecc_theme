@@ -97,11 +97,15 @@
   ]
 %}
 
+{% if section_arc_top %}
+  <div class="lgd-page-section__arc lgd-page-section__arc--top {{ bg_colour ? 'lgd-page-section--bg-' ~ bg_colour|clean_class }} ">
+    <svg width="1278" height="139" viewBox="0 0 1278 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 139L1278 139V55.6247C692.4 -75.9228 182 56.3967 0 139Z" fill="#00843D"/>
+    </svg>
+  </div>
+{% endif %}
 <div{{ attributes.addClass(classes) }}>
-  {% if section_arc_top %}
-    <div class="lgd-page-section__arc lgd-page-section__arc--top">
-    </div>
-  {% endif %}
+
 
   {% if width == 'full-width-contained-content' %}
     <div class="lgd-container">
@@ -115,10 +119,12 @@
     </div>
   {% endif %}
 
-  {% if section_arc_bottom %}
-    <div class="lgd-page-section__arc lgd-page-section__arc--bottom">
-    </div>
-  {% endif %}
-
 </div>
 
+{% if section_arc_bottom %}
+  <div class="lgd-page-section__arc lgd-page-section__arc--bottom {{ bg_colour ? 'lgd-page-section--bg-' ~ bg_colour|clean_class }}">
+    <svg width="1278" height="139" viewBox="0 0 1278 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1278 0.000106812L1.21518e-05 -4.91479e-06L4.86287e-06 83.3752C585.6 214.923 1096 82.6033 1278 0.000106812Z" fill="#00843D"/>
+    </svg>
+  </div>
+{% endif %}
