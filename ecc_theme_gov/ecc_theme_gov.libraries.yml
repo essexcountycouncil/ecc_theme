@@ -47,3 +47,4 @@ subsites:
   css:
     theme:
       css/subsites.css: { weight: 2 }
+      subsites/fostering/fostering.css: { weight: 2 }
