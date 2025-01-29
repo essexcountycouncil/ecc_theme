@@ -9,12 +9,13 @@ blockquote {
 }
 
 blockquote.pull-out-quote__content:before {
+  padding-left: var(--spacing-large);
   background-color: var(--color-accent);
   mask-image: var(--icon-quote);
   content: '';
   display: inline-block;
   height: 22px;
-  width: 30px;
+  width: 34px;
   margin-right: 0.5em;
   mask-size: 30px;
 }
