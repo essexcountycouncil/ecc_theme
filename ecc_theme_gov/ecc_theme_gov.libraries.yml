@@ -48,3 +48,4 @@ subsites:
     theme:
       css/subsites.css: { weight: 2 }
       subsites/fostering/fostering.css: { weight: 2 }
+      subsites/digitalessex/digitalessex.css: { weight: 2 }
