@@ -1,0 +1,32 @@
+.paragraph--type--cta-link a {
+  background-color: #3a7d64;
+  border: 0;
+  color: var(--color-white);
+  display: block;
+  padding: var(--spacing) var(--spacing-large);
+  text-decoration: none;
+  position: relative;
+}
+
+.paragraph--type--cta-link a::after {
+  content: "";
+  width: 1rem;
+  height: 2rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='30' viewBox='0 0 17 30' fill='none'%3E%3Cpath d='M2.68188 29.5835C2.15919 29.5845 1.65265 29.415 1.25018 29.1044C1.02367 28.9295 0.836423 28.7147 0.699177 28.4723C0.561931 28.2299 0.47738 27.9647 0.450366 27.6918C0.423352 27.4189 0.454406 27.1438 0.54175 26.8821C0.629093 26.6204 0.771008 26.3774 0.959369 26.1669L10.9812 15.0002L1.31729 3.8127C1.13147 3.5996 0.992708 3.3544 0.908972 3.09119C0.825237 2.82799 0.798182 2.55196 0.829365 2.27899C0.860547 2.00601 0.94935 1.74147 1.09067 1.50056C1.23199 1.25965 1.42305 1.04712 1.65285 0.875202C1.8843 0.685542 2.15535 0.542485 2.44899 0.455008C2.74263 0.36753 3.05251 0.337523 3.35919 0.366866C3.66587 0.39621 3.96273 0.484272 4.23113 0.625526C4.49953 0.766779 4.73369 0.958175 4.9189 1.1877L15.7237 13.6877C16.0527 14.0605 16.2326 14.5281 16.2326 15.0106C16.2326 15.4932 16.0527 15.9608 15.7237 16.3335L4.5386 28.8335C4.31419 29.0857 4.02912 29.285 3.70652 29.4153C3.38392 29.5456 3.03288 29.6032 2.68188 29.5835Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 1rem;
+  top: 0.8rem;
+}
+
+.paragraph--type--cta-link a:hover {
+  text-decoration: underline;
+}
+
+.paragraph--type--cta-link a:focus {
+  background-color: #285846;
+  color: var(--color-white);
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px 4px rgba(236, 183, 32, 1);
+}

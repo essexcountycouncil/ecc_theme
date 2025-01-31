@@ -36,3 +36,8 @@ layout.css:
   css:
     theme:
       css/layout.css: { weight: 2 }
+
+cta_link:
+  css:
+    theme:
+      css/cta-link.css: { weight: 2 }

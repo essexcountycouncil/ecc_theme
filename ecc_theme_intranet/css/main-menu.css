@@ -2,7 +2,26 @@
   display: block;
   padding: 0.75rem;
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 1rem;
+}
+
+.menu.menu--main > .menu-item:last-child a::after {
+  content: none;
+}
+
+.lgd-header__toggle {
+  padding: 0.5rem var(--spacing);
+  font-weight: 600;
+}
+
+.lgd-header__toggle--active {
+  outline: 1px solid var(--header-services-button-border-color);
+}
+
+@media only screen and (min-width: 394px) {
+  .menu.menu--main > .menu-item a {
+    font-size: 1.125rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -18,15 +37,17 @@
 
   .menu.menu--main > .menu-item a::after {
     position: absolute;
-    top: 0.25rem;
-    right: -0.5rem;
-    width: 1px;
-    height: 20px;
+    top: 0.15rem;
+    right: -0.65rem;
+    width: 2px;
+    height: 32px;
     content: "";
     background-color: var(--color-white);
   }
 }
 
-.menu.menu--main > .menu-item:last-child a::after {
-  content: none;
+@media only screen and (min-width: 1280px) {
+  .menu.menu--main > .menu-item a {
+    font-size: 1.25rem;
+  }
 }
