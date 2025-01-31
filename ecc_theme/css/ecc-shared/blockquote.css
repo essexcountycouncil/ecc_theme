@@ -15,9 +15,10 @@ blockquote.pull-out-quote__content:before {
   content: '';
   display: inline-block;
   height: 22px;
-  width: 34px;
+  width: 30px;
   margin-right: 0.5em;
   mask-size: 30px;
+  mask-repeat: no-repeat;
 }
 
 .pull-out-quote {
