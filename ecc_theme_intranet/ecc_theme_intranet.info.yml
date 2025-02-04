@@ -15,6 +15,7 @@ libraries:
   - ecc_theme_intranet/search
   - ecc_theme_intranet/service_cta_block
   - ecc_theme_intranet/cta_link
+  - ecc_theme_intranet/disclosure_nav
 
 regions:
   tabs: "Tabs"

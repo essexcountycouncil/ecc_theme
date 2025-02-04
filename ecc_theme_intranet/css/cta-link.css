@@ -20,7 +20,7 @@
 }
 
 .paragraph--type--cta-link a:hover {
-  text-decoration: underline;
+  background-color: #285846;
 }
 
 .paragraph--type--cta-link a:focus {
