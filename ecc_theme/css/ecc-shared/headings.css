@@ -33,6 +33,7 @@ h1::after,
   background-color: var(--color-accent);
 }
 
+.page-node-type-localgov-directories-page h2::after,
 .service-landing-page__contact h2::after,
 .localgov-alert-banner h2::after,
 .call-out-box h2::after,
