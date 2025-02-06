@@ -33,6 +33,13 @@ h1::after,
   background-color: var(--color-accent);
 }
 
+.page-node-type-localgov-directories-page .field--label-above h2 {
+  margin-bottom: var(--vertical-rhythm-spacing);
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+.page-node-type-localgov-directories-page h2::after,
 .service-landing-page__contact h2::after,
 .localgov-alert-banner h2::after,
 .call-out-box h2::after,
