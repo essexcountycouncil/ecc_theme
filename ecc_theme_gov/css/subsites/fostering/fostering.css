@@ -170,6 +170,30 @@ body.subsite-extra--color-fostering {
       padding-inline: 0;
     }
   }
+
+  /*
+  Fostering uses accent colour, not link colour, for accordions.
+  */
+  .accordion-pane button {
+    border-color: var(--color-accent);
+    background-color: var(--color-accent);
+  }
+
+  .accordion-pane button:hover,
+  .accordion-pane button:focus {
+    color: var(--color-accent);
+    background-color: var(--color-white);
+  }
+
+  .facets-widget .accordion-pane button {
+    border-color: var(--color-accent);
+    background-color: var(--color-accent);
+  }
+
+  .facets-widget .accordion-pane button:hover {
+    color: var(--color-accent);
+    background-color: var(--color-accent);
+  }
 }
 
 .ck-content .button-start--fostering {
@@ -186,28 +210,4 @@ body.subsite-extra--color-fostering {
 
 .button-start--fostering:hover {
   color: var(--background-fostering);
-}
-
-/*
-Fostering uses accent colour, not link colour, for accordions.
-*/
-.accordion-pane button {
-  border-color: var(--color-accent);
-  background-color: var(--color-accent);
-}
-
-.accordion-pane button:hover,
-.accordion-pane button:focus {
-  color: var(--color-accent);
-  background-color: var(--color-white);
-}
-
-.facets-widget .accordion-pane button {
-  border-color: var(--color-accent);
-  background-color: var(--color-accent);
-}
-
-.facets-widget .accordion-pane button:hover {
-  color: var(--color-accent);
-  background-color: var(--color-accent);
 }
