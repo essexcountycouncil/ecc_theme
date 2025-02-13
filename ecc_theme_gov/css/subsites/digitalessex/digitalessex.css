@@ -38,6 +38,7 @@ body.subsite-extra--color-digitalessex {
 
   .lgd-region--subsites-menu {
     background: var(--background-digitalessex);
+
     .subsite-extra__title {
       background-image: url(digitalessex_logo_white.png);
       background-size: contain;
@@ -45,6 +46,7 @@ body.subsite-extra--color-digitalessex {
       position: relative;
       height: 2em;
     }
+
     .subsite-extra__title>a {
       color: var(--color-white);
       position: absolute;
@@ -184,6 +186,30 @@ body.subsite-extra--color-digitalessex {
     .lgd-region--subsites-menu .padding-horizontal {
       padding-inline: 0;
     }
+  }
+
+  /**
+    * Digital Essex uses accent colour, not link colour, for accordions.
+    */
+  .accordion-pane button {
+    border-color: var(--color-accent);
+    background-color: var(--color-accent);
+  }
+
+  .accordion-pane button:hover,
+  .accordion-pane button:focus {
+    color: var(--color-accent);
+    background-color: var(--color-white);
+  }
+
+  .facets-widget .accordion-pane button {
+    border-color: var(--color-accent);
+    background-color: var(--color-accent);
+  }
+
+  .facets-widget .accordion-pane button:hover {
+    color: var(--color-accent);
+    background-color: var(--color-accent);
   }
 }
 
