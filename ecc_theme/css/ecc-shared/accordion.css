@@ -3,8 +3,8 @@ This CSS file, accordion.css, is used to style an accordion component. An accord
 */
 .accordion-pane button {
   position: relative;
-  border-color: var(--color-accent);
-  background-color: var(--color-accent);
+  border-color: var(--color-link);
+  background-color: var(--color-link);
   padding-right: 3.5em;
 }
 
@@ -33,14 +33,4 @@ This CSS file, accordion.css, is used to style an accordion component. An accord
 .accordion-pane button:hover::after,
 .accordion-pane button:focus::after {
   background-image: var(--icon-chevron-blue);
-}
-
-.facets-widget .accordion-pane button {
-  border-color: var(--color-link);
-  background-color: var(--color-link);
-}
-
-.facets-widget .accordion-pane button:hover {
-  color: var(--color-link);
-  background-color: var(--color-white);
 }
