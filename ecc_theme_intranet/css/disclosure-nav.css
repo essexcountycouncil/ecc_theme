@@ -165,8 +165,10 @@
 }
 
 .lgd-header .disclosure-nav__menu-item--link:focus {
-  box-shadow: none;
-  background-color: #ecb720;
+  outline: 3px solid transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  box-shadow: 0 -2px var(--color-focus), 0 4px var(--color-black);
 }
 
 .lgd-header .disclosure-nav__menu-item--link:focus,
@@ -190,10 +192,15 @@
 .disclosure-nav__back-button:hover,
 .disclosure-nav__back-button:focus {
   color: var(--color-black);
-  text-decoration: none;
   font-weight: bold;
-  background-color: #ecb720;
-  outline: none;
+}
+
+.disclosure-nav__back-button:focus {
+  outline: 3px solid transparent;
+  background-color: var(--color-focus);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  box-shadow: 0 -2px var(--color-focus), 0 4px var(--color-black);
 }
 
 .path-frontpage .disclosure-nav__back-button {
