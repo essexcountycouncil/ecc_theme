@@ -52,7 +52,8 @@
   font-weight: 600;
 }
 
-.lgd-header__toggle--active {
+.lgd-header__toggle--active,
+.lgd-header__toggle:focus {
   outline: 1px solid var(--header-services-button-border-color);
 }
 
@@ -66,7 +67,8 @@
   font-weight: normal;
 }
 
-.lgd-header__toggle--active .lgd-header__toggle-text--primary {
+.lgd-header__toggle--active .lgd-header__toggle-text--primary,
+.lgd-header__toggle:focus .lgd-header__toggle-text--primary {
   font-weight: bold;
 }
 

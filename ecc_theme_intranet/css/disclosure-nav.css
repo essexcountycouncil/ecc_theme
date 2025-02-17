@@ -14,8 +14,12 @@
   font-weight: 600;
 }
 
-.disclosure-nav__toggle:hover,
 .disclosure-nav__toggle:focus {
+  outline: 3px solid transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  box-shadow: 0 -2px var(--color-focus), 0 4px var(--color-black);
+  z-index: 10;
   text-decoration: none;
 }
 
@@ -34,7 +38,19 @@
 
 @media only screen and (min-width: 956px) {
   .disclosure-nav__toggle {
+    border: 0;
     font-weight: 400;
+    margin-right: var(--spacing-smallest);
+  }
+
+  .disclosure-nav__toggle:hover {
+    text-decoration: none;
+  }
+
+  .disclosure-nav__toggle:focus {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 0;
+    box-shadow: inset 0 0 0 2px var(--color-black);
   }
 
   .disclosure-nav__toggle:focus,
@@ -107,7 +123,7 @@
   max-width: var(--width-container);
   margin-right: auto;
   margin-left: auto;
-  padding: 0;
+  padding: 0 0 var(--spacing-large) 0;
   margin-bottom: 0;
 }
 
@@ -117,6 +133,13 @@
   padding: var(--spacing-large) var(--spacing);
   display: block;
   transition: none;
+}
+
+@media only screen and (min-width: 745px) {
+  .disclosure-nav__menu-list {
+    column-count: 2;
+    column-gap: var(--spacing);
+  }
 }
 
 @media only screen and (min-width: 956px) {
@@ -142,8 +165,10 @@
 }
 
 .lgd-header .disclosure-nav__menu-item--link:focus {
-  box-shadow: none;
-  background-color: #ecb720;
+  outline: 3px solid transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  box-shadow: 0 -2px var(--color-focus), 0 4px var(--color-black);
 }
 
 .lgd-header .disclosure-nav__menu-item--link:focus,
@@ -167,8 +192,15 @@
 .disclosure-nav__back-button:hover,
 .disclosure-nav__back-button:focus {
   color: var(--color-black);
-  text-decoration: none;
   font-weight: bold;
+}
+
+.disclosure-nav__back-button:focus {
+  outline: 3px solid transparent;
+  background-color: var(--color-focus);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  box-shadow: 0 -2px var(--color-focus), 0 4px var(--color-black);
 }
 
 .path-frontpage .disclosure-nav__back-button {
