@@ -140,27 +140,52 @@
     column-count: 2;
     column-gap: var(--spacing);
   }
-}
 
-@media only screen and (min-width: 956px) {
-  .disclosure-nav__menu-list {
-    padding: var(--spacing);
-    column-count: 3;
-    column-gap: var(--spacing);
+  .disclosure-nav__menu-item {
+    line-height: 1rem;
   }
 
   .lgd-header .disclosure-nav__menu-item--link {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='24' viewBox='0 0 31 24' fill='none'%3E%3Cpath d='M13.0762 5.0002C13.2683 4.99969 13.4581 5.03267 13.6316 5.09669C13.8052 5.16072 13.9581 5.25418 14.0791 5.3702L20.2891 11.3702C20.4782 11.5491 20.5815 11.7736 20.5815 12.0052C20.5815 12.2368 20.4782 12.4613 20.2891 12.6402L13.8605 18.6402C13.6423 18.8444 13.3287 18.9729 12.9887 18.9972C12.6487 19.0216 12.3102 18.94 12.0477 18.7702C11.7851 18.6005 11.62 18.3566 11.5886 18.0921C11.5573 17.8277 11.6623 17.5644 11.8805 17.3602L17.6276 12.0002L12.0734 6.6402C11.9162 6.49342 11.8163 6.31468 11.7856 6.12513C11.7549 5.93558 11.7946 5.74315 11.9001 5.57063C12.0056 5.3981 12.1725 5.25269 12.3809 5.1516C12.5893 5.05051 12.8306 4.99797 13.0762 5.0002Z' fill='%23231F20'/%3E%3C/svg%3E%0A");
-    background-position: 0.25rem 50%;
+    background-position: 0.25rem 0.75rem;
     background-repeat: no-repeat;
     padding: var(--spacing) var(--spacing-large) var(--spacing)
       var(--spacing-largest);
   }
 }
 
+@media only screen and (min-width: 956px) {
+  .disclosure-nav {
+    margin-left: -1rem;
+    margin-right: var(--spacing);
+  }
+
+  .disclosure-nav__menu {
+    padding: 0 var(--spacing);
+  }
+
+  .disclosure-nav__menu-item {
+    break-inside: avoid;
+  }
+
+  .disclosure-nav__menu-list {
+    padding: var(--spacing) 0;
+    column-count: 3;
+    column-gap: var(--spacing);
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .disclosure-nav__menu-list {
     column-count: 4;
+  }
+
+  .disclosure-nav__menu-item {
+    margin-left: -1rem;
+  }
+
+  .disclosure-nav__menu-item--link {
+    min-height: 55px;
   }
 }
 
@@ -174,7 +199,7 @@
 .lgd-header .disclosure-nav__menu-item--link:focus,
 .lgd-header .disclosure-nav__menu-item--link:hover {
   text-decoration: underline;
-  font-weight: bold;
+  text-shadow: 1px 0 0 var(--color-black);
 }
 
 /* Back Button */
