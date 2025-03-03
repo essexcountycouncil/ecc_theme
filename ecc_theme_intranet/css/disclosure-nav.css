@@ -176,7 +176,7 @@
   }
 
   .disclosure-nav__menu {
-    padding: 0 var(--spacing);
+    padding: 0;
   }
 
   .disclosure-nav__menu-item {
