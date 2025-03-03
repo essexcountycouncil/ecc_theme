@@ -127,6 +127,10 @@
     padding: 0 var(--spacing);
   }
 
+  .lgd-header__inner--top {
+    padding: var(--spacing);
+  }
+
   .lgd-header__inner--top .lgd-container {
     align-items: center;
     justify-content: space-between;
