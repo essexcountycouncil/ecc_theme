@@ -123,10 +123,16 @@
   position: absolute;
   background-color: var(--color-white);
   border-bottom: 3px solid var(--color-accent);
-  top: 3rem;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
+}
+
+@media only screen and (min-width: 956px) {
+  .disclosure-nav__menu {
+    top: auto;
+  }
 }
 
 .disclosure-nav__menu.menu--open {
