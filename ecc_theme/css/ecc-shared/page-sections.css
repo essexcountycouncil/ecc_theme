@@ -41,6 +41,9 @@
   .media-with-text--default .media-with-text__body {
     background-color: var(--color-page-section-background-color-3);
   }
+  a {
+    color: var(--color-link);
+  }
 }
 
 /*
@@ -70,6 +73,9 @@
   .media-with-text--default,
   .media-with-text--default .media-with-text__body {
     background-color: var(--color-page-section-background-color-3);
+  }
+  a {
+    color: var(--color-link);
   }
 }
 
