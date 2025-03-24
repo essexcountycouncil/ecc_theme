@@ -36,7 +36,7 @@ function ecc_theme_gov_preprocess_breadcrumb(&$variables): void {
   if (str_starts_with($alias, '/children-young-people-and-families')) {
     // If the breadcrumb array has more than one item and the second item's text
     // is "Children, young people and families".
-    if (count($variables['breadcrumb']) > 1 && $variables['breadcrumb'][1]['text'] === 'Children, young people and families') {
+    if (count($variables['breadcrumb']) > 2 && $variables['breadcrumb'][1]['text'] === 'Children, young people and families') {
       // Unset the second breadcrumb item.
       unset($variables['breadcrumb'][1]);
     }
