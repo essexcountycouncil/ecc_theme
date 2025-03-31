@@ -33,7 +33,7 @@ function ecc_theme_gov_preprocess_breadcrumb(&$variables): void {
   $alias = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
 
   // Manipulate the breadcrumbs for fostering pages.
-  if (str_starts_with($alias, '/children-young-people-and-families')) {
+  if (str_starts_with($alias, '/children-young-people-and-families/fostering')) {
     // If the breadcrumb array has more than one item and the second item's text
     // is "Children, young people and families".
     if (count($variables['breadcrumb']) > 2 && $variables['breadcrumb'][1]['text'] === 'Children, young people and families') {
