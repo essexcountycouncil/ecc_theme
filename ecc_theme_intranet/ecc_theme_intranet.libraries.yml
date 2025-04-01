@@ -46,3 +46,8 @@ disclosure_nav:
   css:
     theme:
       css/disclosure-nav.css: { weight: 2 }
+
+three_col_layout:
+  css:
+    theme:
+      css/three-col-layout.css: { weight: 2 }
