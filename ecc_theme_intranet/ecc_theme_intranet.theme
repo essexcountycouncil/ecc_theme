@@ -4,3 +4,21 @@
  * @file
  * Theme function for the Essex County Council Intranet theme.
  */
+
+/**
+ * Implements hook_preprocess_hook().
+ *
+ * Add title to URL.
+ */
+function ecc_theme_intranet_preprocess_paragraph__cta_link(&$variables, $hook) {
+  if (isset($variables['content']['field_link_title']['#items'])) {
+    //$items =  $variables['content']['field_link_title']['#items'];
+    if ($link_title = $variables['content']['field_link_title']['#items']?->first()?->value) {
+      /** @var \Drupal\Core\Url $url */
+      $url = &$variables['elements']['localgov_link'][0]['#url'];
+
+      $url->setOption('attributes', ['title' => $link_title]);
+    }
+  }
+  unset($variables['content']['field_link_title']);
+}
