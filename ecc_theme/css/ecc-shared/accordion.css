@@ -8,6 +8,10 @@ This CSS file, accordion.css, is used to style an accordion component. An accord
   padding-right: 3.5em;
 }
 
+.accordion-pane button .accordion-icon{
+  display: none;
+}
+
 .accordion-pane button::after {
   position: absolute;
   top: 1.25rem;
