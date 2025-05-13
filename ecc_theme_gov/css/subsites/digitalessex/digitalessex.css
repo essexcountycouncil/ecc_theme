@@ -45,12 +45,16 @@ body.subsite-extra--color-digitalessex {
       background-repeat: no-repeat;
       position: relative;
       height: 2em;
+      margin-top: 1em;
     }
 
     .subsite-extra__title>a {
       color: var(--color-white);
-      position: absolute;
-      left: -9999px;
+      text-indent: -9999px;
+      overflow: hidden;
+      display: block;
+      height: 4em;
+      width: 10em;
     }
 
     .subsite-extra__title>a:focus {
