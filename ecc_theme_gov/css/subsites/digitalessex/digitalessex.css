@@ -48,17 +48,26 @@ body.subsite-extra--color-digitalessex {
       margin-top: 1em;
     }
 
-    .subsite-extra__title>a {
+    .subsite-extra__title > a {
       color: var(--color-white);
       text-indent: -9999px;
       overflow: hidden;
       display: block;
-      height: 4em;
+      height: 3em;
       width: 10em;
     }
 
-    .subsite-extra__title>a:focus {
+    .subsite-extra__title > a:hover {
+      background-color: transparent;
+      border: 1px dashed white;
+    }
+
+    .subsite-extra__title > a:focus {
+      outline: none;
+      box-shadow: none;
       color: var(--color-black);
+      background-color: transparent;
+      border: 1px dashed white;
     }
   }
 
