@@ -67,7 +67,7 @@ body.subsite-extra--color-digitalessex {
       box-shadow: none;
       color: var(--color-black);
       background-color: transparent;
-      border: 1px dashed white;
+      border: 1px solid white;
     }
   }
 
