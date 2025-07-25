@@ -21,7 +21,8 @@
   border: 0;
 }
 
-.cludo-search-block-search-form form {
+.cludo-search-block-search-form form,
+.cludo-search-block-search-form form .cludo-search-form {
   display: flex;
   align-items: center;
   justify-content: center;
