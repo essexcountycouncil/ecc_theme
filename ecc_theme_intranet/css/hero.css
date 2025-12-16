@@ -1,8 +1,0 @@
-.banner--primary {
-  display: block;
-  margin-top: var(--spacing-larger);
-}
-
-.banner--primary .banner__content {
-  padding: 0;
-}
